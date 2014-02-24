@@ -45,17 +45,15 @@ function template_preprocess_commerce_kiala_point_details(&$vars) {
   $vars['picture_image'] = '';
   if (isset($point['picture']['href'])) {
     if (!empty($settings['ls_ws_details_image_style'])) {
-      $vars['picture_image'] = theme('image_style', array(
-        'style_name' => $settings['ls_ws_details_image_style'],
-        'path' => $point['picture']['href'],
-      ));
+      $vars['picture_image'] = $point['picture']['href'];
     }
     else {
-      $vars['picture_image'] = theme('image', array(
-        'path' => $point['picture']['href'],
-      ));
+      $vars['picture_image'] = $point['picture']['href'];
     }
   }
+
+  $vars['picture_image'] = "<img src='" . $vars['picture_image'] . "' />";
+
 
   // add id specific vars
   if (!empty($point['shortId'])) {
