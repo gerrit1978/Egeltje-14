@@ -1,0 +1,6 @@
+name         = Kadobon Verzending
+description  = Rules integratie voor gratis verzending van kadobons
+core         = 7.x
+version      = 7.x-1.0-alfa1
+
+package      = Egeltje
