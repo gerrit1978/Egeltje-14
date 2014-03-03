@@ -14,13 +14,13 @@
 
 
 // To understand behaviors, see https://drupal.org/node/756722#behaviors
-Drupal.behaviors.my_custom_behavior = {
+Drupal.behaviors.carrousel = {
   attach: function(context, settings) {
-
-    // Place your code here.
-
+    $('.view-carrousel').flexslider({
+      controlNav: false
+    });
   }
-};
+}
 
 
 })(jQuery, Drupal, this, this.document);

@@ -592,16 +592,17 @@ table {
  * For screen sizes larger than 1200px, prevent excessively long lines of text
  * by setting a max-width.
  */
-/* line 34, ../sass/layouts/_responsive.scss */
-#page,
+/* line 35, ../sass/layouts/_responsive.scss */
+#main,
+#header,
 .region-bottom {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1200px;
+  max-width: 1180px;
 }
 
 /* Apply the shared properties of grid items in a single, efficient ruleset. */
-/* line 46, ../sass/layouts/_responsive.scss */
+/* line 47, ../sass/layouts/_responsive.scss */
 #header,
 #content,
 #navigation,
@@ -636,14 +637,14 @@ table {
 
 /* Navigation bar */
 @media all and (min-width: 480px) {
-  /* line 60, ../sass/layouts/_responsive.scss */
+  /* line 61, ../sass/layouts/_responsive.scss */
   #main {
     /* Move all the children of #main down to make room. */
     padding-top: 3em;
     position: relative;
   }
 
-  /* line 65, ../sass/layouts/_responsive.scss */
+  /* line 66, ../sass/layouts/_responsive.scss */
   #navigation {
     /* Move the navbar up inside #main's padding. */
     position: absolute;
@@ -659,19 +660,19 @@ table {
   /**
    * The layout when there is only one sidebar, the left one.
    */
-  /* line 86, ../sass/layouts/_responsive.scss */
+  /* line 87, ../sass/layouts/_responsive.scss */
   .sidebar-first {
     /* Span 2 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
   }
-  /* line 88, ../sass/layouts/_responsive.scss */
+  /* line 89, ../sass/layouts/_responsive.scss */
   .sidebar-first #content {
     float: left;
     width: 66.66667%;
     margin-left: 33.33333%;
     margin-right: -100%;
   }
-  /* line 93, ../sass/layouts/_responsive.scss */
+  /* line 94, ../sass/layouts/_responsive.scss */
   .sidebar-first .region-sidebar-first {
     float: left;
     width: 33.33333%;
@@ -682,19 +683,19 @@ table {
   /**
    * The layout when there is only one sidebar, the right one.
    */
-  /* line 101, ../sass/layouts/_responsive.scss */
+  /* line 102, ../sass/layouts/_responsive.scss */
   .sidebar-second {
     /* Span 2 columns, starting in 1st column from left. */
     /* Span 1 column, starting in 3rd column from left. */
   }
-  /* line 103, ../sass/layouts/_responsive.scss */
+  /* line 104, ../sass/layouts/_responsive.scss */
   .sidebar-second #content {
     float: left;
     width: 66.66667%;
     margin-left: 0%;
     margin-right: -66.66667%;
   }
-  /* line 108, ../sass/layouts/_responsive.scss */
+  /* line 109, ../sass/layouts/_responsive.scss */
   .sidebar-second .region-sidebar-second {
     float: left;
     width: 33.33333%;
@@ -705,27 +706,27 @@ table {
   /**
    * The layout when there are two sidebars.
    */
-  /* line 116, ../sass/layouts/_responsive.scss */
+  /* line 117, ../sass/layouts/_responsive.scss */
   .two-sidebars {
     /* Span 2 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
     /* Start a new row and span all 3 columns. */
   }
-  /* line 118, ../sass/layouts/_responsive.scss */
+  /* line 119, ../sass/layouts/_responsive.scss */
   .two-sidebars #content {
     float: left;
     width: 66.66667%;
     margin-left: 33.33333%;
     margin-right: -100%;
   }
-  /* line 123, ../sass/layouts/_responsive.scss */
+  /* line 124, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-first {
     float: left;
     width: 33.33333%;
     margin-left: 0%;
     margin-right: -33.33333%;
   }
-  /* line 128, ../sass/layouts/_responsive.scss */
+  /* line 129, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second {
     float: left;
     width: 100%;
@@ -739,7 +740,7 @@ table {
     /* Span 1 column, starting in the 2nd column from left. */
     /* Span 1 column, starting in the 3rd column from left. */
   }
-  /* line 134, ../sass/layouts/_responsive.scss */
+  /* line 135, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block {
     padding-left: 10px;
     padding-right: 10px;
@@ -749,7 +750,7 @@ table {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 138, ../sass/layouts/_responsive.scss */
+  /* line 139, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(3n+1) {
     float: left;
     width: 33.33333%;
@@ -757,14 +758,14 @@ table {
     margin-right: -33.33333%;
     clear: left;
   }
-  /* line 143, ../sass/layouts/_responsive.scss */
+  /* line 144, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(3n+2) {
     float: left;
     width: 33.33333%;
     margin-left: 33.33333%;
     margin-right: -66.66667%;
   }
-  /* line 147, ../sass/layouts/_responsive.scss */
+  /* line 148, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(3n) {
     float: left;
     width: 33.33333%;
@@ -779,78 +780,78 @@ table {
   /**
    * The layout when there is only one sidebar, the left one.
    */
-  /* line 164, ../sass/layouts/_responsive.scss */
+  /* line 165, ../sass/layouts/_responsive.scss */
   .sidebar-first {
     /* Span 4 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
   }
-  /* line 166, ../sass/layouts/_responsive.scss */
+  /* line 167, ../sass/layouts/_responsive.scss */
   .sidebar-first #content {
     float: left;
-    width: 80%;
-    margin-left: 20%;
-    margin-right: -100%;
+    width: 33.33333%;
+    margin-left: 8.33333%;
+    margin-right: -41.66667%;
   }
-  /* line 171, ../sass/layouts/_responsive.scss */
+  /* line 172, ../sass/layouts/_responsive.scss */
   .sidebar-first .region-sidebar-first {
     float: left;
-    width: 20%;
+    width: 8.33333%;
     margin-left: 0%;
-    margin-right: -20%;
+    margin-right: -8.33333%;
   }
 
   /**
    * The layout when there is only one sidebar, the right one.
    */
-  /* line 179, ../sass/layouts/_responsive.scss */
+  /* line 180, ../sass/layouts/_responsive.scss */
   .sidebar-second {
     /* Span 4 columns, starting in 1st column from left. */
     /* Span 1 column, starting in 5th column from left. */
   }
-  /* line 181, ../sass/layouts/_responsive.scss */
+  /* line 182, ../sass/layouts/_responsive.scss */
   .sidebar-second #content {
     float: left;
-    width: 80%;
+    width: 33.33333%;
     margin-left: 0%;
-    margin-right: -80%;
+    margin-right: -33.33333%;
   }
-  /* line 186, ../sass/layouts/_responsive.scss */
+  /* line 187, ../sass/layouts/_responsive.scss */
   .sidebar-second .region-sidebar-second {
     float: left;
-    width: 20%;
-    margin-left: 80%;
-    margin-right: -100%;
+    width: 8.33333%;
+    margin-left: 33.33333%;
+    margin-right: -41.66667%;
   }
 
   /**
    * The layout when there are two sidebars.
    */
-  /* line 194, ../sass/layouts/_responsive.scss */
+  /* line 195, ../sass/layouts/_responsive.scss */
   .two-sidebars {
     /* Span 3 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
     /* Span 1 column, starting in 5th column from left. */
   }
-  /* line 196, ../sass/layouts/_responsive.scss */
+  /* line 197, ../sass/layouts/_responsive.scss */
   .two-sidebars #content {
     float: left;
-    width: 60%;
-    margin-left: 20%;
-    margin-right: -80%;
+    width: 25%;
+    margin-left: 8.33333%;
+    margin-right: -33.33333%;
   }
-  /* line 201, ../sass/layouts/_responsive.scss */
+  /* line 202, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-first {
     float: left;
-    width: 20%;
+    width: 8.33333%;
     margin-left: 0%;
-    margin-right: -20%;
+    margin-right: -8.33333%;
   }
-  /* line 206, ../sass/layouts/_responsive.scss */
+  /* line 207, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second {
     float: left;
-    width: 20%;
-    margin-left: 80%;
-    margin-right: -100%;
+    width: 8.33333%;
+    margin-left: 33.33333%;
+    margin-right: -41.66667%;
   }
 }
 /* Component (SMACSS module) rules */
@@ -1795,4 +1796,115 @@ tr.selected td {
 /* line 27, ../sass/styles.scss */
 body {
   font-family: "Roboto";
+}
+
+/* line 31, ../sass/styles.scss */
+a:focus {
+  outline: none;
+}
+
+/* Homepage Carrousel */
+/* line 36, ../sass/styles.scss */
+.view-carrousel {
+  position: relative;
+}
+/* line 38, ../sass/styles.scss */
+.view-carrousel ul.flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: absolute;
+  top: 166px;
+  z-index: 200;
+}
+/* line 45, ../sass/styles.scss */
+.view-carrousel ul.flex-direction-nav li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 39px;
+}
+/* line 50, ../sass/styles.scss */
+.view-carrousel ul.flex-direction-nav li a {
+  position: absolute;
+  top: 0;
+  background: url(../images/sprite.png) no-repeat;
+  display: block;
+  text-indent: -999em;
+  width: 48px;
+  height: 39px;
+}
+/* line 58, ../sass/styles.scss */
+.view-carrousel ul.flex-direction-nav li a.flex-prev {
+  left: 10px;
+}
+/* line 61, ../sass/styles.scss */
+.view-carrousel ul.flex-direction-nav li a.flex-next {
+  background-position: -48px 0;
+  right: 10px;
+}
+/* line 69, ../sass/styles.scss */
+.view-carrousel ul.slides {
+  margin: 0;
+  padding: 0;
+  height: 370px;
+}
+/* line 73, ../sass/styles.scss */
+.view-carrousel ul.slides li.slide {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 370px;
+  position: relative;
+  overflow: hidden;
+}
+/* line 80, ../sass/styles.scss */
+.view-carrousel ul.slides li.slide .image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  height: 370px;
+  width: 100%;
+}
+/* line 87, ../sass/styles.scss */
+.view-carrousel ul.slides li.slide .image img {
+  min-width: 100%;
+  min-height: 370px;
+  display: block;
+}
+/* line 93, ../sass/styles.scss */
+.view-carrousel ul.slides li.slide .text {
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 370px;
+  position: relative;
+  z-index: 100;
+}
+/* line 100, ../sass/styles.scss */
+.view-carrousel ul.slides li.slide .text .title {
+  text-align: center;
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  font-family: "DayPosterBlack";
+  font-size: 4em;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+/* line 112, ../sass/styles.scss */
+.view-carrousel ul.slides li.slide .text .subtitle {
+  text-align: left;
+  position: absolute;
+  max-width: 80%;
+  bottom: 15px;
+  width: 100%;
+  font-size: 1.625em;
+  line-height: 1.3;
+  font-weight: 700;
+  text-shadow: 1px 1px 1px black;
+  color: white;
 }

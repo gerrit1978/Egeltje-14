@@ -66,7 +66,8 @@ stylesheets[all][] = css/styles.css
 
 ; Optionally add some JavaScripts to your theme.
 
-;scripts[] = js/script.js
+scripts[] = flexslider/jquery.flexslider-min.js
+scripts[] = js/script.js
 
 
 
@@ -87,11 +88,15 @@ stylesheets[all][] = css/styles.css
 
 regions[header]         = Header
 regions[navigation]     = Navigation bar
+regions[carrousel]      = Carrousel Frontpage
 regions[highlighted]    = Highlighted
 regions[help]           = Help
+regions[content_top]    = Content Top
 regions[content]        = Content
+regions[content_bottom] = Content Bottom
 regions[sidebar_first]  = First sidebar
 regions[sidebar_second] = Second sidebar
+regions[newsletter]     = Newsletter
 regions[footer]         = Footer
 regions[bottom]         = Page bottom
 
