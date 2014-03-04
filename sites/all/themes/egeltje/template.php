@@ -66,15 +66,12 @@ function egeltje_preprocess_page(&$variables, $hook) {
  * @param $hook
  *   The name of the template being rendered ("node" in this case.)
  */
-/* -- Delete this line if you want to use this function
 function egeltje_preprocess_node(&$variables, $hook) {
-  $variables['sample_variable'] = t('Lorem ipsum.');
-
-  // Optionally, run node-type-specific preprocess functions, like
-  // egeltje_preprocess_node_page() or egeltje_preprocess_node_story().
-  $function = __FUNCTION__ . '_' . $variables['node']->type;
-  if (function_exists($function)) {
-    $function($variables, $hook);
+  if ($variables['type'] == 'product_display' && $variables['view_mode'] == 'product_in_de_kijker') {
+    $variables['theme_hook_suggestions'][] = 'node__product_display__front';
+    
+    // go to product link
+    $variables['content']['link_go_to_product'] = l(t('Bekijk dit product'), 'node/' . $variables['node']->nid);
   }
 }
 // */

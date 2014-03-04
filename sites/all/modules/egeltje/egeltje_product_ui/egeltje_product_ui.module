@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * Product related hooks and other functions
+ */
+
+/**
+ * Implements hook_entity_info_alter
+ * Registers extra view modes for product and product display
+ */
+function egeltje_product_ui_entity_info_alter(&$entity_info) {
+  $entity_info['node']['view modes']['product_in_de_kijker'] = array(
+    'label' => t('Product in de kijker'),
+    'custom settings' => TRUE,
+  );
+  $entity_info['commerce_product']['view modes']['node_product_in_de_kijker'] = array(
+    'label' => t('Node: Product in de kijker'),
+    'custom settings' => TRUE,
+  );  
+}

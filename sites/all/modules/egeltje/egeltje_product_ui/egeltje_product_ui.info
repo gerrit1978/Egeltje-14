@@ -1,0 +1,5 @@
+name         = Product UI
+description  = Productgerelateerde functionaliteiten
+core         = 7.x
+version      = 7.x-1.0
+package      = Egeltje
