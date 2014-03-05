@@ -72,7 +72,9 @@ function egeltje_preprocess_node(&$variables, $hook) {
     
     // go to product link
     $variables['content']['link_go_to_product'] = array(
+      '#prefix' => "<div class='go-to-product'>",
       '#markup' => l(t('Bekijk dit product'), 'node/' . $variables['node']->nid),
+      '#suffix' => "</div>",
     );
   }
 }
