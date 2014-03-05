@@ -71,7 +71,7 @@ function egeltje_preprocess_node(&$variables, $hook) {
     $variables['theme_hook_suggestions'][] = 'node__product_display__front';
     
     // go to product link
-    $variables['link_go_to_product'] = l(t('Bekijk dit product'), 'node/' . $variables['node']->nid);
+    $variables['content']['link_go_to_product'] = l(t('Bekijk dit product'), 'node/' . $variables['node']->nid);
   }
 }
 // */
