@@ -39,7 +39,7 @@
 
 
   <div class='go-to-product'>
-    <?php print render($content['link_go_to_product']); ?>
+    <?php print render($link_go_to_product); ?>
   </div>
   
 </article>
