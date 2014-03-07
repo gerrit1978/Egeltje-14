@@ -25,10 +25,6 @@
     </header>
   <?php endif; ?>
   
-<<<<<<< HEAD
   <?php print render($content['link_go_to_product']); ?>
-=======
-    <?php print render($content['link_go_to_product']); ?>
->>>>>>> 8537f2bcf2c1d645272fe864a07835f97183b67a
   
 </article>
