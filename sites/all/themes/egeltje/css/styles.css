@@ -2110,14 +2110,14 @@ h1 {
   font-weight: 400;
 }
 
-/* Homepage highlighted products */
-/* line 291, ../sass/styles.scss */
-.front .view-display-products ul.products {
+/* Product catalogus */
+/* line 290, ../sass/styles.scss */
+.view-display-products ul.products {
   margin: 0;
   padding: 0;
 }
-/* line 294, ../sass/styles.scss */
-.front .view-display-products ul.products li.product {
+/* line 293, ../sass/styles.scss */
+.view-display-products ul.products li.product {
   width: 25%;
   float: left;
   height: 315px;
@@ -2125,20 +2125,20 @@ h1 {
   margin-bottom: 20px;
   list-style: none;
 }
-/* line 301, ../sass/styles.scss */
-.front .view-display-products ul.products li.product.last {
+/* line 300, ../sass/styles.scss */
+.view-display-products ul.products li.product.last {
   border-right: none;
   width: 24%;
 }
-/* line 305, ../sass/styles.scss */
-.front .view-display-products ul.products li.product .node {
+/* line 304, ../sass/styles.scss */
+.view-display-products ul.products li.product .node {
   text-align: center;
   position: relative;
   margin: 10px;
   height: 295px;
 }
-/* line 310, ../sass/styles.scss */
-.front .view-display-products ul.products li.product .node h2.node-title {
+/* line 309, ../sass/styles.scss */
+.view-display-products ul.products li.product .node h2.node-title {
   position: absolute;
   bottom: 70px;
   text-align: center;
@@ -2146,31 +2146,31 @@ h1 {
   font-size: 1em;
   line-height: 1.2;
 }
-/* line 317, ../sass/styles.scss */
-.front .view-display-products ul.products li.product .node h2.node-title a {
+/* line 316, ../sass/styles.scss */
+.view-display-products ul.products li.product .node h2.node-title a {
   border: none;
 }
-/* line 321, ../sass/styles.scss */
-.front .view-display-products ul.products li.product .node .field-type-image {
+/* line 320, ../sass/styles.scss */
+.view-display-products ul.products li.product .node .field-type-image {
   text-align: center;
 }
-/* line 323, ../sass/styles.scss */
-.front .view-display-products ul.products li.product .node .field-type-image a {
+/* line 322, ../sass/styles.scss */
+.view-display-products ul.products li.product .node .field-type-image a {
   border: none;
 }
-/* line 326, ../sass/styles.scss */
-.front .view-display-products ul.products li.product .node .field-type-image img {
+/* line 325, ../sass/styles.scss */
+.view-display-products ul.products li.product .node .field-type-image img {
   border: 2px solid #e3e3e4;
 }
-/* line 330, ../sass/styles.scss */
-.front .view-display-products ul.products li.product .node .go-to-product {
+/* line 329, ../sass/styles.scss */
+.view-display-products ul.products li.product .node .go-to-product {
   position: absolute;
   bottom: 10px;
   left: 10%;
   width: 80%;
 }
-/* line 335, ../sass/styles.scss */
-.front .view-display-products ul.products li.product .node .go-to-product a {
+/* line 334, ../sass/styles.scss */
+.view-display-products ul.products li.product .node .go-to-product a {
   border: none;
   text-align: right;
   display: block;
@@ -2184,8 +2184,8 @@ h1 {
   -o-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
 }
-/* line 348, ../sass/styles.scss */
-.front .view-display-products ul.products li.product .node .go-to-product a:hover {
+/* line 347, ../sass/styles.scss */
+.view-display-products ul.products li.product .node .go-to-product a:hover {
   background-color: #e88b82;
   border-bottom: none;
   -webkit-transition: all .15s ease-in-out;
@@ -2195,8 +2195,30 @@ h1 {
   transition: all .15s ease-in-out;
 }
 
-/* Campaign Monitor */
 /* line 366, ../sass/styles.scss */
+.not-front .view-display-products ul.products li.product {
+  height: 340px;
+}
+/* line 368, ../sass/styles.scss */
+.not-front .view-display-products ul.products li.product .node {
+  height: 320px;
+}
+/* line 370, ../sass/styles.scss */
+.not-front .view-display-products ul.products li.product .node h2.node-title {
+  bottom: 95px;
+}
+/* line 373, ../sass/styles.scss */
+.not-front .view-display-products ul.products li.product .node .product-price {
+  position: absolute;
+  bottom: 60px;
+  width: 100%;
+  text-align: center;
+  color: #a6a6a6;
+  font-weight: 700;
+}
+
+/* Campaign Monitor */
+/* line 388, ../sass/styles.scss */
 #block-campaign-monitor-subscribe-campaign-monitor-subscribe {
   margin: 0;
   padding: 0;
@@ -2207,7 +2229,7 @@ h1 {
   height: 75px;
   line-height: 75px;
 }
-/* line 375, ../sass/styles.scss */
+/* line 397, ../sass/styles.scss */
 #block-campaign-monitor-subscribe-campaign-monitor-subscribe .label {
   float: left;
   color: white;
@@ -2216,14 +2238,14 @@ h1 {
   padding-left: 100px;
   margin-right: 30px;
 }
-/* line 384, ../sass/styles.scss */
+/* line 406, ../sass/styles.scss */
 #block-campaign-monitor-subscribe-campaign-monitor-subscribe form .form-item {
   margin: 0;
   padding: 0;
   float: left;
   margin-right: 10px;
 }
-/* line 389, ../sass/styles.scss */
+/* line 411, ../sass/styles.scss */
 #block-campaign-monitor-subscribe-campaign-monitor-subscribe form .form-item .form-text {
   border: none;
   height: 35px;
@@ -2232,7 +2254,7 @@ h1 {
   width: 300px;
   padding-left: 10px;
 }
-/* line 398, ../sass/styles.scss */
+/* line 420, ../sass/styles.scss */
 #block-campaign-monitor-subscribe-campaign-monitor-subscribe form .form-submit {
   background: url(../images/sprite.png) no-repeat 0 -85px;
   float: left;

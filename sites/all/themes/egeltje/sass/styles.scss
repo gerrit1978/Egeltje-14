@@ -285,77 +285,99 @@ h1 {
   }
 }
 
-/* Homepage highlighted products */
-.front {
-  .view-display-products {
-    ul.products {
-      margin: 0;
-      padding: 0;
-      li.product {
-        width: 25%;
-        float: left;
-        height: 315px;
-        border-right: 1px dotted #d8d8d8;
-        margin-bottom: 20px;
-        list-style: none;
-        &.last {
-          border-right: none;
-          width: 24%;
-        }
-        .node {
+/* Product catalogus */
+.view-display-products {
+  ul.products {
+    margin: 0;
+    padding: 0;
+    li.product {
+      width: 25%;
+      float: left;
+      height: 315px;
+      border-right: 1px dotted #d8d8d8;
+      margin-bottom: 20px;
+      list-style: none;
+      &.last {
+        border-right: none;
+        width: 24%;
+      }
+      .node {
+        text-align: center;
+        position: relative;
+        margin: 10px;
+        height: 295px;
+        h2.node-title {
+          position: absolute;
+          bottom: 70px;
           text-align: center;
-          position: relative;
-          margin: 10px;
-          height: 295px;
-          h2.node-title {
-            position: absolute;
-            bottom: 70px;
-            text-align: center;
-            width: 100%;
-            font-size: 1em;
-            line-height: 1.2;
-            a {
-              border: none;
-            }
+          width: 100%;
+          font-size: 1em;
+          line-height: 1.2;
+          a {
+            border: none;
           }
-	        .field-type-image {
-	          text-align: center;
-	          a {
-	            border: none;
-	          }
-	          img {
-	            border: 2px solid #e3e3e4;
-	          }
-	        }
-	        .go-to-product {
-	          position: absolute;
-	          bottom: 10px;
-	          left: 10%;
-	          width: 80%;
-	          a {
-	            border: none;
-	            text-align: right;
-	            display: block;
-	            margin: 0 auto;
-	            padding: 5px 10px 5px 50px;
-	            color: white;
-	            background: #e84c3d url(../images/sprite.png) no-repeat 0 -42px;
+        }
+        .field-type-image {
+          text-align: center;
+          a {
+            border: none;
+          }
+          img {
+            border: 2px solid #e3e3e4;
+          }
+        }
+        .go-to-product {
+          position: absolute;
+          bottom: 10px;
+          left: 10%;
+          width: 80%;
+          a {
+            border: none;
+            text-align: right;
+            display: block;
+            margin: 0 auto;
+            padding: 5px 10px 5px 50px;
+            color: white;
+            background: #e84c3d url(../images/sprite.png) no-repeat 0 -42px;
+		        -webkit-transition: all .15s ease-in-out;
+		        -moz-transition: all .15s ease-in-out;
+		        -ms-transition: all .15s ease-in-out;
+		        -o-transition: all .15s ease-in-out;
+		        transition: all .15s ease-in-out;          
+            &:hover {
+              background-color: #e88b82;
+              border-bottom: none;
 			        -webkit-transition: all .15s ease-in-out;
 			        -moz-transition: all .15s ease-in-out;
 			        -ms-transition: all .15s ease-in-out;
 			        -o-transition: all .15s ease-in-out;
 			        transition: all .15s ease-in-out;          
-	            &:hover {
-	              background-color: #e88b82;
-	              border-bottom: none;
-				        -webkit-transition: all .15s ease-in-out;
-				        -moz-transition: all .15s ease-in-out;
-				        -ms-transition: all .15s ease-in-out;
-				        -o-transition: all .15s ease-in-out;
-				        transition: all .15s ease-in-out;          
-	            }
-	          }
-	        }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.not-front {
+  .view-display-products {
+    ul.products {
+      li.product {
+        height: 340px;
+        .node {
+          height: 320px;
+          h2.node-title {
+            bottom: 95px;
+          }
+          .product-price {
+            position: absolute;
+            bottom: 60px;
+            width: 100%;
+            text-align: center;
+            color: #a6a6a6;
+            font-weight: 700;
+          }
         }
       }
     }

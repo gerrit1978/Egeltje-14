@@ -18,4 +18,14 @@ function egeltje_product_ui_entity_info_alter(&$entity_info) {
     'label' => t('Node: Product in de kijker'),
     'custom settings' => TRUE,
   );  
+  $entity_info['node']['view modes']['product_catalogus'] = array(
+    'label' => t('Product catalogus'),
+    'custom settings' => TRUE,
+  );
+  $entity_info['commerce_product']['view modes']['node_product_catalogus'] = array(
+    'label' => t('Node: Product catalogus'),
+    'custom settings' => TRUE,
+  );  
+
+
 }

@@ -12,7 +12,8 @@
     // We hide the comments and links now so that we can render them later.
     hide($content['comments']);
     hide($content['links']);
-    print render($content);
+    hide($content['product:commerce_price']);
+    print render($content['product:field_images']);
   ?>
 
   <?php if ($title_prefix || $title_suffix || $display_submitted || $unpublished || !$page && $title): ?>
@@ -24,7 +25,10 @@
       <?php print render($title_suffix); ?>
     </header>
   <?php endif; ?>
-  
+
+
+  <?php print render($content['product_price']); ?>
+
   <?php print render($content['link_go_to_product']); ?>
   
 </article>
