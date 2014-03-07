@@ -75,7 +75,6 @@ function egeltje_preprocess_node(&$variables, $hook) {
       '#markup' => l(t('Bekijk dit product'), 'node/' . $variables['node']->nid),
       '#suffix' => "</div>",
     );
-
     if ($variables['view_mode'] == 'product_in_de_kijker') {
       $variables['theme_hook_suggestions'][] = 'node__product_display__front';
     }
@@ -89,8 +88,8 @@ function egeltje_preprocess_node(&$variables, $hook) {
       );
       $variables['theme_hook_suggestions'][] = 'node__product_display__catalog';    
     }
-  
-  } 
+
+  }
 }
 
 
