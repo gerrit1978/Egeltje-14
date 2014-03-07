@@ -244,4 +244,17 @@ $zen-auto-include-item-base: false;
     }
   }
   
+  /* Footer */
+  #footer {
+    .column-1 {
+      @include zen-grid-item(4,1);
+    }
+    .column-2 {
+      @include zen-grid-item(4,5);
+    }
+    .column-3 {
+      @include zen-grid-item(4,9);
+    }
+  }
+  
 }

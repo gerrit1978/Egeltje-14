@@ -263,6 +263,29 @@ ul {
     margin-right: 50%;
     margin-left: -100%;
   }
+
+  /* Footer */
+  /* line 249, ../sass/layouts/_responsive.scss */
+  #footer .column-1 {
+    float: right;
+    width: 33.33333%;
+    margin-right: 0%;
+    margin-left: -33.33333%;
+  }
+  /* line 252, ../sass/layouts/_responsive.scss */
+  #footer .column-2 {
+    float: right;
+    width: 33.33333%;
+    margin-right: 33.33333%;
+    margin-left: -66.66667%;
+  }
+  /* line 255, ../sass/layouts/_responsive.scss */
+  #footer .column-3 {
+    float: right;
+    width: 33.33333%;
+    margin-right: 66.66667%;
+    margin-left: -100%;
+  }
 }
 /* Component (SMACSS module) rules */
 /**

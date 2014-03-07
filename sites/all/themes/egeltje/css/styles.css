@@ -899,6 +899,29 @@ table {
     margin-left: 50%;
     margin-right: -100%;
   }
+
+  /* Footer */
+  /* line 249, ../sass/layouts/_responsive.scss */
+  #footer .column-1 {
+    float: left;
+    width: 33.33333%;
+    margin-left: 0%;
+    margin-right: -33.33333%;
+  }
+  /* line 252, ../sass/layouts/_responsive.scss */
+  #footer .column-2 {
+    float: left;
+    width: 33.33333%;
+    margin-left: 33.33333%;
+    margin-right: -66.66667%;
+  }
+  /* line 255, ../sass/layouts/_responsive.scss */
+  #footer .column-3 {
+    float: left;
+    width: 33.33333%;
+    margin-left: 66.66667%;
+    margin-right: -100%;
+  }
 }
 /* Component (SMACSS module) rules */
 /**
@@ -2096,12 +2119,12 @@ h1 {
 
 /* Homepage categories */
 /* line 258, ../sass/styles.scss */
-#block-views-catalog-blocks-frontpage-block ul.blocks {
+.catalog-blocks-front ul.blocks {
   margin: 0;
   padding: 0;
 }
 /* line 261, ../sass/styles.scss */
-#block-views-catalog-blocks-frontpage-block ul.blocks li.block {
+.catalog-blocks-front ul.blocks li.block {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -2113,11 +2136,11 @@ h1 {
   position: relative;
 }
 /* line 271, ../sass/styles.scss */
-#block-views-catalog-blocks-frontpage-block ul.blocks li.block.last {
+.catalog-blocks-front ul.blocks li.block.last {
   margin-right: 0;
 }
 /* line 274, ../sass/styles.scss */
-#block-views-catalog-blocks-frontpage-block ul.blocks li.block a {
+.catalog-blocks-front ul.blocks li.block a {
   display: block;
   height: 240px;
   color: white;
@@ -2128,7 +2151,7 @@ h1 {
   transition: opacity .15s ease-in-out;
 }
 /* line 283, ../sass/styles.scss */
-#block-views-catalog-blocks-frontpage-block ul.blocks li.block a:hover {
+.catalog-blocks-front ul.blocks li.block a:hover {
   opacity: 0.6;
   -webkit-transition: opacity .15s ease-in-out;
   -moz-transition: opacity .15s ease-in-out;
@@ -2137,7 +2160,7 @@ h1 {
   transition: opacity .15s ease-in-out;
 }
 /* line 291, ../sass/styles.scss */
-#block-views-catalog-blocks-frontpage-block ul.blocks li.block a .category {
+.catalog-blocks-front ul.blocks li.block a .category {
   position: absolute;
   bottom: 20px;
   right: 10px;
@@ -2371,4 +2394,59 @@ h1 {
   height: 35px;
   text-indent: -1000em;
   border: none;
+}
+
+/* Footer */
+/* line 518, ../sass/styles.scss */
+#footer-wrapper {
+  background: white;
+}
+/* line 520, ../sass/styles.scss */
+#footer-wrapper #footer {
+  margin: 0;
+  padding: 0;
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 300;
+}
+/* line 528, ../sass/styles.scss */
+#footer-wrapper #footer .column-2 h2 {
+  text-transform: uppercase;
+  font-size: 1.125em;
+  font-weight: 500;
+  margin-top: 20px;
+}
+/* line 534, ../sass/styles.scss */
+#footer-wrapper #footer .column-2 ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 537, ../sass/styles.scss */
+#footer-wrapper #footer .column-2 ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float: left;
+  width: 50%;
+}
+/* line 546, ../sass/styles.scss */
+#footer-wrapper #footer a {
+  color: #888888;
+  border-bottom: 1px solid #888888;
+  -webkit-transition: all .15s ease-in-out;
+  -moz-transition: all .15s ease-in-out;
+  -ms-transition: all .15s ease-in-out;
+  -o-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+}
+/* line 554, ../sass/styles.scss */
+#footer-wrapper #footer a:hover {
+  color: #444444;
+  border-bottom: 1px solid #888888;
+  -webkit-transition: all .15s ease-in-out;
+  -moz-transition: all .15s ease-in-out;
+  -ms-transition: all .15s ease-in-out;
+  -o-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
 }

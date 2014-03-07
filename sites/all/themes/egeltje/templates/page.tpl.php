@@ -94,7 +94,9 @@
     <?php print render($page['newsletter']); ?>
   <?php endif; ?>
 
-  <?php print render($page['footer']); ?>
+  <div id="footer-wrapper">
+    <?php print render($page['footer']); ?>
+  </div>
 
 </div>
 
