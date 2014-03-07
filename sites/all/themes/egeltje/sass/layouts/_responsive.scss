@@ -174,7 +174,7 @@ $zen-auto-include-item-base: false;
  */
 @media all and (min-width: 960px) {
 
-  $zen-column-count: 12;
+  $zen-column-count: 24;
 
   /**
    * Header region
@@ -237,23 +237,23 @@ $zen-auto-include-item-base: false;
   /* Product Display node */
   .node-type-product-display {
     .column-1 {
-      @include zen-grid-item(6,1);
+      @include zen-grid-item(12,1);
     }
     .column-2 {
-      @include zen-grid-item(6,7);
+      @include zen-grid-item(12,13);
     }
   }
   
   /* Footer */
   #footer {
     .column-1 {
-      @include zen-grid-item(4,1);
+      @include zen-grid-item(5,1);
     }
     .column-2 {
-      @include zen-grid-item(4,5);
+      @include zen-grid-item(5,11);
     }
     .column-3 {
-      @include zen-grid-item(4,9);
+      @include zen-grid-item(5,20);
     }
   }
   

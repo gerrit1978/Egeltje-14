@@ -818,16 +818,16 @@ table {
   /* line 192, ../sass/layouts/_responsive.scss */
   .sidebar-first #content {
     float: left;
-    width: 33.33333%;
-    margin-left: 8.33333%;
-    margin-right: -41.66667%;
+    width: 16.66667%;
+    margin-left: 4.16667%;
+    margin-right: -20.83333%;
   }
   /* line 197, ../sass/layouts/_responsive.scss */
   .sidebar-first .region-sidebar-first {
     float: left;
-    width: 8.33333%;
+    width: 4.16667%;
     margin-left: 0%;
-    margin-right: -8.33333%;
+    margin-right: -4.16667%;
   }
 
   /**
@@ -841,16 +841,16 @@ table {
   /* line 207, ../sass/layouts/_responsive.scss */
   .sidebar-second #content {
     float: left;
-    width: 33.33333%;
+    width: 16.66667%;
     margin-left: 0%;
-    margin-right: -33.33333%;
+    margin-right: -16.66667%;
   }
   /* line 212, ../sass/layouts/_responsive.scss */
   .sidebar-second .region-sidebar-second {
     float: left;
-    width: 8.33333%;
-    margin-left: 33.33333%;
-    margin-right: -41.66667%;
+    width: 4.16667%;
+    margin-left: 16.66667%;
+    margin-right: -20.83333%;
   }
 
   /**
@@ -865,23 +865,23 @@ table {
   /* line 222, ../sass/layouts/_responsive.scss */
   .two-sidebars #content {
     float: left;
-    width: 25%;
-    margin-left: 8.33333%;
-    margin-right: -33.33333%;
+    width: 12.5%;
+    margin-left: 4.16667%;
+    margin-right: -16.66667%;
   }
   /* line 227, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-first {
     float: left;
-    width: 8.33333%;
+    width: 4.16667%;
     margin-left: 0%;
-    margin-right: -8.33333%;
+    margin-right: -4.16667%;
   }
   /* line 232, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second {
     float: left;
-    width: 8.33333%;
-    margin-left: 33.33333%;
-    margin-right: -41.66667%;
+    width: 4.16667%;
+    margin-left: 16.66667%;
+    margin-right: -20.83333%;
   }
 
   /* Product Display node */
@@ -904,22 +904,22 @@ table {
   /* line 249, ../sass/layouts/_responsive.scss */
   #footer .column-1 {
     float: left;
-    width: 33.33333%;
+    width: 20.83333%;
     margin-left: 0%;
-    margin-right: -33.33333%;
+    margin-right: -20.83333%;
   }
   /* line 252, ../sass/layouts/_responsive.scss */
   #footer .column-2 {
     float: left;
-    width: 33.33333%;
-    margin-left: 33.33333%;
-    margin-right: -66.66667%;
+    width: 20.83333%;
+    margin-left: 41.66667%;
+    margin-right: -62.5%;
   }
   /* line 255, ../sass/layouts/_responsive.scss */
   #footer .column-3 {
     float: left;
-    width: 33.33333%;
-    margin-left: 66.66667%;
+    width: 20.83333%;
+    margin-left: 79.16667%;
     margin-right: -100%;
   }
 }
@@ -2415,7 +2415,7 @@ h1 {
   text-transform: uppercase;
   font-size: 1.125em;
   font-weight: 500;
-  margin-top: 20px;
+  margin-top: 16px;
 }
 /* line 534, ../sass/styles.scss */
 #footer-wrapper #footer .column-2 ul {
@@ -2431,6 +2431,10 @@ h1 {
   width: 50%;
 }
 /* line 546, ../sass/styles.scss */
+#footer-wrapper #footer .column-3 {
+  text-align: right;
+}
+/* line 549, ../sass/styles.scss */
 #footer-wrapper #footer a {
   color: #888888;
   border-bottom: 1px solid #888888;
@@ -2440,7 +2444,7 @@ h1 {
   -o-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
 }
-/* line 554, ../sass/styles.scss */
+/* line 557, ../sass/styles.scss */
 #footer-wrapper #footer a:hover {
   color: #444444;
   border-bottom: 1px solid #888888;
