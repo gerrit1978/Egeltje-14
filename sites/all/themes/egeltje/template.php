@@ -67,7 +67,11 @@ function egeltje_preprocess_page(&$variables, $hook) {
  *   The name of the template being rendered ("node" in this case.)
  */
 function egeltje_preprocess_node(&$variables, $hook) {
-  if ($variables['type'] == 'product_display') {
+  if ($variables['type'] == 'product_display' && $variables['view_mode'] == 'full') {
+    dpm($variables['content']);
+  }
+
+  if ($variables['type'] == 'product_display' && ($variables['view_mode'] == 'product_in_de_kijker' || $variables['view_mode'] == 'product_catalogus')) {
 
     // go to product link
     $variables['content']['link_go_to_product'] = array(
