@@ -67,32 +67,38 @@ function egeltje_preprocess_page(&$variables, $hook) {
  *   The name of the template being rendered ("node" in this case.)
  */
 function egeltje_preprocess_node(&$variables, $hook) {
-  if ($variables['type'] == 'product_display' && $variables['view_mode'] == 'full') {
 
-  }
+  if ($variables['type'] == 'product_display') {
 
-  if ($variables['type'] == 'product_display' && ($variables['view_mode'] == 'product_in_de_kijker' || $variables['view_mode'] == 'product_catalogus')) {
-
-    // go to product link
-    $variables['content']['link_go_to_product'] = array(
+    $link_go_to_product = array(
       '#prefix' => "<div class='go-to-product'>",
       '#markup' => l(t('Bekijk dit product'), 'node/' . $variables['node']->nid),
       '#suffix' => "</div>",
     );
-    if ($variables['view_mode'] == 'product_in_de_kijker') {
-      $variables['theme_hook_suggestions'][] = 'node__product_display__front';
-    }
-    
-    if ($variables['view_mode'] == 'product_catalogus') {
-      $commerce_price = $variables['content']['product:commerce_price'];
-      $variables['content']['product_price'] = array(
-        '#markup' => $commerce_price[0]['#markup'],
-        '#prefix' => "<div class='product-price'>",
-        '#suffix' => "</div>",
-      );
-      $variables['theme_hook_suggestions'][] = 'node__product_display__catalog';    
-    }
 
+    switch ($variables['view_mode']) {
+      case 'full':
+      default:
+/*         dpm($variables['content']); */
+        break;
+      
+      case 'product_in_de_kijker':
+        $variables['theme_hook_suggestions'][] = 'node__product_display__front';      
+        $variables['content']['link_go_to_product'] = $link_go_to_product;
+        break;
+      
+      case 'product_catalogus':
+	      $commerce_price = $variables['content']['product:commerce_price'];
+	      $variables['content']['product_price'] = array(
+	        '#markup' => $commerce_price[0]['#markup'],
+	        '#prefix' => "<div class='product-price'>",
+	        '#suffix' => "</div>",
+	      );
+        $variables['theme_hook_suggestions'][] = 'node__product_display__front';      
+        $variables['content']['link_go_to_product'] = $link_go_to_product;
+        break;
+
+    }
   }
 }
 

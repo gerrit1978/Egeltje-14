@@ -170,7 +170,7 @@ $zen-auto-include-item-base: false;
 }
 
 /**
- * Use 5 grid columns for larger screens.
+ * Use 12 grid columns for larger screens.
  */
 @media all and (min-width: 960px) {
 
@@ -233,4 +233,15 @@ $zen-auto-include-item-base: false;
       @include zen-grid-item(1, 5);
     }
   }
+  
+  /* Product Display node */
+  .node-type-product-display {
+    .column-1 {
+      @include zen-grid-item(6,1);
+    }
+    .column-2 {
+      @include zen-grid-item(6,7);
+    }
+  }
+  
 }

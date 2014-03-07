@@ -23,16 +23,34 @@
   
   <div class="column column-2">
   <?php
-    // We hide the comments and links now so that we can render them later.
-    hide($content['comments']);
-    hide($content['links']);
-    hide($content['product:title_field']);
-    hide($content['title_field']);    
-    hide($content['body']);
-    
-    print render($content);
-    print render($content['body']);
+    hide($content['title_field']);
+    hide($content['comments']);    
+    print render($content['body']); 
   ?>
+  
+    <div class="call-to-action">
+     
+      <div class="price">
+        <?php print render($content['product:commerce_price']); ?>
+      </div>
+    
+      <?php if (isset($content['product:field_variation_color'][0])): ?>
+        <div class="attribute-color attribute">
+          <?php print render($content['product:field_variation_color']); ?>
+        </div>
+      <?php endif; ?>
+      <?php if (isset($content['product:field_variation_shape'][0])): ?>
+        <div class="attribute-shape attribute">
+          <?php print render($content['product:field_variation_shape']); ?>
+        </div>
+      <?php endif; ?>
+
+
+    
+      <?php print render($content); ?>
+      
+    </div>
+  
   </div>
 
 

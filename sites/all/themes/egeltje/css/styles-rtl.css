@@ -159,7 +159,7 @@ ul {
   }
 }
 /**
- * Use 5 grid columns for larger screens.
+ * Use 12 grid columns for larger screens.
  */
 @media all and (min-width: 960px) {
   /**
@@ -246,6 +246,22 @@ ul {
     width: 8.33333%;
     margin-right: 33.33333%;
     margin-left: -41.66667%;
+  }
+
+  /* Product Display node */
+  /* line 239, ../sass/layouts/_responsive.scss */
+  .node-type-product-display .column-1 {
+    float: right;
+    width: 50%;
+    margin-right: 0%;
+    margin-left: -50%;
+  }
+  /* line 242, ../sass/layouts/_responsive.scss */
+  .node-type-product-display .column-2 {
+    float: right;
+    width: 50%;
+    margin-right: 50%;
+    margin-left: -100%;
   }
 }
 /* Component (SMACSS module) rules */

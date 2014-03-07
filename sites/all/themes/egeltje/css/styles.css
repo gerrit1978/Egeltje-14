@@ -795,7 +795,7 @@ table {
   }
 }
 /**
- * Use 5 grid columns for larger screens.
+ * Use 12 grid columns for larger screens.
  */
 @media all and (min-width: 960px) {
   /**
@@ -882,6 +882,22 @@ table {
     width: 8.33333%;
     margin-left: 33.33333%;
     margin-right: -41.66667%;
+  }
+
+  /* Product Display node */
+  /* line 239, ../sass/layouts/_responsive.scss */
+  .node-type-product-display .column-1 {
+    float: left;
+    width: 50%;
+    margin-left: 0%;
+    margin-right: -50%;
+  }
+  /* line 242, ../sass/layouts/_responsive.scss */
+  .node-type-product-display .column-2 {
+    float: left;
+    width: 50%;
+    margin-left: 50%;
+    margin-right: -100%;
   }
 }
 /* Component (SMACSS module) rules */
@@ -2258,9 +2274,59 @@ h1 {
 .node-type-product-display .field-field-images .cloud-zoom-gallery-thumbs a img {
   display: block;
 }
+/* line 426, ../sass/styles.scss */
+.node-type-product-display .call-to-action {
+  margin-top: 20px;
+  background: #f2f2f2;
+  border: 1px solid #cacaca;
+  padding: 10px;
+}
+/* line 431, ../sass/styles.scss */
+.node-type-product-display .call-to-action .price {
+  font-size: 1.375em;
+  color: #888888;
+}
+/* line 435, ../sass/styles.scss */
+.node-type-product-display .call-to-action form {
+  margin: 20px 0;
+}
+/* line 437, ../sass/styles.scss */
+.node-type-product-display .call-to-action form .form-item-quantity {
+  margin: 0;
+  padding: 0;
+  float: left;
+  margin-right: 20px;
+}
+/* line 442, ../sass/styles.scss */
+.node-type-product-display .call-to-action form .form-item-quantity label {
+  display: inline;
+}
+/* line 446, ../sass/styles.scss */
+.node-type-product-display .call-to-action form .form-submit {
+  color: white;
+  font-weight: 700;
+  text-transform: lowercase;
+  border: none;
+  cursor: pointer;
+  background: url(../images/sprite.png) #e84c3d no-repeat left -127px;
+  padding: 6px 10px 6px 40px;
+  position: relative;
+  top: -3px;
+}
+/* line 458, ../sass/styles.scss */
+.node-type-product-display .call-to-action form.out-of-stock .form-item-quantity {
+  display: none;
+}
+/* line 461, ../sass/styles.scss */
+.node-type-product-display .call-to-action form.out-of-stock .form-submit {
+  cursor: default;
+  background: #ededed;
+  padding-left: 10px;
+  color: #adadad;
+}
 
 /* Campaign Monitor */
-/* line 428, ../sass/styles.scss */
+/* line 473, ../sass/styles.scss */
 #block-campaign-monitor-subscribe-campaign-monitor-subscribe {
   margin: 0;
   padding: 0;
@@ -2271,7 +2337,7 @@ h1 {
   height: 75px;
   line-height: 75px;
 }
-/* line 437, ../sass/styles.scss */
+/* line 482, ../sass/styles.scss */
 #block-campaign-monitor-subscribe-campaign-monitor-subscribe .label {
   float: left;
   color: white;
@@ -2280,14 +2346,14 @@ h1 {
   padding-left: 100px;
   margin-right: 30px;
 }
-/* line 446, ../sass/styles.scss */
+/* line 491, ../sass/styles.scss */
 #block-campaign-monitor-subscribe-campaign-monitor-subscribe form .form-item {
   margin: 0;
   padding: 0;
   float: left;
   margin-right: 10px;
 }
-/* line 451, ../sass/styles.scss */
+/* line 496, ../sass/styles.scss */
 #block-campaign-monitor-subscribe-campaign-monitor-subscribe form .form-item .form-text {
   border: none;
   height: 35px;
@@ -2296,7 +2362,7 @@ h1 {
   width: 300px;
   padding-left: 10px;
 }
-/* line 460, ../sass/styles.scss */
+/* line 505, ../sass/styles.scss */
 #block-campaign-monitor-subscribe-campaign-monitor-subscribe form .form-submit {
   background: url(../images/sprite.png) no-repeat 0 -85px;
   float: left;
