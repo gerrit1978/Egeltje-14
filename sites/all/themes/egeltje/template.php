@@ -69,7 +69,6 @@ function egeltje_preprocess_page(&$variables, $hook) {
 function egeltje_preprocess_node(&$variables, $hook) {
 
   if ($variables['type'] == 'product_display') {
-
     $link_go_to_product = array(
       '#prefix' => "<div class='go-to-product'>",
       '#markup' => l(t('Bekijk dit product'), 'node/' . $variables['node']->nid),
@@ -94,7 +93,7 @@ function egeltje_preprocess_node(&$variables, $hook) {
 	        '#prefix' => "<div class='product-price'>",
 	        '#suffix' => "</div>",
 	      );
-        $variables['theme_hook_suggestions'][] = 'node__product_display__front';      
+        $variables['theme_hook_suggestions'][] = 'node__product_display__catalog';      
         $variables['content']['link_go_to_product'] = $link_go_to_product;
         break;
 

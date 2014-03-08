@@ -29,6 +29,5 @@
 
   <?php print render($content['product_price']); ?>
 
-  <?php print render($content['link_go_to_product']); ?>
-  
+  <?php print render($content['link_go_to_product']); ?>  
 </article>
