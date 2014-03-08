@@ -17,6 +17,7 @@
 
 /* Component (SMACSS module) rules */
 @import "components/misc";
+@import "components/variables";
 // Optionally, add your own components here.
 @import "print";
 
@@ -199,6 +200,81 @@ h1 {
 	}
 }
 
+/* Main Menu */
+#block-megamenu-main-menu {
+  ul#megamenu-main-menu {
+    margin: 0;
+    padding: 5px;
+    background: #dadada;
+    border: 1px solid #cacaca;
+    li.megamenu-parent {
+      margin-right: 70px;
+      position: relative;
+      z-index: 150;
+      a {
+        color: white;
+        &:hover {
+          color: #444444;
+        }
+      }
+      &.active {
+        a {
+          color: #444444;
+        }
+      }
+      &.first {
+        margin-left: 70px;
+      }
+      &.last {
+        margin-right: 0;
+      }
+      ul.megamenu-slots-stacking {
+        border: none;
+        border-radius: 0;
+        -moz-border-radius: 0;
+        -webkit-border-radius: 0;
+        z-index: 100;
+        background: $mainRed;
+        box-shadow: 2px 2px 4px #888888;
+        li.megamenu-slot {
+          list-style: none;
+          border: none;
+          h3.megamenu-slot-title {
+            background: none;
+            text-align: left;
+            a {
+              background: none;
+	            text-align: left;
+	            font-size: 0.875em;
+	            font-weight: 300;
+	            text-transform: none;
+	            color: white;
+	            &:hover {
+	              text-decoration: none;
+	              border-bottom: 1px solid white;
+	            }
+            }
+          }
+          ul.megamenu-items {
+            margin-left: 20px;
+            li.megamenu-item {
+              a {
+                color: $mainRedLight;
+                font-size: 0.8125em;
+                font-weight: 300;
+                &:hover {
+                  text-decoration: none;
+                  border-bottom: 1px solid $mainRedLight;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 /* Secondary Menu */
 #block-menu-secondary-navigation {
   position: absolute;
@@ -220,6 +296,10 @@ h1 {
         color: black;
         font-size: 1.125em;
         font-weight: 300;
+        padding-bottom: 6px;
+        &:hover,&.active {
+          border-bottom: 2px solid black;
+        }
       }
     }
   }
@@ -353,7 +433,7 @@ h1 {
             margin: 0 auto;
             padding: 5px 10px 5px 50px;
             color: white;
-            background: #e84c3d url(../images/sprite.png) no-repeat 0 -42px;
+            background: $mainRed url(../images/sprite.png) no-repeat 0 -42px;
 		        -webkit-transition: all .15s ease-in-out;
 		        -moz-transition: all .15s ease-in-out;
 		        -ms-transition: all .15s ease-in-out;
@@ -405,6 +485,7 @@ h1 {
     #wrap {
       border: 3px solid white;
       margin-bottom: 20px;
+      z-index: auto !important;
       a {
         border-bottom: none;
       }
@@ -449,7 +530,7 @@ h1 {
         text-transform: lowercase;
         border: none;
         cursor: pointer;
-        background: url(../images/sprite.png) #e84c3dno-repeat left -127px;
+        background: url(../images/sprite.png) $mainRed no-repeat left -127px;
         padding: 6px 10px 6px 40px;
         position: relative;
         top: -3px;
