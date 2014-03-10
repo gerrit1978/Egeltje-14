@@ -295,7 +295,7 @@ h1 {
         padding-bottom: 6px;
         border-bottom: none;
         &:hover,&.active {
-          border-bottom: 2px solid black;
+          border-bottom: 5px solid #444444;
         }
       }
     }
@@ -357,6 +357,7 @@ h1 {
         -ms-transition: opacity .15s ease-in-out;
         -o-transition: opacity .15s ease-in-out;
         transition: opacity .15s ease-in-out;          
+        border: none;
         &:hover {
           opacity: 0.6;
 	        -webkit-transition: opacity .15s ease-in-out;
@@ -364,6 +365,7 @@ h1 {
 	        -ms-transition: opacity .15s ease-in-out;
 	        -o-transition: opacity .15s ease-in-out;
 	        transition: opacity .15s ease-in-out;          
+	        border: none;
         }
         .category {
           position: absolute;
@@ -600,6 +602,16 @@ form#user-login {
 	    border: none;
 	  }
 	}
+}
+
+/* Add to cart message */
+div.commerce-add-to-cart-confirmation {
+  width: 650px !important;
+  margin-left: -30% !important;
+  padding-bottom: 20px !important;
+  a {
+    border-bottom: none;
+  }
 }
 
 /* Footer */
