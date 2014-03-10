@@ -173,7 +173,7 @@ h1 {
 	    padding: 0;
 	    .form-text {
 	      border: 1px solid #ededed;
-	      font-family: Rockwell;
+	      font-family: Kameron;
 	      padding: 3px 25px 3px 10px;
 	      color: #cacaca;
 	    }
@@ -231,11 +231,19 @@ h1 {
     }
     span {
       position: relative;
-      top: 22px;
-      left: 25px;
-      color: $mainRed;
+      width: 25px;
+      height: 25px;
+      display: block;
+      text-align: center;
+      top: -30px;
+      left: 30px;
+      background: #444444;
+      color: white;
+      border-radius: 15px;
+      -moz-border-radius: 15px;
+      -webkit-border-radius: 15px;
       font-weight: 700;
-      font-size: 1.125em;
+      font-size: 0.875em;
     }
   }
 }
@@ -641,7 +649,7 @@ form#user-login {
       .form-text {
         border: none;
         height: 35px;
-        font-family: Rockwell;
+        font-family: Kameron;
         color: #cacaca;
         width: 300px;
         padding-left: 10px;
@@ -695,6 +703,17 @@ div.commerce-add-to-cart-confirmation {
         }
         &.views-field-nothing {
           padding-left: 20px;
+        }
+        input.delete-line-item {
+          border: none;
+          cursor: pointer;
+          width: 47px;
+          height: 47px;
+          background: url(../images/sprite.png) no-repeat left -255px;
+          text-indent: -999em;
+          &:hover {
+            background-position: -47px -255px;
+          }
         }
       }
       &.even {
