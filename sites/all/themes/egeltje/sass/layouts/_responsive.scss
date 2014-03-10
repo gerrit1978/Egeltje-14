@@ -244,6 +244,17 @@ $zen-auto-include-item-base: false;
     }
   }
   
+  /* User Login Form */
+  form#user-login {
+    margin-bottom: 40px;
+	  #user_login_form {
+	    @include zen-grid-item(12,1);
+	  }
+	  .create-account {
+	    @include zen-grid-item(10, 14);
+	  }
+  }
+  
   /* Footer */
   #footer {
     .column-1 {

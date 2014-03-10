@@ -264,22 +264,42 @@ ul {
     margin-left: -100%;
   }
 
+  /* User Login Form */
+  /* line 248, ../sass/layouts/_responsive.scss */
+  form#user-login {
+    margin-bottom: 40px;
+  }
+  /* line 250, ../sass/layouts/_responsive.scss */
+  form#user-login #user_login_form {
+    float: right;
+    width: 50%;
+    margin-right: 0%;
+    margin-left: -50%;
+  }
+  /* line 253, ../sass/layouts/_responsive.scss */
+  form#user-login .create-account {
+    float: right;
+    width: 41.66667%;
+    margin-right: 54.16667%;
+    margin-left: -95.83333%;
+  }
+
   /* Footer */
-  /* line 249, ../sass/layouts/_responsive.scss */
+  /* line 260, ../sass/layouts/_responsive.scss */
   #footer .column-1 {
     float: right;
     width: 20.83333%;
     margin-right: 0%;
     margin-left: -20.83333%;
   }
-  /* line 252, ../sass/layouts/_responsive.scss */
+  /* line 263, ../sass/layouts/_responsive.scss */
   #footer .column-2 {
     float: right;
     width: 20.83333%;
     margin-right: 41.66667%;
     margin-left: -62.5%;
   }
-  /* line 255, ../sass/layouts/_responsive.scss */
+  /* line 266, ../sass/layouts/_responsive.scss */
   #footer .column-3 {
     float: right;
     width: 20.83333%;

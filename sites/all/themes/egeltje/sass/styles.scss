@@ -30,33 +30,24 @@ body {
   color: #444444;
 }
 
-a:link, a:visited {
-  text-decoration: none;
-}
-
-a:focus {
-  outline: none;
-}
-
-.node {
-  a {
-    color: #444444;
-    border-bottom: 1px solid #cacaca;
-    -webkit-transition: border .15s ease-in-out;
-    -moz-transition: border .15s ease-in-out;
-    -ms-transition: border .15s ease-in-out;
-    -o-transition: border .15s ease-in-out;
-    transition: border .15s ease-in-out;          
-    
-    &:hover {
-      border-bottom-color: #444444;
-	    -webkit-transition: border .15s ease-in-out;
-	    -moz-transition: border .15s ease-in-out;
-	    -ms-transition: border .15s ease-in-out;
-	    -o-transition: border .15s ease-in-out;
-	    transition: border .15s ease-in-out;          
-    }
+a {
+	&:link,&:visited {
+	  color: #444444;
+	  border-bottom: 1px solid #cacaca;
+	  text-decoration: none;
+	  -webkit-transition: border .15s ease-in-out;
+	  -moz-transition: border .15s ease-in-out;
+	  -ms-transition: border .15s ease-in-out;
+	  -o-transition: border .15s ease-in-out;
+	  transition: border .15s ease-in-out;          
+	}
+  &:focus {
+    outline: none;
   }
+  &:hover {
+    border-bottom: 1px solid #444444;
+  }
+
 }
 
 h1 {
@@ -200,6 +191,10 @@ h1 {
 	}
 }
 
+#logo {
+  border-bottom: none;
+}
+
 /* Main Menu */
 #block-megamenu-main-menu {
   ul#megamenu-main-menu {
@@ -216,6 +211,7 @@ h1 {
         &:hover {
           color: #444444;
         }
+        border-bottom: none;
       }
       &.active {
         a {
@@ -297,6 +293,7 @@ h1 {
         font-size: 1.125em;
         font-weight: 300;
         padding-bottom: 6px;
+        border-bottom: none;
         &:hover,&.active {
           border-bottom: 2px solid black;
         }
@@ -547,6 +544,16 @@ h1 {
         }
       }
     }
+  }
+}
+
+/* Login pagina */
+form#user-login {
+  #user_login_form {
+    border-right: 1px solid #cacaca;
+    margin-bottom: 40px;
+  }
+  .create-account {
   }
 }
 
