@@ -294,8 +294,18 @@ h1 {
         font-weight: 300;
         padding-bottom: 6px;
         border-bottom: none;
+		    -webkit-transition: none;
+		    -moz-transition: none;
+		    -ms-transition: none;
+		    -o-transition: none;
+		    transition: none;
         &:hover,&.active {
           border-bottom: 5px solid #444444;
+			    -webkit-transition: none;
+			    -moz-transition: none;
+			    -ms-transition: none;
+			    -o-transition: none;
+			    transition: none;
         }
       }
     }
