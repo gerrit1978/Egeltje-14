@@ -1,0 +1,63 @@
+<?php
+
+/**
+ * @file
+ * This module provides a simple "go to cart" block
+ */
+
+/**
+ * Implements hook_block_info
+ */
+function egeltje_cart_block_info() {
+  $blocks = array();
+  
+  $blocks['egeltje_cart_block'] = array(
+    'info' => t('Go to cart'),
+  );
+  
+  return $blocks;
+}
+
+
+/**
+ * Implements hook_block_view
+ */
+function egeltje_cart_block_view($delta = "") {
+  $block = array();
+  
+  switch ($delta) {
+    case 'egeltje_cart_block':
+      $block['subject'] = '';
+      $block['content'] = array(
+        '#markup' => _egeltje_cart_block_render(),
+      );
+      break;
+  }
+  
+  return $block;
+}
+
+
+/**
+ * Rendering function for the cart block
+ */
+function _egeltje_cart_block_render() {
+
+  $qty = "";
+
+  global $user;
+
+  $order = commerce_cart_order_load($user->uid);
+  if ($order) {
+    $wrapper = entity_metadata_wrapper('commerce_order', $order);
+    $line_items = $wrapper->commerce_line_items;
+    $quantity = commerce_line_items_quantity($line_items, commerce_product_line_item_types());
+    if ($quantity > 0) {
+      $qty = "<span>" . $quantity . "</span>";
+    }
+  }
+
+  $output = "<a class='cart' href='/cart'>&nbsp;" . $qty . "</a>";
+  
+  return $output;
+}

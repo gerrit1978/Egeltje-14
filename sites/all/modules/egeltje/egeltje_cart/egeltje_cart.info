@@ -1,0 +1,5 @@
+name        = Egeltje Cart Block
+description = Provides a small "Go To Cart" block
+core        = 7.x
+version     = 7.x-1.0-alfa1
+package     = egeltje

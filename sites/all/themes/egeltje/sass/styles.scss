@@ -81,6 +81,7 @@ h1 {
         text-indent: -999em;
 	      width: 48px;
         height: 39px;
+        border: none;
         &.flex-prev {
           left: 10px;
         }
@@ -155,11 +156,16 @@ h1 {
 
 /* HEADER */
 
+/* Logo */
+#logo {
+  border-bottom: none;
+}
+
 /* Search form */
 #block-views-exp-display-products-page {
   position: absolute;
   top: 20px;
-  right: 0;
+  right: 120px;
   .views-exposed-form {
 	  position: relative;
 	  .views-exposed-widget {
@@ -191,8 +197,47 @@ h1 {
 	}
 }
 
-#logo {
-  border-bottom: none;
+/* Facebook link */
+.block-fb {
+  position: absolute;
+  top: 7px;
+  right: 0;
+  a.fb {
+    border: none;
+    background: url(../images/sprite.png) no-repeat 0 -161px;
+    width: 47px;
+    height: 47px;
+    display: block;
+    text-indent: -999em;
+    &:hover {
+      background-position: -46px -161px;
+    }
+  }
+}
+
+/* Cart link */
+.block-cart {
+  position: absolute;
+  top: 7px;
+  right: 60px;
+  a.cart {
+    border: none;
+    background: url(../images/sprite.png) no-repeat 0 -207px;
+    width: 47px;
+    height: 47px;
+    display: block;
+    &:hover {
+      background-position: -46px -207px;
+    }
+    span {
+      position: relative;
+      top: 22px;
+      left: 25px;
+      color: $mainRed;
+      font-weight: 700;
+      font-size: 1.125em;
+    }
+  }
 }
 
 /* Main Menu */
