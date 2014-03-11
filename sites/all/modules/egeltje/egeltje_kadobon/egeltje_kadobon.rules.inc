@@ -34,9 +34,20 @@ function egeltje_kadobon_order_contains_only_products($order) {
 	  if ($line_item->type == 'product') {
 	    $commerce_product_field = field_get_items('commerce_line_item', $line_item, 'commerce_product');
 			$commerce_product = commerce_product_load($commerce_product_field[0]['product_id']);
-			$merk_field = field_get_items('commerce_product', $commerce_product, 'field_product_merk');
-			if ($merk_field[0]['value'] != "kado") {
-			  $flag = FALSE;
+
+			$query = new EntityFieldQuery;
+			
+			$query->entityCondition('entity_type', 'node', '=')
+			  ->propertyCondition('type', 'product_display')
+			  ->fieldCondition('field_product', 'product_id', $commerce_product->product_id, '=')
+			  ->range(0, 1);
+			
+			if ($result = $query->execute()) {
+			  $product_display = entity_metadata_wrapper('node', key($result['node']));
+			  $merk_field = $product_display->field_product_merk->value();
+				if ($merk_field->name != "Kadobon") {
+				  $flag = FALSE;
+				}
 			}
 	  }
 	}

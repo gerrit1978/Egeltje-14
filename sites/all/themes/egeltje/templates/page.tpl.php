@@ -29,7 +29,6 @@
 
     <div id="content" class="column" role="main">
       <?php print render($page['highlighted']); ?>
-      <?php print $breadcrumb; ?>
       <a id="main-content"></a>
       <?php print render($title_prefix); ?>
       <?php if ($title): ?>
@@ -43,6 +42,7 @@
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
       <?php print render($page['content_top']); ?>
+      <?php print $breadcrumb; ?>
       <?php print render($page['content']); ?>
       <?php print render($page['content_bottom']); ?>      
       <?php print $feed_icons; ?>
@@ -72,7 +72,6 @@
       <?php endif; ?>
 
       <?php print render($page['navigation']); ?>
-
     </div>
 
     <?php
