@@ -58,6 +58,19 @@ h1 {
   text-shadow: 1px 1px 1px white;
 }
 
+.form-submit {
+  background: $mainRed;
+  padding: 3px 10px;
+  border: none;
+  margin: 0 2px;
+  color: white;
+  cursor: pointer;
+  &:hover {
+    background: $mainRedLight;
+    color: #444444;
+  }
+}
+
 /* Homepage Carrousel */
 .view-carrousel {
   position: relative;
@@ -617,8 +630,28 @@ form#user-login {
   #user_login_form {
     border-right: 1px solid #cacaca;
     margin-bottom: 40px;
+    a.login-password {
+      display: inline-block;
+      margin-bottom: 20px;
+      font-weight: 300;
+    }
   }
   .create-account {
+  }
+}
+
+form#user-pass {
+  .back-to-login {
+    margin: 40px 0;
+  }
+} 
+
+form#user-register-form {
+  .mollom-privacy {
+    margin-bottom: 20px;
+  }
+  .back-to-login {
+    margin: 40px 0;
   }
 }
 
@@ -718,6 +751,18 @@ div.commerce-add-to-cart-confirmation {
       }
       &.even {
         background: #fafafa;
+      }
+    }
+  }
+  .commerce-order-handler-area-order-total {
+    table {
+      tr {
+        td.component-title {
+          padding-left: 20px;
+        }
+        td.component-total {
+          padding-right: 20px;
+        }
       }
     }
   }
