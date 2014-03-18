@@ -38,7 +38,7 @@ function campaign_monitor_subscribe_order($order) {
   $wrapper = entity_metadata_wrapper('commerce_order', $order);
   $field_newsletter = $wrapper->field_newsletter->value();
 
-  if (is_array($field_newsletter) && ($field_newsletter[0] == 1)) {
+  if (is_array($field_newsletter) && (isset($field_newsletter[0])) && ($field_newsletter[0] == 1)) {
     $mail = $order->mail;
     
     // subscribe hier
