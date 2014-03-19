@@ -463,7 +463,7 @@ h1 {
     li.product {
       width: 25%;
       float: left;
-      height: 335px;
+      height: 315px;
       border-right: 1px dotted #d8d8d8;
       margin-bottom: 20px;
       list-style: none;
@@ -475,7 +475,7 @@ h1 {
         text-align: center;
         position: relative;
         margin: 10px;
-        height: 315px;
+        height: 295px;
         h2.node-title {
           position: absolute;
           bottom: 70px;
@@ -531,7 +531,7 @@ h1 {
 }
 
 .not-front {
-  .view-display-products {
+  .view-display-products,.view-collection-products {
     ul.products {
       li.product {
         height: 340px;

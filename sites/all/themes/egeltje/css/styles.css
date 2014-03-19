@@ -2371,7 +2371,7 @@ h1 {
 .view-display-products ul.products li.product, .view-collection-products ul.products li.product {
   width: 25%;
   float: left;
-  height: 335px;
+  height: 315px;
   border-right: 1px dotted #d8d8d8;
   margin-bottom: 20px;
   list-style: none;
@@ -2386,7 +2386,7 @@ h1 {
   text-align: center;
   position: relative;
   margin: 10px;
-  height: 315px;
+  height: 295px;
 }
 /* line 479, ../sass/styles.scss */
 .view-display-products ul.products li.product .node h2.node-title, .view-collection-products ul.products li.product .node h2.node-title {
@@ -2447,19 +2447,19 @@ h1 {
 }
 
 /* line 536, ../sass/styles.scss */
-.not-front .view-display-products ul.products li.product {
+.not-front .view-display-products ul.products li.product, .not-front .view-collection-products ul.products li.product {
   height: 340px;
 }
 /* line 538, ../sass/styles.scss */
-.not-front .view-display-products ul.products li.product .node {
+.not-front .view-display-products ul.products li.product .node, .not-front .view-collection-products ul.products li.product .node {
   height: 320px;
 }
 /* line 540, ../sass/styles.scss */
-.not-front .view-display-products ul.products li.product .node h2.node-title {
+.not-front .view-display-products ul.products li.product .node h2.node-title, .not-front .view-collection-products ul.products li.product .node h2.node-title {
   bottom: 95px;
 }
 /* line 543, ../sass/styles.scss */
-.not-front .view-display-products ul.products li.product .node .product-price {
+.not-front .view-display-products ul.products li.product .node .product-price, .not-front .view-collection-products ul.products li.product .node .product-price {
   position: absolute;
   bottom: 60px;
   width: 100%;
