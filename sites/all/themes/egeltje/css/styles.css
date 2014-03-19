@@ -2371,7 +2371,7 @@ h1 {
 .view-display-products ul.products li.product, .view-collection-products ul.products li.product {
   width: 25%;
   float: left;
-  height: 315px;
+  height: 335px;
   border-right: 1px dotted #d8d8d8;
   margin-bottom: 20px;
   list-style: none;
@@ -2386,7 +2386,7 @@ h1 {
   text-align: center;
   position: relative;
   margin: 10px;
-  height: 295px;
+  height: 315px;
 }
 /* line 479, ../sass/styles.scss */
 .view-display-products ul.products li.product .node h2.node-title, .view-collection-products ul.products li.product .node h2.node-title {
