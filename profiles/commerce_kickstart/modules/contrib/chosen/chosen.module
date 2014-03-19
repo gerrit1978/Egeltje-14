@@ -8,12 +8,29 @@
  */
 
 /**
- * Define chosen library url
+ * Widget that Chosen can be applied to
  */
-define('CHOSEN_WEBSITE_URL', 'http://harvesthq.github.io/chosen');
+define('CHOSEN_WIDGET', 'options_select');
 
 /**
- * Implements hook_menu().
+ * Implements hook_init().
+ */
+function chosen_init() {
+  drupal_add_css(libraries_get_path('chosen') . '/chosen/chosen.css');
+  drupal_add_js(chosen_js_path());
+  drupal_add_js(array(
+    'chosen' => array(
+      'selector' => variable_get('chosen_jquery_selector', 'select:visible'),
+      'minimum' => variable_get('chosen_minimum', 20),
+      'minimum_width' => variable_get('chosen_minimum_width', 200),
+      'search_contains' => (variable_get('chosen_search_contains', FALSE)) ? TRUE : FALSE,
+    ),
+  ), 'setting');
+  drupal_add_js(drupal_get_path('module', 'chosen') . '/chosen.js');
+}
+
+/**
+ * Implement hook_menu()
  */
 function chosen_menu() {
   $items = array();
@@ -31,175 +48,81 @@ function chosen_menu() {
 }
 
 /**
+ * Implements hook_form_alter().
+ */
+function chosen_form_field_ui_field_edit_form_alter(&$form, $form_state) {
+  $type = $form['instance']['widget']['type']['#value'];
+  if ($type == CHOSEN_WIDGET) {
+    $field = $form['#field'];
+    $instance = field_info_instance($form['instance']['entity_type']['#value'], $form['instance']['field_name']['#value'], $form['instance']['bundle']['#value']);
+    $form['instance'] += chosen_field_widget_settings_form($field, $instance);
+  }
+}
+
+/**
  * Implements hook_field_widget_info_alter().
  *
  * A list of settings needed by Chosen module for widgets.
  */
 function chosen_field_widget_info_alter(&$info) {
-  foreach ($info as $widget => $widget_info) {
-    switch ($widget) {
-      case 'options_select':
-      case 'date_select':
-        $info[$widget]['settings']['apply_chosen'] = 0;
-        break;
-    }
+  $settings = array(
+    'apply_chosen' => 0,
+  );
+
+  if (isset($info[CHOSEN_WIDGET]['settings'])) {
+    $info[CHOSEN_WIDGET]['settings'] += $settings;
   }
 }
 
-/**
- * Implements hook_form_FORM_ID_alter().
- */
-function chosen_form_field_ui_field_edit_form_alter(&$form, $form_state) {
-  if (empty($form['#field']['locked']) && isset($form['#instance']['widget']['settings']['apply_chosen'])) {
-    $form['instance']['widget']['settings']['apply_chosen'] = array(
-      '#type' => 'checkbox',
-      '#title' => t('Apply Chosen on this field'),
-      '#default_value' => !empty($form['#instance']['widget']['settings']['apply_chosen']),
-      '#disabled' => !chosen_get_chosen_path(),
-    );
-  }
+function chosen_field_widget_settings_form($field, $instance) {
+  $widget = $instance['widget'];
+  $settings = $widget['settings'];
+
+  $form['chosen'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Chosen'),
+    '#collapsed' => TRUE,
+    '#collapsible' => TRUE,
+    '#parents' => array('instance', 'widget', 'settings'),
+  );
+
+  $form['chosen']['apply_chosen'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Apply Chosen on this field'),
+    '#default_value' => $settings['apply_chosen'],
+  );
+
+  return $form;
 }
 
 /**
  * Implements hook_field_widget_form_alter().
  */
 function chosen_field_widget_form_alter(&$element, &$form_state, $context) {
-  if (!empty($context['instance']['widget']['settings']['apply_chosen'])) {
-    $element['#attributes']['class'][] = 'chosen-enabled';
-  }
-}
-
-/**
- * Implements hook_library().
- */
-function chosen_library() {
-  $library_path = chosen_get_chosen_path();
-
-  $info['chosen'] = array(
-    'title' => 'Chosen',
-    'website' => CHOSEN_WEBSITE_URL,
-    'version' => '1.1.0',
-    'js' => array(
-      $library_path . '/chosen.jquery.min.js' => array('group' => 'JS_LIBRARY'),
-    ),
-  );
-  if (variable_get('chosen_use_theme', TRUE)) {
-    $info['chosen']['css'] = array($library_path . '/chosen.css' => array());
-  }
-
-  // All the settings that are actually passed through into the chosen()
-  // function are contained in this array.
-  $options = array(
-    'disable_search' => (bool) variable_get('chosen_disable_search', FALSE),
-    'disable_search_threshold' => (int) variable_get('chosen_disable_search_threshold', 0),
-    'search_contains' => (bool) variable_get('chosen_search_contains', FALSE),
-    'placeholder_text_multiple' => variable_get('chosen_placeholder_text_multiple', t('Choose some options')),
-    'placeholder_text_single' => variable_get('chosen_placeholder_text_single', t('Choose an option')),
-    'no_results_text' => variable_get('chosen_no_results_text', t('No results match')),
-    'inherit_select_classes' => TRUE,
-  );
-
-  $module_path = drupal_get_path('module', 'chosen');
-  $info['drupal.chosen'] = array(
-    'title' => 'Drupal Chosen integration',
-    'website' => 'https://drupal.org/project/chosen',
-    'version' => '1.1.0',
-    'js' => array(
-      $module_path . '/chosen.js' => array(
-        'group' => JS_DEFAULT,
-        'weight' => 100,
-      ),
-      array(
-        'data' => array(
-          'chosen' => array(
-            'selector' => variable_get('chosen_jquery_selector', 'select:visible'),
-            'minimum_single' => (int) variable_get('chosen_minimum_single', 20),
-            'minimum_multiple' => (int) variable_get('chosen_minimum_multiple', 20),
-            'minimum_width' => (int) variable_get('chosen_minimum_width', 200),
-            'options' => $options,
-          ),
-        ),
-        'type' => 'setting',
-      ),
-    ),
-    'css' => array(
-      $module_path . '/css/chosen-drupal.css' => array(),
-    ),
-    'dependencies' => array(
-      array('chosen', 'chosen'),
-    ),
-  );
-
-  return $info;
-}
-
-/**
- * Implements hook_element_info_alter().
- */
-function chosen_element_info_alter(&$info) {
-  $info['select']['#pre_render'][] = 'chosen_pre_render_select';
-
-  if (module_exists('date')) {
-    $info['date_combo']['#pre_render'][] = 'chosen_pre_render_select';
-  }
-}
-
-/**
- * Implementation of chosen_pre_render_select().
- */
-function chosen_pre_render_select($element) {
-  // If the #chosen FAPI property is set, then add the appropriate class.
-  if (isset($element['#chosen'])) {
-    if (!empty($element['#chosen'])) {
-      $element['#attributes']['class'][] = 'chosen-enabled';
-    }
-    else {
-      $element['#attributes']['class'][] = 'chosen-disabled';
-      // No point in continuing if Chosen is not enabled for this element.
-      return $element;
+  $type = $context['instance']['widget']['type'];
+  if ($type == CHOSEN_WIDGET) {
+    $settings = $context['instance']['widget']['settings'];
+    if ($settings['apply_chosen']) {
+      $element['#attributes']['class'][] = 'chosen-widget';
     }
   }
-
-  if (isset($element['#field_name']) && !empty($element['#multiple'])) {
-    $field = field_info_field($element['#field_name']);
-    if ($field['cardinality'] != FIELD_CARDINALITY_UNLIMITED && $field['cardinality'] > 1) {
-      $element['#attributes']['data-cardinality'] = $field['cardinality'];
-    }
-  }
-
-  $element['#attached']['library'][] = array('chosen', 'drupal.chosen');
-  return $element;
 }
 
 /**
- * Get the location of the chosen library.
+ * Returns the path to the Chosen JavaScript file.
  *
- * @return
- *   The location of the library, or FALSE if the library isn't installed.
+ * @return mixed
+ *   The path to the JavaScript file or FALSE if no file could be found.
  */
-function chosen_get_chosen_path() {
-  if (function_exists('libraries_get_path')) {
-    return libraries_get_path('chosen');
+function chosen_js_path() {
+  $path = libraries_get_path('chosen');
+
+  // Use the minified file if it exists to preserve bandwidth.
+  if (file_exists($path . '/chosen/chosen.jquery.min.js')) {
+    return $path . '/chosen/chosen.jquery.min.js';
   }
-
-  // The following logic is taken from libraries_get_libraries()
-  $searchdir = array();
-
-  // Similar to 'modules' and 'themes' directories inside an installation
-  // profile, installation profiles may want to place libraries into a
-  // 'libraries' directory.
-  $searchdir[] = 'profiles/' . drupal_get_profile() . '/libraries';
-
-  // Always search sites/all/libraries.
-  $searchdir[] = 'sites/all/libraries';
-
-  // Also search sites/<domain>/*.
-  $searchdir[] = conf_path() . '/libraries';
-
-  foreach ($searchdir as $dir) {
-    if (file_exists($dir . '/chosen/chosen.jquery.min.js')) {
-      return $dir . '/chosen';
-    }
+  elseif (file_exists($path . '/chosen/chosen.jquery.js')) {
+    return $path . '/chosen/chosen.jquery.js';
   }
 
   return FALSE;

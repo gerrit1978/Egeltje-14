@@ -146,10 +146,41 @@ function _charts_examples_column_simple() {
   return $example;
 }
 
+function _charts_examples_column_stacking() {
+  $example = _charts_examples_column_simple();
+  $example['chart']['#title'] = t('Column stacked');
+  $example['chart']['#stacking'] = TRUE;
+
+  return $example;
+}
+
 function _charts_examples_bar_simple() {
   $example = _charts_examples_column_simple();
   $example['chart']['#title'] = t('Bar simple');
   $example['chart']['#chart_type'] = 'bar';
+  return $example;
+}
+
+function _charts_examples_line_gap() {
+  $chart = array(
+    '#type' => 'chart',
+    '#chart_type' => 'line',
+    '#title' => t('Line with interpolated gap'),
+  );
+  // Test with a gap in the data.
+  $chart['male'] = array(
+    '#type' => 'chart_data',
+    '#title' => t('Male'),
+    '#data' => array(array(0, 0), array(10, NULL), array(20, 30), array(30, 30), array(40, 40)),
+  );
+  $chart['female'] = array(
+    '#type' => 'chart_data',
+    '#title' => t('Female'),
+    '#data' => array(array(0, 5), array(10, 14), array(20, 16), array(30, 36), array(40, 48)),
+  );
+
+  $example['chart'] = $chart;
+
   return $example;
 }
 

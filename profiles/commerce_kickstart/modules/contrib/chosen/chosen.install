@@ -8,74 +8,23 @@
  * Implements hook_requirements().
  */
 function chosen_requirements($phase) {
-  $requirements = array();
-  module_load_include('module', 'chosen');
-  $t = get_t();
-  $chosen_path = chosen_get_chosen_path();
-  switch($phase) {
-    case 'runtime':
-      if (!$chosen_path) {
-        $requirements['chosen_js'] = array(
-          'title' => $t('Chosen JavaScript file'),
-          'severity' => REQUIREMENT_ERROR,
-          'description' => $t('You need to download the !chosen and extract the entire contents of the archive into the %path directory on your server.', array('!chosen' => l($t('Chosen JavaScript file'), CHOSEN_WEBSITE_URL), '%path' => 'sites/all/libraries')),
-          'value' => $t('Not Installed'),
-        );
-      }
-      else {
-        $requirements['chosen_js'] = array(
-          'title' => $t('Chosen JavaScript file'),
-          'severity' => REQUIREMENT_OK,
-          'value' => $t('Installed'),
-        );
-      }
-    break;
-   }
+  module_load_include('module', 'libraries');
+  module_load_include('module', 'chosen', 'chosen');
+
+  $requirements['chosen_js'] = array(
+   'title' => t('Chosen JavaScript file'),
+   'value' => chosen_js_path() ? t('Available') : t('Unavailable'),
+   'description' => !chosen_js_path() ? t('Place <code>chosen.jquery.min.js</code> or <code>chosen.jquery.js</code> in <em>sites/all/libraries/chosen/chosen</em>.') : NULL,
+   'severity' => chosen_js_path() ? REQUIREMENT_OK : REQUIREMENT_ERROR,
+  );
+
   return $requirements;
 }
 
 /**
- * Implements hook_uninstall().
+ * Implementation of hook_uninstall().
  */
 function chosen_uninstall() {
   // Delete created variables.
-  variable_del('chosen_minimum_single');
-  variable_del('chosen_minimum_multiple');
-  variable_del('chosen_minimum_width');
-  variable_del('chosen_search_contains');
   variable_del('chosen_jquery_selector');
-  variable_del('chosen_placeholder_text_multiple');
-  variable_del('chosen_placeholder_text_single');
-  variable_del('chosen_no_results_text');
-  variable_del('chosen_use_theme');
-  variable_del('chosen_disable_search');
-  variable_del('chosen_disable_search_threshold');
-}
-
-/**
- * Transfer the old chosen minimum value to the new chosen minimum single and
- * chosen minimum multiple variables.
- */
-function chosen_update_7201() {
-  $chosen_minimum = variable_get('chosen_minimum', 20);
-  variable_set('chosen_minimum_single', $chosen_minimum);
-  variable_set('chosen_minimum_multiple', $chosen_minimum);
-  variable_del('chosen_minimum');
-}
-
-/**
- * Fix variables that should be integers and not strings.
- */
-function chosen_update_7202() {
-  $variables = array(
-    'chosen_minimum_single',
-    'chosen_minimum_multiple',
-    'chosen_disable_search_threshold',
-  );
-  foreach ($variables as $variable) {
-    $value = variable_get($variable, 0);
-    if (!is_numeric($value)) {
-      variable_set($variable, 0);
-    }
-  }
 }

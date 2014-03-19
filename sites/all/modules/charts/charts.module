@@ -162,7 +162,7 @@ function charts_permission() {
     ),
     'access example charts' => array(
       'title' => t('Access example charts'),
-      'description' => t('Grants access to the <a href="!url">charts examples</a> page. Use this page for testing chart functionality.'),
+      'description' => t('Grants access to the <a href="!url">charts examples</a> page. Use this page for testing chart functionality.', array('!url' => url('charts/examples'))),
     ),
   );
 }
@@ -308,7 +308,7 @@ function charts_type_info() {
       'stacking' => FALSE,
     );
   }
-  drupal_alter('charts_type_info', $charts_info);
+  drupal_alter('charts_type_info', $charts_type_info);
   return $charts_type_info;
 }
 

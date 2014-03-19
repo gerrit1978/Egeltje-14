@@ -170,9 +170,17 @@ class charts_plugin_style_chart extends views_plugin_style {
       foreach ($renders as $row_number => $row) {
         $data_row = array();
         if ($label_field_key) {
-          $data_row[] = $renders[$row_number][$label_field_key];
+          // Labels need to be decoded, as the charting library will re-encode.
+          $data_row[] = htmlspecialchars_decode($renders[$row_number][$label_field_key], ENT_QUOTES);
         }
-        $data_row[] = (float) $renders[$row_number][$data_field_key];
+        // Convert empty strings to NULL.
+        if ($renders[$row_number][$data_field_key] === '') {
+          $value = NULL;
+        }
+        else {
+          $value = (float) $renders[$row_number][$data_field_key];
+        }
+        $data_row[] = $value;
         $data[] = $data_row;
       }
 
@@ -217,7 +225,15 @@ class charts_plugin_style_chart extends views_plugin_style {
           $chart['xaxis']['#labels'][] = $renders[$row_number][$label_field_key];
         }
         foreach ($data_fields as $field_key => $field_handler) {
-          $chart[$this->view->current_display . '__' . $field_key]['#data'][] = (float) $renders[$row_number][$field_key];
+          // Convert empty strings to NULL.
+          if ($renders[$row_number][$field_key] === '') {
+            $value = NULL;
+          }
+          // Strip thousands placeholders if present, then cast to float.
+          else {
+            $value = (float) str_replace(array(',', ' '), '', $renders[$row_number][$field_key]);
+          }
+          $chart[$this->view->current_display . '__' . $field_key]['#data'][] = $value;
         }
       }
     }
@@ -251,6 +267,12 @@ class charts_plugin_style_chart extends views_plugin_style {
       // Execute the subview and get the result.
       $subview->pre_execute();
       $subview->execute();
+
+      // If there's no results, don't attach the subview.
+      if (empty($subview->result)) {
+        continue;
+      }
+
       $subchart = $subview->style_plugin->render($subview->result);
       $subview->post_execute();
       unset($subview);
@@ -305,7 +327,8 @@ class charts_plugin_style_chart extends views_plugin_style {
   function get_children_chart_displays() {
     $children_displays = array();
     foreach ($this->view->display as $display_name => $display) {
-      if ($display->display_plugin === 'chart' && $display->display_options['parent_display'] && empty($display->deleted)) {
+      $display_enabled = $this->view->display[$display_name]->handler->get_option('enabled');
+      if ($display->display_plugin === 'chart' && $display->display_options['parent_display'] && empty($display->deleted) && $display_enabled) {
         $parent_display_name = $display->display_options['parent_display'];
         if ($parent_display_name === $this->view->current_display) {
           $children_displays[$display_name] = $this->view->display[$display_name];

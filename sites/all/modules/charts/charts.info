@@ -3,13 +3,14 @@ description = A charting API for Drupal that provides chart elements and integra
 package = Charts
 core = 7.x
 php = 5.2
+configure = admin/config/content/charts
 
 files[] = views/charts_plugin_style_chart.inc
 files[] = views/charts_plugin_display_chart.inc
 
-; Information added by drupal.org packaging script on 2013-07-30
-version = "7.x-2.0-beta5"
+; Information added by Drupal.org packaging script on 2014-03-18
+version = "7.x-2.0-rc1"
 core = "7.x"
 project = "charts"
-datestamp = "1375159271"
+datestamp = "1395123856"
 
