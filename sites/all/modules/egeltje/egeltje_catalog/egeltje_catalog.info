@@ -1,0 +1,6 @@
+name          = Catalog
+description   = Catalog related functionalities
+core          = 7.x
+version       = 7.x-1.0
+package       = egeltje
+files[]       = egeltje_catalog.views.inc

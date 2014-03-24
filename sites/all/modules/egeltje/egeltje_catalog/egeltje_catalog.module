@@ -1,0 +1,30 @@
+<?php
+
+/**
+ * @file
+ * This module implements some catalog related functionalities
+ */
+
+/**
+ * Implements hook_views_api
+ */
+/*
+function egeltje_catalog_views_api() {
+  return array(
+    'api' => 3,
+    'path' => drupal_get_path('module', 'egeltje_catalog'),
+  );
+}
+*/
+
+/**
+ * Implements hook_search_api_query_alter
+ */
+/*
+function egeltje_catalog_search_api_query_alter(SearchApiQueryInterface $query) {
+  print "<pre>";
+  print_r($query);
+  print "</pre>";
+  exit();
+}
+*/
