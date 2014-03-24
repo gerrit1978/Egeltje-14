@@ -2090,14 +2090,20 @@ h1 {
   text-indent: -999em;
 }
 
+/* Hide the "merk" dropdown in the header */
+/* line 215, ../sass/styles.scss */
+.region-header #edit-merk-wrapper {
+  display: none;
+}
+
 /* Facebook link */
-/* line 214, ../sass/styles.scss */
+/* line 221, ../sass/styles.scss */
 .block-fb {
   position: absolute;
   top: 7px;
   right: 0;
 }
-/* line 218, ../sass/styles.scss */
+/* line 225, ../sass/styles.scss */
 .block-fb a.fb {
   border: none;
   background: url(../images/sprite.png) no-repeat 0 -161px;
@@ -2106,19 +2112,19 @@ h1 {
   display: block;
   text-indent: -999em;
 }
-/* line 225, ../sass/styles.scss */
+/* line 232, ../sass/styles.scss */
 .block-fb a.fb:hover {
   background-position: -46px -161px;
 }
 
 /* Cart link */
-/* line 232, ../sass/styles.scss */
+/* line 239, ../sass/styles.scss */
 .block-cart {
   position: absolute;
   top: 7px;
   right: 60px;
 }
-/* line 236, ../sass/styles.scss */
+/* line 243, ../sass/styles.scss */
 .block-cart a.cart {
   border: none;
   background: url(../images/sprite.png) no-repeat 0 -207px;
@@ -2126,11 +2132,11 @@ h1 {
   height: 47px;
   display: block;
 }
-/* line 242, ../sass/styles.scss */
+/* line 249, ../sass/styles.scss */
 .block-cart a.cart:hover {
   background-position: -46px -207px;
 }
-/* line 245, ../sass/styles.scss */
+/* line 252, ../sass/styles.scss */
 .block-cart a.cart span {
   position: relative;
   width: 25px;
@@ -2149,41 +2155,41 @@ h1 {
 }
 
 /* Main Menu */
-/* line 266, ../sass/styles.scss */
+/* line 273, ../sass/styles.scss */
 #block-megamenu-main-menu ul#megamenu-main-menu {
   margin: 0;
   padding: 5px;
   background: #dadada;
   border: 1px solid #cacaca;
 }
-/* line 271, ../sass/styles.scss */
+/* line 278, ../sass/styles.scss */
 #block-megamenu-main-menu ul#megamenu-main-menu li.megamenu-parent {
   margin-right: 70px;
   position: relative;
   z-index: 150;
 }
-/* line 275, ../sass/styles.scss */
+/* line 282, ../sass/styles.scss */
 #block-megamenu-main-menu ul#megamenu-main-menu li.megamenu-parent a {
   color: white;
   border-bottom: none;
 }
-/* line 277, ../sass/styles.scss */
+/* line 284, ../sass/styles.scss */
 #block-megamenu-main-menu ul#megamenu-main-menu li.megamenu-parent a:hover {
   color: #444444;
 }
-/* line 283, ../sass/styles.scss */
+/* line 290, ../sass/styles.scss */
 #block-megamenu-main-menu ul#megamenu-main-menu li.megamenu-parent.active a {
   color: #444444;
 }
-/* line 287, ../sass/styles.scss */
+/* line 294, ../sass/styles.scss */
 #block-megamenu-main-menu ul#megamenu-main-menu li.megamenu-parent.first {
   margin-left: 70px;
 }
-/* line 290, ../sass/styles.scss */
+/* line 297, ../sass/styles.scss */
 #block-megamenu-main-menu ul#megamenu-main-menu li.megamenu-parent.last {
   margin-right: 0;
 }
-/* line 293, ../sass/styles.scss */
+/* line 300, ../sass/styles.scss */
 #block-megamenu-main-menu ul#megamenu-main-menu li.megamenu-parent ul.megamenu-slots-stacking {
   border: none;
   border-radius: 0;
@@ -2193,17 +2199,17 @@ h1 {
   background: #e84c3d;
   box-shadow: 2px 2px 4px #888888;
 }
-/* line 301, ../sass/styles.scss */
+/* line 308, ../sass/styles.scss */
 #block-megamenu-main-menu ul#megamenu-main-menu li.megamenu-parent ul.megamenu-slots-stacking li.megamenu-slot {
   list-style: none;
   border: none;
 }
-/* line 304, ../sass/styles.scss */
+/* line 311, ../sass/styles.scss */
 #block-megamenu-main-menu ul#megamenu-main-menu li.megamenu-parent ul.megamenu-slots-stacking li.megamenu-slot h3.megamenu-slot-title {
   background: none;
   text-align: left;
 }
-/* line 307, ../sass/styles.scss */
+/* line 314, ../sass/styles.scss */
 #block-megamenu-main-menu ul#megamenu-main-menu li.megamenu-parent ul.megamenu-slots-stacking li.megamenu-slot h3.megamenu-slot-title a {
   background: none;
   text-align: left;
@@ -2212,40 +2218,40 @@ h1 {
   text-transform: none;
   color: white;
 }
-/* line 314, ../sass/styles.scss */
+/* line 321, ../sass/styles.scss */
 #block-megamenu-main-menu ul#megamenu-main-menu li.megamenu-parent ul.megamenu-slots-stacking li.megamenu-slot h3.megamenu-slot-title a:hover {
   text-decoration: none;
   border-bottom: 1px solid white;
 }
-/* line 320, ../sass/styles.scss */
+/* line 327, ../sass/styles.scss */
 #block-megamenu-main-menu ul#megamenu-main-menu li.megamenu-parent ul.megamenu-slots-stacking li.megamenu-slot ul.megamenu-items {
   margin-left: 20px;
 }
-/* line 323, ../sass/styles.scss */
+/* line 330, ../sass/styles.scss */
 #block-megamenu-main-menu ul#megamenu-main-menu li.megamenu-parent ul.megamenu-slots-stacking li.megamenu-slot ul.megamenu-items li.megamenu-item a {
   color: #eccdca;
   font-size: 0.8125em;
   font-weight: 300;
 }
-/* line 327, ../sass/styles.scss */
+/* line 334, ../sass/styles.scss */
 #block-megamenu-main-menu ul#megamenu-main-menu li.megamenu-parent ul.megamenu-slots-stacking li.megamenu-slot ul.megamenu-items li.megamenu-item a:hover {
   text-decoration: none;
   border-bottom: 1px solid #eccdca;
 }
 
 /* Secondary Menu */
-/* line 341, ../sass/styles.scss */
+/* line 348, ../sass/styles.scss */
 #block-menu-secondary-navigation {
   position: absolute;
   bottom: 0;
   right: 0;
 }
-/* line 345, ../sass/styles.scss */
+/* line 352, ../sass/styles.scss */
 #block-menu-secondary-navigation ul {
   margin: 0;
   padding: 0;
 }
-/* line 348, ../sass/styles.scss */
+/* line 355, ../sass/styles.scss */
 #block-menu-secondary-navigation ul li {
   margin: 0;
   padding: 0;
@@ -2253,11 +2259,11 @@ h1 {
   display: inline-block;
   margin-right: 20px;
 }
-/* line 354, ../sass/styles.scss */
+/* line 361, ../sass/styles.scss */
 #block-menu-secondary-navigation ul li.last {
   margin-right: 0;
 }
-/* line 357, ../sass/styles.scss */
+/* line 364, ../sass/styles.scss */
 #block-menu-secondary-navigation ul li a {
   color: black;
   font-size: 1.125em;
@@ -2270,7 +2276,7 @@ h1 {
   -o-transition: none;
   transition: none;
 }
-/* line 368, ../sass/styles.scss */
+/* line 375, ../sass/styles.scss */
 #block-menu-secondary-navigation ul li a:hover, #block-menu-secondary-navigation ul li a.active {
   border-bottom: 5px solid #444444;
   -webkit-transition: none;
@@ -2281,7 +2287,7 @@ h1 {
 }
 
 /* Homepage text */
-/* line 383, ../sass/styles.scss */
+/* line 390, ../sass/styles.scss */
 .catalog-header p {
   font-size: 1.25em;
   color: #444444;
@@ -2289,7 +2295,7 @@ h1 {
   text-shadow: 1px 1px 2px white;
   text-align: center;
 }
-/* line 390, ../sass/styles.scss */
+/* line 397, ../sass/styles.scss */
 .catalog-header a {
   color: #444444;
   border-bottom: 1px solid #cacaca;
@@ -2299,7 +2305,7 @@ h1 {
   -o-transition: border .15s ease-in-out;
   transition: border .15s ease-in-out;
 }
-/* line 398, ../sass/styles.scss */
+/* line 405, ../sass/styles.scss */
 .catalog-header a:hover {
   border-bottom-color: #444444;
   -webkit-transition: border .15s ease-in-out;
@@ -2310,12 +2316,12 @@ h1 {
 }
 
 /* Homepage categories */
-/* line 411, ../sass/styles.scss */
+/* line 418, ../sass/styles.scss */
 .catalog-blocks-front ul.blocks {
   margin: 0;
   padding: 0;
 }
-/* line 414, ../sass/styles.scss */
+/* line 421, ../sass/styles.scss */
 .catalog-blocks-front ul.blocks li.block {
   margin: 0;
   padding: 0;
@@ -2327,11 +2333,11 @@ h1 {
   height: 240px;
   position: relative;
 }
-/* line 424, ../sass/styles.scss */
+/* line 431, ../sass/styles.scss */
 .catalog-blocks-front ul.blocks li.block.last {
   margin-right: 0;
 }
-/* line 427, ../sass/styles.scss */
+/* line 434, ../sass/styles.scss */
 .catalog-blocks-front ul.blocks li.block a {
   display: block;
   height: 240px;
@@ -2343,7 +2349,7 @@ h1 {
   transition: opacity .15s ease-in-out;
   border: none;
 }
-/* line 437, ../sass/styles.scss */
+/* line 444, ../sass/styles.scss */
 .catalog-blocks-front ul.blocks li.block a:hover {
   opacity: 0.6;
   -webkit-transition: opacity .15s ease-in-out;
@@ -2353,7 +2359,7 @@ h1 {
   transition: opacity .15s ease-in-out;
   border: none;
 }
-/* line 446, ../sass/styles.scss */
+/* line 453, ../sass/styles.scss */
 .catalog-blocks-front ul.blocks li.block a .category {
   position: absolute;
   bottom: 20px;
@@ -2363,12 +2369,12 @@ h1 {
 }
 
 /* Product catalogus */
-/* line 460, ../sass/styles.scss */
+/* line 467, ../sass/styles.scss */
 .view-display-products ul.products, .view-collection-products ul.products {
   margin: 0;
   padding: 0;
 }
-/* line 463, ../sass/styles.scss */
+/* line 470, ../sass/styles.scss */
 .view-display-products ul.products li.product, .view-collection-products ul.products li.product {
   width: 25%;
   float: left;
@@ -2377,19 +2383,19 @@ h1 {
   margin-bottom: 20px;
   list-style: none;
 }
-/* line 470, ../sass/styles.scss */
+/* line 477, ../sass/styles.scss */
 .view-display-products ul.products li.product.last, .view-collection-products ul.products li.product.last {
   border-right: none;
   width: 24%;
 }
-/* line 474, ../sass/styles.scss */
+/* line 481, ../sass/styles.scss */
 .view-display-products ul.products li.product .node, .view-collection-products ul.products li.product .node {
   text-align: center;
   position: relative;
   margin: 10px;
   height: 295px;
 }
-/* line 479, ../sass/styles.scss */
+/* line 486, ../sass/styles.scss */
 .view-display-products ul.products li.product .node h2.node-title, .view-collection-products ul.products li.product .node h2.node-title {
   position: absolute;
   bottom: 70px;
@@ -2398,30 +2404,30 @@ h1 {
   font-size: 1em;
   line-height: 1.2;
 }
-/* line 486, ../sass/styles.scss */
+/* line 493, ../sass/styles.scss */
 .view-display-products ul.products li.product .node h2.node-title a, .view-collection-products ul.products li.product .node h2.node-title a {
   border: none;
 }
-/* line 490, ../sass/styles.scss */
+/* line 497, ../sass/styles.scss */
 .view-display-products ul.products li.product .node .field-type-image, .view-collection-products ul.products li.product .node .field-type-image {
   text-align: center;
 }
-/* line 492, ../sass/styles.scss */
+/* line 499, ../sass/styles.scss */
 .view-display-products ul.products li.product .node .field-type-image a, .view-collection-products ul.products li.product .node .field-type-image a {
   border: none;
 }
-/* line 495, ../sass/styles.scss */
+/* line 502, ../sass/styles.scss */
 .view-display-products ul.products li.product .node .field-type-image img, .view-collection-products ul.products li.product .node .field-type-image img {
   border: 2px solid #e3e3e4;
 }
-/* line 499, ../sass/styles.scss */
+/* line 506, ../sass/styles.scss */
 .view-display-products ul.products li.product .node .go-to-product, .view-collection-products ul.products li.product .node .go-to-product {
   position: absolute;
   bottom: 10px;
   left: 10%;
   width: 80%;
 }
-/* line 504, ../sass/styles.scss */
+/* line 511, ../sass/styles.scss */
 .view-display-products ul.products li.product .node .go-to-product a, .view-collection-products ul.products li.product .node .go-to-product a {
   border: none;
   text-align: right;
@@ -2436,7 +2442,7 @@ h1 {
   -o-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
 }
-/* line 517, ../sass/styles.scss */
+/* line 524, ../sass/styles.scss */
 .view-display-products ul.products li.product .node .go-to-product a:hover, .view-collection-products ul.products li.product .node .go-to-product a:hover {
   background-color: #e88b82;
   border-bottom: none;
@@ -2447,19 +2453,19 @@ h1 {
   transition: all .15s ease-in-out;
 }
 
-/* line 536, ../sass/styles.scss */
+/* line 543, ../sass/styles.scss */
 .not-front .view-display-products ul.products li.product, .not-front .view-collection-products ul.products li.product {
   height: 340px;
 }
-/* line 538, ../sass/styles.scss */
+/* line 545, ../sass/styles.scss */
 .not-front .view-display-products ul.products li.product .node, .not-front .view-collection-products ul.products li.product .node {
   height: 320px;
 }
-/* line 540, ../sass/styles.scss */
+/* line 547, ../sass/styles.scss */
 .not-front .view-display-products ul.products li.product .node h2.node-title, .not-front .view-collection-products ul.products li.product .node h2.node-title {
   bottom: 95px;
 }
-/* line 543, ../sass/styles.scss */
+/* line 550, ../sass/styles.scss */
 .not-front .view-display-products ul.products li.product .node .product-price, .not-front .view-collection-products ul.products li.product .node .product-price {
   position: absolute;
   bottom: 60px;
@@ -2470,17 +2476,17 @@ h1 {
 }
 
 /* Product Display detail page */
-/* line 560, ../sass/styles.scss */
+/* line 567, ../sass/styles.scss */
 .node-type-product-display .field-field-images #wrap {
   border: 3px solid white;
   margin-bottom: 20px;
   z-index: auto !important;
 }
-/* line 564, ../sass/styles.scss */
+/* line 571, ../sass/styles.scss */
 .node-type-product-display .field-field-images #wrap a {
   border-bottom: none;
 }
-/* line 569, ../sass/styles.scss */
+/* line 576, ../sass/styles.scss */
 .node-type-product-display .field-field-images .cloud-zoom-gallery-thumbs a {
   margin: 0;
   padding: 0;
@@ -2488,38 +2494,38 @@ h1 {
   border: 2px solid white;
   display: inline-block;
 }
-/* line 575, ../sass/styles.scss */
+/* line 582, ../sass/styles.scss */
 .node-type-product-display .field-field-images .cloud-zoom-gallery-thumbs a img {
   display: block;
 }
-/* line 582, ../sass/styles.scss */
+/* line 589, ../sass/styles.scss */
 .node-type-product-display .call-to-action {
   margin-top: 20px;
   background: #f2f2f2;
   border: 1px solid #cacaca;
   padding: 10px;
 }
-/* line 587, ../sass/styles.scss */
+/* line 594, ../sass/styles.scss */
 .node-type-product-display .call-to-action .price {
   font-size: 1.375em;
   color: #888888;
 }
-/* line 591, ../sass/styles.scss */
+/* line 598, ../sass/styles.scss */
 .node-type-product-display .call-to-action form {
   margin: 20px 0;
 }
-/* line 593, ../sass/styles.scss */
+/* line 600, ../sass/styles.scss */
 .node-type-product-display .call-to-action form .form-item-quantity {
   margin: 0;
   padding: 0;
   float: left;
   margin-right: 20px;
 }
-/* line 598, ../sass/styles.scss */
+/* line 605, ../sass/styles.scss */
 .node-type-product-display .call-to-action form .form-item-quantity label {
   display: inline;
 }
-/* line 602, ../sass/styles.scss */
+/* line 609, ../sass/styles.scss */
 .node-type-product-display .call-to-action form .form-submit {
   color: white;
   font-weight: 700;
@@ -2531,11 +2537,11 @@ h1 {
   position: relative;
   top: -3px;
 }
-/* line 614, ../sass/styles.scss */
+/* line 621, ../sass/styles.scss */
 .node-type-product-display .call-to-action form.out-of-stock .form-item-quantity {
   display: none;
 }
-/* line 617, ../sass/styles.scss */
+/* line 624, ../sass/styles.scss */
 .node-type-product-display .call-to-action form.out-of-stock .form-submit {
   cursor: default;
   background: #ededed;
@@ -2544,34 +2550,34 @@ h1 {
 }
 
 /* Login pagina */
-/* line 630, ../sass/styles.scss */
+/* line 637, ../sass/styles.scss */
 form#user-login #user_login_form {
   border-right: 1px solid #cacaca;
   margin-bottom: 40px;
 }
-/* line 633, ../sass/styles.scss */
+/* line 640, ../sass/styles.scss */
 form#user-login #user_login_form a.login-password {
   display: inline-block;
   margin-bottom: 20px;
   font-weight: 300;
 }
 
-/* line 644, ../sass/styles.scss */
+/* line 651, ../sass/styles.scss */
 form#user-pass .back-to-login {
   margin: 40px 0;
 }
 
-/* line 650, ../sass/styles.scss */
+/* line 657, ../sass/styles.scss */
 form#user-register-form .mollom-privacy {
   margin-bottom: 20px;
 }
-/* line 653, ../sass/styles.scss */
+/* line 660, ../sass/styles.scss */
 form#user-register-form .back-to-login {
   margin: 40px 0;
 }
 
 /* Campaign Monitor */
-/* line 659, ../sass/styles.scss */
+/* line 666, ../sass/styles.scss */
 #block-campaign-monitor-subscribe-campaign-monitor-subscribe {
   margin: 0;
   padding: 0;
@@ -2582,7 +2588,7 @@ form#user-register-form .back-to-login {
   height: 75px;
   line-height: 75px;
 }
-/* line 668, ../sass/styles.scss */
+/* line 675, ../sass/styles.scss */
 #block-campaign-monitor-subscribe-campaign-monitor-subscribe .label {
   float: left;
   color: white;
@@ -2591,14 +2597,14 @@ form#user-register-form .back-to-login {
   padding-left: 100px;
   margin-right: 30px;
 }
-/* line 677, ../sass/styles.scss */
+/* line 684, ../sass/styles.scss */
 #block-campaign-monitor-subscribe-campaign-monitor-subscribe form .form-item {
   margin: 0;
   padding: 0;
   float: left;
   margin-right: 10px;
 }
-/* line 682, ../sass/styles.scss */
+/* line 689, ../sass/styles.scss */
 #block-campaign-monitor-subscribe-campaign-monitor-subscribe form .form-item .form-text {
   border: none;
   height: 35px;
@@ -2607,7 +2613,7 @@ form#user-register-form .back-to-login {
   width: 300px;
   padding-left: 10px;
 }
-/* line 691, ../sass/styles.scss */
+/* line 698, ../sass/styles.scss */
 #block-campaign-monitor-subscribe-campaign-monitor-subscribe form .form-submit {
   background: url(../images/sprite.png) no-repeat 0 -85px;
   float: left;
@@ -2619,37 +2625,37 @@ form#user-register-form .back-to-login {
 }
 
 /* Add to cart message */
-/* line 704, ../sass/styles.scss */
+/* line 711, ../sass/styles.scss */
 div.commerce-add-to-cart-confirmation {
   width: 650px !important;
   margin-left: -30% !important;
   padding-bottom: 20px !important;
 }
-/* line 708, ../sass/styles.scss */
+/* line 715, ../sass/styles.scss */
 div.commerce-add-to-cart-confirmation a {
   border-bottom: none;
 }
 
 /* Cart */
-/* line 714, ../sass/styles.scss */
+/* line 721, ../sass/styles.scss */
 .view-commerce-cart-form {
   margin-bottom: 20px;
 }
-/* line 716, ../sass/styles.scss */
+/* line 723, ../sass/styles.scss */
 .view-commerce-cart-form table {
   width: 100%;
 }
-/* line 719, ../sass/styles.scss */
+/* line 726, ../sass/styles.scss */
 .view-commerce-cart-form table tr td {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-/* line 722, ../sass/styles.scss */
+/* line 729, ../sass/styles.scss */
 .view-commerce-cart-form table tr td .field-name-field-images {
   float: left;
   margin-right: 20px;
 }
-/* line 726, ../sass/styles.scss */
+/* line 733, ../sass/styles.scss */
 .view-commerce-cart-form table tr td h2.field-name-title-field {
   margin: 0;
   padding: 0;
@@ -2657,16 +2663,16 @@ div.commerce-add-to-cart-confirmation a {
   color: #444444;
   font-weight: 500;
 }
-/* line 733, ../sass/styles.scss */
+/* line 740, ../sass/styles.scss */
 .view-commerce-cart-form table tr td a.goto-product {
   font-weight: 100;
   font-size: 0.875em;
 }
-/* line 737, ../sass/styles.scss */
+/* line 744, ../sass/styles.scss */
 .view-commerce-cart-form table tr td.views-field-nothing {
   padding-left: 20px;
 }
-/* line 740, ../sass/styles.scss */
+/* line 747, ../sass/styles.scss */
 .view-commerce-cart-form table tr td input.delete-line-item {
   border: none;
   cursor: pointer;
@@ -2675,25 +2681,25 @@ div.commerce-add-to-cart-confirmation a {
   background: url(../images/sprite.png) no-repeat left -255px;
   text-indent: -999em;
 }
-/* line 747, ../sass/styles.scss */
+/* line 754, ../sass/styles.scss */
 .view-commerce-cart-form table tr td input.delete-line-item:hover {
   background-position: -47px -255px;
 }
-/* line 752, ../sass/styles.scss */
+/* line 759, ../sass/styles.scss */
 .view-commerce-cart-form table tr.even {
   background: #fafafa;
 }
-/* line 760, ../sass/styles.scss */
+/* line 767, ../sass/styles.scss */
 .view-commerce-cart-form .commerce-order-handler-area-order-total table tr td.component-title {
   padding-left: 20px;
 }
-/* line 763, ../sass/styles.scss */
+/* line 770, ../sass/styles.scss */
 .view-commerce-cart-form .commerce-order-handler-area-order-total table tr td.component-total {
   padding-right: 20px;
 }
 
 /* Checkout */
-/* line 773, ../sass/styles.scss */
+/* line 780, ../sass/styles.scss */
 ol.commerce-checkout-progress li {
   padding: 20px 0 5px 0 !important;
   font-weight: 300;
@@ -2702,43 +2708,43 @@ ol.commerce-checkout-progress li {
   width: auto !important;
   margin-right: 20px;
 }
-/* line 780, ../sass/styles.scss */
+/* line 787, ../sass/styles.scss */
 ol.commerce-checkout-progress li.active {
   border-bottom: 3px solid #e84c3d;
   color: #e84c3d;
 }
 
-/* line 788, ../sass/styles.scss */
+/* line 795, ../sass/styles.scss */
 #commerce-checkout-form-checkout .button-operator, #commerce-checkout-form-shipping .button-operator, #commerce-checkout-form-review .button-operator {
   padding-left: 10px;
 }
-/* line 791, ../sass/styles.scss */
+/* line 798, ../sass/styles.scss */
 #commerce-checkout-form-checkout fieldset, #commerce-checkout-form-shipping fieldset, #commerce-checkout-form-review fieldset {
   border: none;
   margin: 0;
   padding: 0;
   margin-bottom: 30px;
 }
-/* line 796, ../sass/styles.scss */
+/* line 803, ../sass/styles.scss */
 #commerce-checkout-form-checkout fieldset legend, #commerce-checkout-form-shipping fieldset legend, #commerce-checkout-form-review fieldset legend {
   width: 100%;
   margin-bottom: 20px;
   border-bottom: 1px solid #444444;
 }
-/* line 802, ../sass/styles.scss */
+/* line 809, ../sass/styles.scss */
 #commerce-checkout-form-checkout table, #commerce-checkout-form-shipping table, #commerce-checkout-form-review table {
   width: 100% !important;
 }
-/* line 805, ../sass/styles.scss */
+/* line 812, ../sass/styles.scss */
 #commerce-checkout-form-checkout table tr td, #commerce-checkout-form-checkout table tr th, #commerce-checkout-form-shipping table tr td, #commerce-checkout-form-shipping table tr th, #commerce-checkout-form-review table tr td, #commerce-checkout-form-review table tr th {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-/* line 808, ../sass/styles.scss */
+/* line 815, ../sass/styles.scss */
 #commerce-checkout-form-checkout table tr td.views-field-line-item-title, #commerce-checkout-form-checkout table tr td.component-title, #commerce-checkout-form-checkout table tr th.views-field-line-item-title, #commerce-checkout-form-checkout table tr th.component-title, #commerce-checkout-form-shipping table tr td.views-field-line-item-title, #commerce-checkout-form-shipping table tr td.component-title, #commerce-checkout-form-shipping table tr th.views-field-line-item-title, #commerce-checkout-form-shipping table tr th.component-title, #commerce-checkout-form-review table tr td.views-field-line-item-title, #commerce-checkout-form-review table tr td.component-title, #commerce-checkout-form-review table tr th.views-field-line-item-title, #commerce-checkout-form-review table tr th.component-title {
   padding-left: 10px;
 }
-/* line 811, ../sass/styles.scss */
+/* line 818, ../sass/styles.scss */
 #commerce-checkout-form-checkout table tr td.price, #commerce-checkout-form-checkout table tr td.component-total, #commerce-checkout-form-checkout table tr th.price, #commerce-checkout-form-checkout table tr th.component-total, #commerce-checkout-form-shipping table tr td.price, #commerce-checkout-form-shipping table tr td.component-total, #commerce-checkout-form-shipping table tr th.price, #commerce-checkout-form-shipping table tr th.component-total, #commerce-checkout-form-review table tr td.price, #commerce-checkout-form-review table tr td.component-total, #commerce-checkout-form-review table tr th.price, #commerce-checkout-form-review table tr th.component-total {
   padding-right: 10px;
 }
@@ -2758,11 +2764,11 @@ ol.commerce-checkout-progress li.active {
 
 */
 /* Footer */
-/* line 835, ../sass/styles.scss */
+/* line 842, ../sass/styles.scss */
 #footer-wrapper {
   background: white;
 }
-/* line 837, ../sass/styles.scss */
+/* line 844, ../sass/styles.scss */
 #footer-wrapper #footer {
   margin: 0;
   padding: 0;
@@ -2771,19 +2777,19 @@ ol.commerce-checkout-progress li.active {
   margin-right: auto;
   font-weight: 300;
 }
-/* line 845, ../sass/styles.scss */
+/* line 852, ../sass/styles.scss */
 #footer-wrapper #footer .column-2 h2 {
   text-transform: uppercase;
   font-size: 1.125em;
   font-weight: 500;
   margin-top: 16px;
 }
-/* line 851, ../sass/styles.scss */
+/* line 858, ../sass/styles.scss */
 #footer-wrapper #footer .column-2 ul {
   margin: 0;
   padding: 0;
 }
-/* line 854, ../sass/styles.scss */
+/* line 861, ../sass/styles.scss */
 #footer-wrapper #footer .column-2 ul li {
   margin: 0;
   padding: 0;
@@ -2791,11 +2797,11 @@ ol.commerce-checkout-progress li.active {
   float: left;
   width: 50%;
 }
-/* line 863, ../sass/styles.scss */
+/* line 870, ../sass/styles.scss */
 #footer-wrapper #footer .column-3 {
   text-align: right;
 }
-/* line 866, ../sass/styles.scss */
+/* line 873, ../sass/styles.scss */
 #footer-wrapper #footer a {
   color: #888888;
   border-bottom: 1px solid #888888;
@@ -2805,7 +2811,7 @@ ol.commerce-checkout-progress li.active {
   -o-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
 }
-/* line 874, ../sass/styles.scss */
+/* line 881, ../sass/styles.scss */
 #footer-wrapper #footer a:hover {
   color: #444444;
   border-bottom: 1px solid #888888;

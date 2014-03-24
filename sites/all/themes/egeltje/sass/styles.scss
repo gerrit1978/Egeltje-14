@@ -210,6 +210,13 @@ h1 {
 	}
 }
 
+/* Hide the "merk" dropdown in the header */
+.region-header {
+  #edit-merk-wrapper {
+    display: none;
+  }
+}
+
 /* Facebook link */
 .block-fb {
   position: absolute;
