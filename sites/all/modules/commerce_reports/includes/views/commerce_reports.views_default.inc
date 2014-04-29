@@ -145,6 +145,7 @@ function commerce_reports_views_default_views() {
   $handler->display->display_options['fields']['commerce_total']['label'] = 'Revenue';
   $handler->display->display_options['fields']['commerce_total']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['commerce_total']['click_sort_column'] = 'amount';
+  $handler->display->display_options['fields']['commerce_total']['type'] = 'commerce_price_formatted_amount';
   $handler->display->display_options['fields']['commerce_total']['settings'] = array(
     'calculation' => FALSE,
   );
@@ -484,6 +485,7 @@ function commerce_reports_views_default_views() {
   $handler->display->display_options['fields']['commerce_order_total_1']['label'] = 'Total';
   $handler->display->display_options['fields']['commerce_order_total_1']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['commerce_order_total_1']['click_sort_column'] = 'amount';
+  $handler->display->display_options['fields']['commerce_order_total_1']['type'] = 'commerce_price_formatted_amount';
   $handler->display->display_options['fields']['commerce_order_total_1']['settings'] = array(
     'calculation' => FALSE,
   );
@@ -503,6 +505,7 @@ function commerce_reports_views_default_views() {
   $handler->display->display_options['fields']['commerce_order_total']['element_wrapper_type'] = '0';
   $handler->display->display_options['fields']['commerce_order_total']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['commerce_order_total']['click_sort_column'] = 'amount';
+  $handler->display->display_options['fields']['commerce_order_total']['type'] = 'commerce_price_formatted_amount';
   $handler->display->display_options['fields']['commerce_order_total']['settings'] = array(
     'calculation' => FALSE,
   );
@@ -860,6 +863,7 @@ function commerce_reports_views_default_views() {
   $handler->display->display_options['fields']['commerce_order_total']['group_type'] = 'sum';
   $handler->display->display_options['fields']['commerce_order_total']['label'] = 'Total Revenue';
   $handler->display->display_options['fields']['commerce_order_total']['click_sort_column'] = 'amount';
+  $handler->display->display_options['fields']['commerce_order_total']['type'] = 'commerce_price_formatted_amount';
   $handler->display->display_options['fields']['commerce_order_total']['settings'] = array(
     'calculation' => FALSE,
   );
@@ -874,6 +878,7 @@ function commerce_reports_views_default_views() {
   $handler->display->display_options['fields']['commerce_order_total_1']['group_type'] = 'avg';
   $handler->display->display_options['fields']['commerce_order_total_1']['label'] = 'Average Order';
   $handler->display->display_options['fields']['commerce_order_total_1']['click_sort_column'] = 'amount';
+  $handler->display->display_options['fields']['commerce_order_total_1']['type'] = 'commerce_price_formatted_amount';
   $handler->display->display_options['fields']['commerce_order_total_1']['settings'] = array(
     'calculation' => FALSE,
   );
@@ -965,6 +970,7 @@ function commerce_reports_views_default_views() {
   $handler->display->display_options['fields']['commerce_order_total']['group_type'] = 'sum';
   $handler->display->display_options['fields']['commerce_order_total']['label'] = 'Total Revenue';
   $handler->display->display_options['fields']['commerce_order_total']['click_sort_column'] = 'amount';
+  $handler->display->display_options['fields']['commerce_order_total']['type'] = 'commerce_price_formatted_amount';
   $handler->display->display_options['fields']['commerce_order_total']['settings'] = array(
     'calculation' => FALSE,
   );
@@ -979,6 +985,7 @@ function commerce_reports_views_default_views() {
   $handler->display->display_options['fields']['commerce_order_total_1']['group_type'] = 'avg';
   $handler->display->display_options['fields']['commerce_order_total_1']['label'] = 'Average Order';
   $handler->display->display_options['fields']['commerce_order_total_1']['click_sort_column'] = 'amount';
+  $handler->display->display_options['fields']['commerce_order_total_1']['type'] = 'commerce_price_formatted_amount';
   $handler->display->display_options['fields']['commerce_order_total_1']['settings'] = array(
     'calculation' => FALSE,
   );
@@ -1114,6 +1121,7 @@ function commerce_reports_views_default_views() {
   $handler->display->display_options['fields']['commerce_order_total']['group_type'] = 'sum';
   $handler->display->display_options['fields']['commerce_order_total']['label'] = 'Total Revenue';
   $handler->display->display_options['fields']['commerce_order_total']['click_sort_column'] = 'amount';
+  $handler->display->display_options['fields']['commerce_order_total']['type'] = 'commerce_price_formatted_amount';
   $handler->display->display_options['fields']['commerce_order_total']['settings'] = array(
     'calculation' => FALSE,
   );
@@ -1128,6 +1136,7 @@ function commerce_reports_views_default_views() {
   $handler->display->display_options['fields']['commerce_order_total_1']['group_type'] = 'avg';
   $handler->display->display_options['fields']['commerce_order_total_1']['label'] = 'Average Order';
   $handler->display->display_options['fields']['commerce_order_total_1']['click_sort_column'] = 'amount';
+  $handler->display->display_options['fields']['commerce_order_total_1']['type'] = 'commerce_price_formatted_amount';
   $handler->display->display_options['fields']['commerce_order_total_1']['settings'] = array(
     'calculation' => FALSE,
   );
@@ -1263,6 +1272,7 @@ function commerce_reports_views_default_views() {
   $handler->display->display_options['fields']['commerce_order_total']['group_type'] = 'sum';
   $handler->display->display_options['fields']['commerce_order_total']['label'] = 'Total Revenue';
   $handler->display->display_options['fields']['commerce_order_total']['click_sort_column'] = 'amount';
+  $handler->display->display_options['fields']['commerce_order_total']['type'] = 'commerce_price_formatted_amount';
   $handler->display->display_options['fields']['commerce_order_total']['settings'] = array(
     'calculation' => FALSE,
   );
@@ -1277,6 +1287,7 @@ function commerce_reports_views_default_views() {
   $handler->display->display_options['fields']['commerce_order_total_1']['group_type'] = 'avg';
   $handler->display->display_options['fields']['commerce_order_total_1']['label'] = 'Average Order';
   $handler->display->display_options['fields']['commerce_order_total_1']['click_sort_column'] = 'amount';
+  $handler->display->display_options['fields']['commerce_order_total_1']['type'] = 'commerce_price_formatted_amount';
   $handler->display->display_options['fields']['commerce_order_total_1']['settings'] = array(
     'calculation' => FALSE,
   );
@@ -1412,6 +1423,7 @@ function commerce_reports_views_default_views() {
   $handler->display->display_options['fields']['commerce_order_total']['group_type'] = 'sum';
   $handler->display->display_options['fields']['commerce_order_total']['label'] = 'Total Revenue';
   $handler->display->display_options['fields']['commerce_order_total']['click_sort_column'] = 'amount';
+  $handler->display->display_options['fields']['commerce_order_total']['type'] = 'commerce_price_formatted_amount';
   $handler->display->display_options['fields']['commerce_order_total']['settings'] = array(
     'calculation' => FALSE,
   );
@@ -1426,6 +1438,7 @@ function commerce_reports_views_default_views() {
   $handler->display->display_options['fields']['commerce_order_total_1']['group_type'] = 'avg';
   $handler->display->display_options['fields']['commerce_order_total_1']['label'] = 'Average Order';
   $handler->display->display_options['fields']['commerce_order_total_1']['click_sort_column'] = 'amount';
+  $handler->display->display_options['fields']['commerce_order_total_1']['type'] = 'commerce_price_formatted_amount';
   $handler->display->display_options['fields']['commerce_order_total_1']['settings'] = array(
     'calculation' => FALSE,
   );
@@ -1517,7 +1530,7 @@ function commerce_reports_views_default_views() {
   );
   $handler->display->display_options['style_options']['width'] = '1140';
   $handler->display->display_options['style_options']['height'] = '225';
-  $handler->display->display_options['style_options']['xaxis_labels_rotation'] = '0';
+  $handler->display->display_options['style_options']['xaxis_labels_rotation'] = '45';
   $handler->display->display_options['style_options']['yaxis_labels_rotation'] = '0';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
@@ -1527,7 +1540,7 @@ function commerce_reports_views_default_views() {
   $handler->display->display_options['fields']['created']['field'] = 'created';
   $handler->display->display_options['fields']['created']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['created']['date_format'] = 'custom';
-  $handler->display->display_options['fields']['created']['custom_date_format'] = 'F Y';
+  $handler->display->display_options['fields']['created']['custom_date_format'] = 'M Y';
   $handler->display->display_options['fields']['created']['format_date_sql'] = 1;
   /* Field: COUNT(Commerce Order: Order ID) */
   $handler->display->display_options['fields']['order_id']['id'] = 'order_id';
@@ -1622,7 +1635,7 @@ function commerce_reports_views_default_views() {
   );
   $handler->display->display_options['style_options']['width'] = '1140';
   $handler->display->display_options['style_options']['height'] = '225';
-  $handler->display->display_options['style_options']['xaxis_labels_rotation'] = '0';
+  $handler->display->display_options['style_options']['xaxis_labels_rotation'] = '45';
   $handler->display->display_options['style_options']['yaxis_labels_rotation'] = '0';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
@@ -1631,7 +1644,7 @@ function commerce_reports_views_default_views() {
   $handler->display->display_options['fields']['created']['table'] = 'commerce_order';
   $handler->display->display_options['fields']['created']['field'] = 'created';
   $handler->display->display_options['fields']['created']['date_format'] = 'custom';
-  $handler->display->display_options['fields']['created']['custom_date_format'] = 'd F Y';
+  $handler->display->display_options['fields']['created']['custom_date_format'] = 'd M';
   $handler->display->display_options['fields']['created']['format_date_sql'] = 1;
   /* Field: COUNT(Commerce Order: Order ID) */
   $handler->display->display_options['fields']['order_id']['id'] = 'order_id';
@@ -1726,7 +1739,7 @@ function commerce_reports_views_default_views() {
   );
   $handler->display->display_options['style_options']['width'] = '1140';
   $handler->display->display_options['style_options']['height'] = '225';
-  $handler->display->display_options['style_options']['xaxis_labels_rotation'] = '0';
+  $handler->display->display_options['style_options']['xaxis_labels_rotation'] = '45';
   $handler->display->display_options['style_options']['yaxis_labels_rotation'] = '0';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
@@ -1735,7 +1748,7 @@ function commerce_reports_views_default_views() {
   $handler->display->display_options['fields']['created']['table'] = 'commerce_order';
   $handler->display->display_options['fields']['created']['field'] = 'created';
   $handler->display->display_options['fields']['created']['date_format'] = 'custom';
-  $handler->display->display_options['fields']['created']['custom_date_format'] = 'j F Y';
+  $handler->display->display_options['fields']['created']['custom_date_format'] = 'j F';
   $handler->display->display_options['fields']['created']['format_date_sql'] = 1;
   /* Field: COUNT(Commerce Order: Order ID) */
   $handler->display->display_options['fields']['order_id']['id'] = 'order_id';
@@ -2155,6 +2168,7 @@ function commerce_reports_views_default_views() {
   $handler->display->display_options['fields']['commerce_order_total']['element_label_type'] = 'span';
   $handler->display->display_options['fields']['commerce_order_total']['element_wrapper_type'] = 'div';
   $handler->display->display_options['fields']['commerce_order_total']['click_sort_column'] = 'amount';
+  $handler->display->display_options['fields']['commerce_order_total']['type'] = 'commerce_price_formatted_amount';
   $handler->display->display_options['fields']['commerce_order_total']['settings'] = array(
     'calculation' => FALSE,
   );
@@ -2172,6 +2186,7 @@ function commerce_reports_views_default_views() {
   $handler->display->display_options['fields']['commerce_order_total_1']['element_label_type'] = 'span';
   $handler->display->display_options['fields']['commerce_order_total_1']['element_wrapper_type'] = 'div';
   $handler->display->display_options['fields']['commerce_order_total_1']['click_sort_column'] = 'amount';
+  $handler->display->display_options['fields']['commerce_order_total_1']['type'] = 'commerce_price_formatted_amount';
   $handler->display->display_options['fields']['commerce_order_total_1']['settings'] = array(
     'calculation' => FALSE,
   );

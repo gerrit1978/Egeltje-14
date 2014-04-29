@@ -62,36 +62,27 @@ function commerce_reports_theme($existing, $type, $theme, $path) {
   );
 }
 
-function commerce_reports_preprocess_page(&$vars) {
-  $view = views_get_page_view();
-  if (!empty($view) && strpos($view->name, 'commerce_reports_sales') !== FALSE) {
-    //dpm($vars['tabs']);
 
-    //Duplicate Monthly Report link into secondary tasks.
-    //@todo not sure if this is best way..but it does work.
-    foreach($vars['tabs']['#primary'] as $tab_key => $tab_value) {
-      if($tab_value['#link']['path'] == 'admin/commerce/reports/sales') {
-        $vars['tabs']['#secondary'][] = $tab_value;
-      }
-    }
-
-    foreach($vars['tabs']['#secondary'] as $sales_report_key => $sales_report_value) {
-
-      switch($sales_report_value['#link']['path']) {
-        case 'admin/commerce/reports/sales/daily':
-          $vars['tabs']['#secondary'][$sales_report_key]['#link']['title'] = 'Daily Report';
-        break;
-        case 'admin/commerce/reports/sales/weekly':
-          $vars['tabs']['#secondary'][$sales_report_key]['#link']['title'] = 'Weekly Report';
-        break;
-        case 'admin/commerce/reports/sales/yearly':
-          $vars['tabs']['#secondary'][$sales_report_key]['#link']['title'] = 'Yearly Report';
-        break;
-        case 'admin/commerce/reports/sales':
-          $vars['tabs']['#secondary'][$sales_report_key]['#link']['title'] = 'Monthly Report';
-        break;
-      }
-    }
+/**
+ * Implements hook_menu_local_tasks_alter().
+ */
+function commerce_reports_menu_local_tasks_alter(&$data, $router_item, $root_path) {
+  // Alter local tasks under admin/commerce/reports/sales
+  if ($router_item['tab_parent'] == 'admin/commerce/reports/sales'
+    || $router_item['path'] == 'admin/commerce/reports/sales') {
+    $data['tabs'][1]['output'][] = array(
+      '#theme' => 'menu_local_task',
+      '#link' => array(
+        'title' => t('Monthly'),
+        'href' => 'admin/commerce/reports/sales',
+        'localized_options' => array(
+          'attributes' => array(
+            'title' => t('Monthly reports'),
+          ),
+        ),
+      ),
+      '#active' => ($router_item['path'] == 'admin/commerce/reports/sales'),
+    );
   }
 }
 
@@ -155,7 +146,11 @@ function commerce_reports_block_view($delta = '') {
     case 'commerce_reports_sales':
       return commerce_reports_sales();
     case 'commerce_reports_customers':
-      return commerce_reports_customers();
+      $block_render = module_invoke('views', 'block_view', 'f3f98e42ba2d4d3103b95e9199cf48fe');
+      return array(
+        'title' => t('Customer statistics'),
+        'content' => $block_render['content'],
+      );
   }
 }
 
@@ -322,17 +317,17 @@ function commerce_reports_commerce_reports_dashboard() {
       ),
       'sections' => array(
         'year' => array(
-          'title' => 'Year',
+          'title' => t('Year'),
           'module' => 'views',
           'block' => 'cc437fbe6b867b448dc946fd925800a3',
         ),
         'month' => array(
-          'title' => 'Month',
+          'title' => t('Month'),
           'module' => 'views',
           'block' => '1127e4706efe2c1eb8537a65a644e572',
         ),
         'week' => array(
-          'title' => 'Week',
+          'title' => t('Week'),
           'module' => 'views',
           'block' => 'd70fc459675538d56c73a9f90574211a',
         ),
@@ -362,12 +357,12 @@ function commerce_reports_commerce_reports_dashboard() {
       ),
       'sections' => array(
         'revenue' => array(
-          'title' => 'Revenue',
+          'title' => t('Revenue'),
           'module' => 'views',
           'block' => 'commerce_reports_products-chart_revenue',
         ),
         'quantity' => array(
-          'title' => 'Quantity',
+          'title' => t('Quantity'),
           'module' => 'views',
           'block' => '31eccd6666389cf554f290e91ef9848a',
         ),
@@ -394,12 +389,12 @@ function commerce_reports_commerce_reports_dashboard() {
       ),
       'sections' => array(
         'billing_profiles' => array(
-          'title' => 'Billing',
+          'title' => t('Billing'),
           'module' => 'views',
           'block' => 'c143b512518b3a7c6b30be35b192abbf',
         ),
         'shipping_profiles' => array(
-          'title' => 'Shipping',
+          'title' => t('Shipping'),
           'module' => 'views',
           'block' => '5efb68bd488bc78cae2aac5b8ddc29a6',
         ),
