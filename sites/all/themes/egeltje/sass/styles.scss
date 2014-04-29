@@ -12,13 +12,16 @@
 /* HTML element (SMACSS base) rules */
 @import "normalize";
 
-/* Layout rules */
-@import "layouts/responsive";
-@import "layouts/smartphone";
-
 /* Component (SMACSS module) rules */
 @import "components/misc";
 @import "components/variables";
+
+/* Layout rules */
+@import "layouts/responsive";
+@import "layouts/smartphone";
+@import "layouts/tablet";
+@import "layouts/desktop";
+
 // Optionally, add your own components here.
 @import "print";
 
@@ -265,123 +268,6 @@ h1 {
       -webkit-border-radius: 15px;
       font-weight: 700;
       font-size: 0.875em;
-    }
-  }
-}
-
-/* Main Menu */
-#block-megamenu-main-menu {
-  ul#megamenu-main-menu {
-    margin: 0;
-    padding: 5px;
-    background: #dadada;
-    border: 1px solid #cacaca;
-    li.megamenu-parent {
-      margin-right: 70px;
-      position: relative;
-      z-index: 150;
-      a {
-        color: white;
-        &:hover {
-          color: #444444;
-        }
-        border-bottom: none;
-      }
-      &.active {
-        a {
-          color: #444444;
-        }
-      }
-      &.first {
-        margin-left: 70px;
-      }
-      &.last {
-        margin-right: 0;
-      }
-      ul.megamenu-slots-stacking {
-        border: none;
-        border-radius: 0;
-        -moz-border-radius: 0;
-        -webkit-border-radius: 0;
-        z-index: 100;
-        background: $mainRed;
-        box-shadow: 2px 2px 4px #888888;
-        li.megamenu-slot {
-          list-style: none;
-          border: none;
-          h3.megamenu-slot-title {
-            background: none;
-            text-align: left;
-            a {
-              background: none;
-	            text-align: left;
-	            font-size: 0.875em;
-	            font-weight: 300;
-	            text-transform: none;
-	            color: white;
-	            &:hover {
-	              text-decoration: none;
-	              border-bottom: 1px solid white;
-	            }
-            }
-          }
-          ul.megamenu-items {
-            margin-left: 20px;
-            li.megamenu-item {
-              a {
-                color: $mainRedLight;
-                font-size: 0.8125em;
-                font-weight: 300;
-                &:hover {
-                  text-decoration: none;
-                  border-bottom: 1px solid $mainRedLight;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-/* Secondary Menu */
-#block-menu-secondary-navigation {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  ul {
-    margin: 0;
-    padding: 0;
-    li {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      display: inline-block;
-      margin-right: 20px;
-      &.last {
-        margin-right: 0;
-      }
-      a {
-        color: black;
-        font-size: 1.125em;
-        font-weight: 300;
-        padding-bottom: 6px;
-        border-bottom: none;
-		    -webkit-transition: none;
-		    -moz-transition: none;
-		    -ms-transition: none;
-		    -o-transition: none;
-		    transition: none;
-        &:hover,&.active {
-          border-bottom: 5px solid #444444;
-			    -webkit-transition: none;
-			    -moz-transition: none;
-			    -ms-transition: none;
-			    -o-transition: none;
-			    transition: none;
-        }
-      }
     }
   }
 }
