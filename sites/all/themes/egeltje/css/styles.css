@@ -1659,9 +1659,22 @@ tr.selected td {
   }
 }
 @media all and (min-width: 767px) and (max-width: 1024px) {
-  /* line 5, ../sass/layouts/_tablet.scss */
+  /* Secondary Menu */
+  /* line 7, ../sass/layouts/_tablet.scss */
   #block-menu-secondary-navigation ul li a {
     font-size: 1em;
+  }
+
+  /* Catalog */
+  /* line 17, ../sass/layouts/_tablet.scss */
+  .view-display-products ul.products li.product, .view-collection-products ul.products li.product, .view-products-in-de-kijker ul.products li.product {
+    width: 50%;
+    float: left;
+    margin: 0;
+  }
+  /* line 23, ../sass/layouts/_tablet.scss */
+  .view-display-products ul.products li.product.even, .view-collection-products ul.products li.product.even, .view-products-in-de-kijker ul.products li.product.even {
+    width: 49%;
   }
 }
 @media all and (min-width: 320px) and (max-width: 640px) {

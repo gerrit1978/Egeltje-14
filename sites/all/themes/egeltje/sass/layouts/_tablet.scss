@@ -1,4 +1,6 @@
 @media all and (min-width : 767px) and (max-width : 1024px) {
+
+  /* Secondary Menu */
   #block-menu-secondary-navigation {
     ul {
       li {
@@ -8,4 +10,23 @@
       }
     }
   }
+  
+  /* Catalog */
+  .view-display-products, .view-collection-products, .view-products-in-de-kijker {
+    ul.products {
+      li.product {
+        width: 50%;
+	      float: left;
+        margin: 0;
+        &.last {
+        }
+        &.even {
+          width: 49%;
+        }
+      }
+    }
+  }
+  
+  
+  
 }
