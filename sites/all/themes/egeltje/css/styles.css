@@ -1658,43 +1658,6 @@ tr.selected td {
     font-weight: 700;
   }
 }
-@media all and (min-width: 767px) and (max-width: 1024px) {
-  /* Secondary Menu */
-  /* line 7, ../sass/layouts/_tablet.scss */
-  #block-menu-secondary-navigation ul li a {
-    font-size: 1em;
-  }
-
-  /* Homepage carrousel */
-  /* line 16, ../sass/layouts/_tablet.scss */
-  .view-carrousel ul.slides {
-    height: 250px !important;
-  }
-  /* line 18, ../sass/layouts/_tablet.scss */
-  .view-carrousel ul.slides li.slide {
-    height: 250px !important;
-  }
-  /* line 20, ../sass/layouts/_tablet.scss */
-  .view-carrousel ul.slides li.slide .image {
-    height: 250px !important;
-  }
-  /* line 22, ../sass/layouts/_tablet.scss */
-  .view-carrousel ul.slides li.slide .image img {
-    min-height: 250px !important;
-  }
-
-  /* Catalog */
-  /* line 33, ../sass/layouts/_tablet.scss */
-  .view-display-products ul.products li.product, .view-collection-products ul.products li.product, .view-products-in-de-kijker ul.products li.product {
-    width: 50%;
-    float: left;
-    margin: 0;
-  }
-  /* line 39, ../sass/layouts/_tablet.scss */
-  .view-display-products ul.products li.product.even, .view-collection-products ul.products li.product.even, .view-products-in-de-kijker ul.products li.product.even {
-    width: 49%;
-  }
-}
 @media all and (min-width: 320px) and (max-width: 640px) {
   /* Hide search text field */
   /* line 4, ../sass/layouts/_smartphone.scss */
