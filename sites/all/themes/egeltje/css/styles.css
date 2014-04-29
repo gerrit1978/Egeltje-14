@@ -1665,14 +1665,32 @@ tr.selected td {
     font-size: 1em;
   }
 
+  /* Homepage carrousel */
+  /* line 16, ../sass/layouts/_tablet.scss */
+  .view-carrousel ul.slides {
+    height: 250px !important;
+  }
+  /* line 18, ../sass/layouts/_tablet.scss */
+  .view-carrousel ul.slides li.slide {
+    height: 250px !important;
+  }
+  /* line 20, ../sass/layouts/_tablet.scss */
+  .view-carrousel ul.slides li.slide .image {
+    height: 250px !important;
+  }
+  /* line 22, ../sass/layouts/_tablet.scss */
+  .view-carrousel ul.slides li.slide .image img {
+    min-height: 250px !important;
+  }
+
   /* Catalog */
-  /* line 17, ../sass/layouts/_tablet.scss */
+  /* line 33, ../sass/layouts/_tablet.scss */
   .view-display-products ul.products li.product, .view-collection-products ul.products li.product, .view-products-in-de-kijker ul.products li.product {
     width: 50%;
     float: left;
     margin: 0;
   }
-  /* line 23, ../sass/layouts/_tablet.scss */
+  /* line 39, ../sass/layouts/_tablet.scss */
   .view-display-products ul.products li.product.even, .view-collection-products ul.products li.product.even, .view-products-in-de-kijker ul.products li.product.even {
     width: 49%;
   }
@@ -1692,15 +1710,21 @@ tr.selected td {
   }
 
   /* Menu's here */
+  /* Homepage carrousel */
+  /* line 17, ../sass/layouts/_smartphone.scss */
+  .view-carrousel {
+    display: none;
+  }
+
   /* Catalog */
-  /* line 19, ../sass/layouts/_smartphone.scss */
+  /* line 24, ../sass/layouts/_smartphone.scss */
   .view-display-products ul.products li.product, .view-collection-products ul.products li.product, .view-products-in-de-kijker ul.products li.product {
     width: 100%;
     float: none;
     margin: 0;
     border-bottom: 1px solid #e84c3d;
   }
-  /* line 24, ../sass/layouts/_smartphone.scss */
+  /* line 29, ../sass/layouts/_smartphone.scss */
   .view-display-products ul.products li.product.last, .view-collection-products ul.products li.product.last, .view-products-in-de-kijker ul.products li.product.last {
     width: 100%;
   }

@@ -11,6 +11,22 @@
     }
   }
   
+  /* Homepage carrousel */
+  .view-carrousel {
+		ul.slides {
+		  height: 250px !important;
+      li.slide {
+        height: 250px !important;
+        .image {
+          height: 250px !important;
+          img {
+            min-height: 250px !important;
+          }
+        }
+		  }
+	  }  
+  } 
+  
   /* Catalog */
   .view-display-products, .view-collection-products, .view-products-in-de-kijker {
     ul.products {
