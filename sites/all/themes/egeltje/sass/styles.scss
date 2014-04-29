@@ -17,10 +17,11 @@
 @import "components/variables";
 
 /* Layout rules */
-@import "layouts/responsive";
-@import "layouts/smartphone";
-@import "layouts/tablet";
 @import "layouts/desktop";
+@import "layouts/tablet";
+@import "layouts/smartphone";
+@import "layouts/responsive";
+
 
 // Optionally, add your own components here.
 @import "print";
