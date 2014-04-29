@@ -11,5 +11,22 @@
     text-align: center;
   }
   
+  /* Menu's here */
+  
+  /* Catalog */
+  .view-display-products, .view-collection-products, .view-products-in-de-kijker {
+    ul.products {
+      li.product {
+        width: 100%;
+        float: none;
+        margin: 0;
+        border-bottom: 1px solid $mainRed;
+        &.last {
+          width: 100%;
+        }
+      }
+    }
+  }
+  
   
 }
