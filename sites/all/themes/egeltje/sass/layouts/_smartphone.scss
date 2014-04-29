@@ -1,0 +1,15 @@
+@media all and (min-width: 320px) and (max-width: 640px) {
+  
+  /* Hide search text field */
+  #block-views-exp-display-products-page {
+    display: none;
+  }
+  
+  /* Logo */
+  a#logo {
+    width: 100%;
+    text-align: center;
+  }
+  
+  
+}
