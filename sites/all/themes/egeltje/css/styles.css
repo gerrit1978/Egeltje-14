@@ -1808,43 +1808,43 @@ tr.selected td {
     text-align: center;
   }
 }
-@media all and (min-width: 1023px) {
+@media all and (min-width: 767px) {
   /* Main Menu */
-  /* line 5, ../sass/layouts/_desktop.scss */
+  /* line 8, ../sass/layouts/_desktop.scss */
   #block-megamenu-main-menu ul#megamenu-main-menu {
     margin: 0;
     padding: 5px;
     background: #dadada;
     border: 1px solid #cacaca;
   }
-  /* line 10, ../sass/layouts/_desktop.scss */
+  /* line 13, ../sass/layouts/_desktop.scss */
   #block-megamenu-main-menu ul#megamenu-main-menu li.megamenu-parent {
     margin-right: 70px;
     position: relative;
     z-index: 150;
   }
-  /* line 14, ../sass/layouts/_desktop.scss */
+  /* line 17, ../sass/layouts/_desktop.scss */
   #block-megamenu-main-menu ul#megamenu-main-menu li.megamenu-parent a {
     color: white;
     border-bottom: none;
   }
-  /* line 16, ../sass/layouts/_desktop.scss */
+  /* line 19, ../sass/layouts/_desktop.scss */
   #block-megamenu-main-menu ul#megamenu-main-menu li.megamenu-parent a:hover {
     color: #444444;
   }
-  /* line 22, ../sass/layouts/_desktop.scss */
+  /* line 25, ../sass/layouts/_desktop.scss */
   #block-megamenu-main-menu ul#megamenu-main-menu li.megamenu-parent.active a {
     color: #444444;
   }
-  /* line 26, ../sass/layouts/_desktop.scss */
+  /* line 29, ../sass/layouts/_desktop.scss */
   #block-megamenu-main-menu ul#megamenu-main-menu li.megamenu-parent.first {
     margin-left: 70px;
   }
-  /* line 29, ../sass/layouts/_desktop.scss */
+  /* line 32, ../sass/layouts/_desktop.scss */
   #block-megamenu-main-menu ul#megamenu-main-menu li.megamenu-parent.last {
     margin-right: 0;
   }
-  /* line 32, ../sass/layouts/_desktop.scss */
+  /* line 35, ../sass/layouts/_desktop.scss */
   #block-megamenu-main-menu ul#megamenu-main-menu li.megamenu-parent ul.megamenu-slots-stacking {
     border: none;
     border-radius: 0;
@@ -1854,17 +1854,17 @@ tr.selected td {
     background: #e84c3d;
     box-shadow: 2px 2px 4px #888888;
   }
-  /* line 40, ../sass/layouts/_desktop.scss */
+  /* line 43, ../sass/layouts/_desktop.scss */
   #block-megamenu-main-menu ul#megamenu-main-menu li.megamenu-parent ul.megamenu-slots-stacking li.megamenu-slot {
     list-style: none;
     border: none;
   }
-  /* line 43, ../sass/layouts/_desktop.scss */
+  /* line 46, ../sass/layouts/_desktop.scss */
   #block-megamenu-main-menu ul#megamenu-main-menu li.megamenu-parent ul.megamenu-slots-stacking li.megamenu-slot h3.megamenu-slot-title {
     background: none;
     text-align: left;
   }
-  /* line 46, ../sass/layouts/_desktop.scss */
+  /* line 49, ../sass/layouts/_desktop.scss */
   #block-megamenu-main-menu ul#megamenu-main-menu li.megamenu-parent ul.megamenu-slots-stacking li.megamenu-slot h3.megamenu-slot-title a {
     background: none;
     text-align: left;
@@ -1873,40 +1873,40 @@ tr.selected td {
     text-transform: none;
     color: white;
   }
-  /* line 53, ../sass/layouts/_desktop.scss */
+  /* line 56, ../sass/layouts/_desktop.scss */
   #block-megamenu-main-menu ul#megamenu-main-menu li.megamenu-parent ul.megamenu-slots-stacking li.megamenu-slot h3.megamenu-slot-title a:hover {
     text-decoration: none;
     border-bottom: 1px solid white;
   }
-  /* line 59, ../sass/layouts/_desktop.scss */
+  /* line 62, ../sass/layouts/_desktop.scss */
   #block-megamenu-main-menu ul#megamenu-main-menu li.megamenu-parent ul.megamenu-slots-stacking li.megamenu-slot ul.megamenu-items {
     margin-left: 20px;
   }
-  /* line 62, ../sass/layouts/_desktop.scss */
+  /* line 65, ../sass/layouts/_desktop.scss */
   #block-megamenu-main-menu ul#megamenu-main-menu li.megamenu-parent ul.megamenu-slots-stacking li.megamenu-slot ul.megamenu-items li.megamenu-item a {
     color: #eccdca;
     font-size: 0.8125em;
     font-weight: 300;
   }
-  /* line 66, ../sass/layouts/_desktop.scss */
+  /* line 69, ../sass/layouts/_desktop.scss */
   #block-megamenu-main-menu ul#megamenu-main-menu li.megamenu-parent ul.megamenu-slots-stacking li.megamenu-slot ul.megamenu-items li.megamenu-item a:hover {
     text-decoration: none;
     border-bottom: 1px solid #eccdca;
   }
 
   /* Secondary Menu */
-  /* line 80, ../sass/layouts/_desktop.scss */
+  /* line 83, ../sass/layouts/_desktop.scss */
   #block-menu-secondary-navigation {
     position: absolute;
     bottom: 0;
     right: 0;
   }
-  /* line 84, ../sass/layouts/_desktop.scss */
+  /* line 87, ../sass/layouts/_desktop.scss */
   #block-menu-secondary-navigation ul {
     margin: 0;
     padding: 0;
   }
-  /* line 87, ../sass/layouts/_desktop.scss */
+  /* line 90, ../sass/layouts/_desktop.scss */
   #block-menu-secondary-navigation ul li {
     margin: 0;
     padding: 0;
@@ -1914,11 +1914,11 @@ tr.selected td {
     display: inline-block;
     margin-right: 20px;
   }
-  /* line 93, ../sass/layouts/_desktop.scss */
+  /* line 96, ../sass/layouts/_desktop.scss */
   #block-menu-secondary-navigation ul li.last {
     margin-right: 0;
   }
-  /* line 96, ../sass/layouts/_desktop.scss */
+  /* line 99, ../sass/layouts/_desktop.scss */
   #block-menu-secondary-navigation ul li a {
     color: black;
     font-size: 1.125em;
@@ -1931,7 +1931,7 @@ tr.selected td {
     -o-transition: none;
     transition: none;
   }
-  /* line 107, ../sass/layouts/_desktop.scss */
+  /* line 110, ../sass/layouts/_desktop.scss */
   #block-menu-secondary-navigation ul li a:hover, #block-menu-secondary-navigation ul li a.active {
     border-bottom: 5px solid #444444;
     -webkit-transition: none;
