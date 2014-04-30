@@ -11,7 +11,31 @@
     text-align: center;
   }
   
-  /* Menu's here */
+	/* Secondary Menu */
+	#block-menu-secondary-navigation {
+    padding-top: 20px;
+	  ul {
+	    margin: 0;
+	    padding: 0;
+	    height: 38px;
+	    overflow: hidden;
+	    background: #ededed url(../images/sprite.png) no-repeat 0 -313px;
+	    li {
+	      margin: 0;
+	      padding: 0;
+	      list-style: none;
+	      text-transform: uppercase;
+	      height: 38px;
+	      line-height: 38px;
+	      a {
+	        border-bottom: none;
+		      &#smartphone-link {
+		        padding-left: 50px;
+		      }
+	      }
+	    }
+	  }
+	} 
   
   /* Homepage carrousel */
   .view-carrousel {

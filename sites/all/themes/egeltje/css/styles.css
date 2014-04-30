@@ -1559,9 +1559,13 @@ tr.selected td {
     -o-transition: none;
     transition: none;
   }
+  /* line 118, ../sass/layouts/_desktop.scss */
+  #block-menu-secondary-navigation ul li a#smartphone-link {
+    display: none;
+  }
 
   /* Product catalogus */
-  /* line 126, ../sass/layouts/_desktop.scss */
+  /* line 129, ../sass/layouts/_desktop.scss */
   .view-display-products ul.products li.product, .view-collection-products ul.products li.product, .view-products-in-de-kijker ul.products li.product {
     width: 25%;
     float: left;
@@ -1569,16 +1573,16 @@ tr.selected td {
     border-right: 1px dotted #d8d8d8;
     list-style: none;
   }
-  /* line 132, ../sass/layouts/_desktop.scss */
+  /* line 135, ../sass/layouts/_desktop.scss */
   .view-display-products ul.products li.product.last, .view-collection-products ul.products li.product.last, .view-products-in-de-kijker ul.products li.product.last {
     border-right: none;
     width: 24%;
   }
-  /* line 136, ../sass/layouts/_desktop.scss */
+  /* line 139, ../sass/layouts/_desktop.scss */
   .view-display-products ul.products li.product .node, .view-collection-products ul.products li.product .node, .view-products-in-de-kijker ul.products li.product .node {
     height: 295px;
   }
-  /* line 138, ../sass/layouts/_desktop.scss */
+  /* line 141, ../sass/layouts/_desktop.scss */
   .view-display-products ul.products li.product .node h2.node-title, .view-collection-products ul.products li.product .node h2.node-title, .view-products-in-de-kijker ul.products li.product .node h2.node-title {
     position: absolute;
     bottom: 70px;
@@ -1587,30 +1591,30 @@ tr.selected td {
     font-size: 1em;
     line-height: 1.2;
   }
-  /* line 145, ../sass/layouts/_desktop.scss */
+  /* line 148, ../sass/layouts/_desktop.scss */
   .view-display-products ul.products li.product .node h2.node-title a, .view-collection-products ul.products li.product .node h2.node-title a, .view-products-in-de-kijker ul.products li.product .node h2.node-title a {
     border: none;
   }
-  /* line 149, ../sass/layouts/_desktop.scss */
+  /* line 152, ../sass/layouts/_desktop.scss */
   .view-display-products ul.products li.product .node .field-type-image, .view-collection-products ul.products li.product .node .field-type-image, .view-products-in-de-kijker ul.products li.product .node .field-type-image {
     text-align: center;
   }
-  /* line 151, ../sass/layouts/_desktop.scss */
+  /* line 154, ../sass/layouts/_desktop.scss */
   .view-display-products ul.products li.product .node .field-type-image a, .view-collection-products ul.products li.product .node .field-type-image a, .view-products-in-de-kijker ul.products li.product .node .field-type-image a {
     border: none;
   }
-  /* line 154, ../sass/layouts/_desktop.scss */
+  /* line 157, ../sass/layouts/_desktop.scss */
   .view-display-products ul.products li.product .node .field-type-image img, .view-collection-products ul.products li.product .node .field-type-image img, .view-products-in-de-kijker ul.products li.product .node .field-type-image img {
     border: 2px solid #e3e3e4;
   }
-  /* line 158, ../sass/layouts/_desktop.scss */
+  /* line 161, ../sass/layouts/_desktop.scss */
   .view-display-products ul.products li.product .node .go-to-product, .view-collection-products ul.products li.product .node .go-to-product, .view-products-in-de-kijker ul.products li.product .node .go-to-product {
     position: absolute;
     bottom: 10px;
     left: 10%;
     width: 80%;
   }
-  /* line 163, ../sass/layouts/_desktop.scss */
+  /* line 166, ../sass/layouts/_desktop.scss */
   .view-display-products ul.products li.product .node .go-to-product a, .view-collection-products ul.products li.product .node .go-to-product a, .view-products-in-de-kijker ul.products li.product .node .go-to-product a {
     border: none;
     text-align: right;
@@ -1625,7 +1629,7 @@ tr.selected td {
     -o-transition: all .15s ease-in-out;
     transition: all .15s ease-in-out;
   }
-  /* line 176, ../sass/layouts/_desktop.scss */
+  /* line 179, ../sass/layouts/_desktop.scss */
   .view-display-products ul.products li.product .node .go-to-product a:hover, .view-collection-products ul.products li.product .node .go-to-product a:hover, .view-products-in-de-kijker ul.products li.product .node .go-to-product a:hover {
     background-color: #e88b82;
     border-bottom: none;
@@ -1636,19 +1640,19 @@ tr.selected td {
     transition: all .15s ease-in-out;
   }
 
-  /* line 195, ../sass/layouts/_desktop.scss */
+  /* line 198, ../sass/layouts/_desktop.scss */
   .not-front .view-display-products ul.products li.product, .not-front .view-collection-products ul.products li.product {
     height: 340px;
   }
-  /* line 197, ../sass/layouts/_desktop.scss */
+  /* line 200, ../sass/layouts/_desktop.scss */
   .not-front .view-display-products ul.products li.product .node, .not-front .view-collection-products ul.products li.product .node {
     height: 320px;
   }
-  /* line 199, ../sass/layouts/_desktop.scss */
+  /* line 202, ../sass/layouts/_desktop.scss */
   .not-front .view-display-products ul.products li.product .node h2.node-title, .not-front .view-collection-products ul.products li.product .node h2.node-title {
     bottom: 95px;
   }
-  /* line 202, ../sass/layouts/_desktop.scss */
+  /* line 205, ../sass/layouts/_desktop.scss */
   .not-front .view-display-products ul.products li.product .node .product-price, .not-front .view-collection-products ul.products li.product .node .product-price {
     position: absolute;
     bottom: 60px;
@@ -1709,22 +1713,52 @@ tr.selected td {
     text-align: center;
   }
 
-  /* Menu's here */
-  /* Homepage carrousel */
+  /* Secondary Menu */
+  /* line 15, ../sass/layouts/_smartphone.scss */
+  #block-menu-secondary-navigation {
+    padding-top: 20px;
+  }
   /* line 17, ../sass/layouts/_smartphone.scss */
+  #block-menu-secondary-navigation ul {
+    margin: 0;
+    padding: 0;
+    height: 38px;
+    overflow: hidden;
+    background: #ededed url(../images/sprite.png) no-repeat 0 -313px;
+  }
+  /* line 23, ../sass/layouts/_smartphone.scss */
+  #block-menu-secondary-navigation ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-transform: uppercase;
+    height: 38px;
+    line-height: 38px;
+  }
+  /* line 30, ../sass/layouts/_smartphone.scss */
+  #block-menu-secondary-navigation ul li a {
+    border-bottom: none;
+  }
+  /* line 32, ../sass/layouts/_smartphone.scss */
+  #block-menu-secondary-navigation ul li a#smartphone-link {
+    padding-left: 50px;
+  }
+
+  /* Homepage carrousel */
+  /* line 41, ../sass/layouts/_smartphone.scss */
   .view-carrousel {
     display: none;
   }
 
   /* Catalog */
-  /* line 24, ../sass/layouts/_smartphone.scss */
+  /* line 48, ../sass/layouts/_smartphone.scss */
   .view-display-products ul.products li.product, .view-collection-products ul.products li.product, .view-products-in-de-kijker ul.products li.product {
     width: 100%;
     float: none;
     margin: 0;
     border-bottom: 1px solid #e84c3d;
   }
-  /* line 29, ../sass/layouts/_smartphone.scss */
+  /* line 53, ../sass/layouts/_smartphone.scss */
   .view-display-products ul.products li.product.last, .view-collection-products ul.products li.product.last, .view-products-in-de-kijker ul.products li.product.last {
     width: 100%;
   }
