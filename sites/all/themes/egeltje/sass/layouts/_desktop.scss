@@ -1,7 +1,9 @@
+/* Desktop only */
 @media all and (min-width: 1023px) {
 
 }
 
+/* Desktop and tablet */
 @media all and (min-width: 767px) {
 	/* Main Menu */
 	#block-megamenu-main-menu {
@@ -117,6 +119,55 @@
 	        }
 	        &#smartphone-link {
 	          display: none;
+	        }
+	      }
+	    }
+	  }
+	}
+
+	/* Homepage categories */
+	.catalog-blocks-front {
+	  ul.blocks {
+	    margin: 0;
+	    padding: 0;
+	    li.block {
+	      margin: 0;
+	      padding: 0;
+	      list-style: none;
+	      float: left;
+	      width: 32%;
+	      margin-right: 2%;
+	      margin-bottom: 20px;
+	      height: 240px;
+	      position: relative;
+	      &.last {
+	        margin-right: 0;
+	      }
+	      a {
+	        display: block;
+	        height: 240px;
+	        color: white;
+	        -webkit-transition: opacity .15s ease-in-out;
+	        -moz-transition: opacity .15s ease-in-out;
+	        -ms-transition: opacity .15s ease-in-out;
+	        -o-transition: opacity .15s ease-in-out;
+	        transition: opacity .15s ease-in-out;          
+	        border: none;
+	        &:hover {
+	          opacity: 0.6;
+		        -webkit-transition: opacity .15s ease-in-out;
+		        -moz-transition: opacity .15s ease-in-out;
+		        -ms-transition: opacity .15s ease-in-out;
+		        -o-transition: opacity .15s ease-in-out;
+		        transition: opacity .15s ease-in-out;          
+		        border: none;
+	        }
+	        .category {
+	          position: absolute;
+	          bottom: 20px;
+	          right: 10px;
+	          font-size: 3em;
+	          font-weight: 400;
 	        }
 	      }
 	    }
