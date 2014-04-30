@@ -88,5 +88,35 @@
     }
   }
   
+  /* Campaign Monitor */
+	#block-campaign-monitor-subscribe-campaign-monitor-subscribe {
+	  padding-top: 20px;
+	  height: 145px;
+    .label {
+      color: white;
+      margin: 10px;
+    }
+    form {
+      .form-item {
+        .form-text {
+          width: 80%;
+          margin-left: 10px;
+          float: left;
+          height: 35px;
+        }
+      }
+      .form-submit {
+		    background: url(../images/sprite.png) no-repeat 0 -85px;
+		    float: left;
+		    width: 40px;
+		    height: 35px;
+		    text-indent: -1000em;
+		    border: none;
+      }
+      
+    }
+	}
+
+  
   
 }
