@@ -4,12 +4,16 @@
 }
 
 /* Desktop and tablet */
-@media all and (min-width: 767px) {
+@media all and (min-width: 641px) {
 
-h1 {
-  font-size: 2.25em;
-}
+	h1 {
+	  font-size: 2.25em;
+	}
 
+  #header {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 
 	/* Main Menu */
 	#block-megamenu-main-menu {
