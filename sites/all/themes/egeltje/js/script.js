@@ -25,7 +25,12 @@ Drupal.behaviors.carrousel = {
 Drupal.behaviors.smartphonemenu = {
   attach: function(context, settings) {
     $('a#smartphone-link', context).click(function(e) {
-      alert('gelikt');
+      var height = $('#block-menu-secondary-navigation ul.menu').height();
+      if (height < 40) {
+        $('#block-menu-secondary-navigation ul.menu').css('height', 'auto');
+      } else {
+        $('#block-menu-secondary-navigation ul.menu').css('height', '38px');      
+      }
       e.preventDefault();
       return false;
     });

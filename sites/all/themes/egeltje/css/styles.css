@@ -1739,27 +1739,28 @@ tr.selected td {
   #block-menu-secondary-navigation ul li a {
     border-bottom: none;
     display: block;
+    padding-left: 8px;
   }
-  /* line 33, ../sass/layouts/_smartphone.scss */
+  /* line 34, ../sass/layouts/_smartphone.scss */
   #block-menu-secondary-navigation ul li a#smartphone-link {
     padding-left: 50px;
   }
 
   /* Homepage carrousel */
-  /* line 42, ../sass/layouts/_smartphone.scss */
+  /* line 43, ../sass/layouts/_smartphone.scss */
   .view-carrousel {
     display: none;
   }
 
   /* Catalog */
-  /* line 49, ../sass/layouts/_smartphone.scss */
+  /* line 50, ../sass/layouts/_smartphone.scss */
   .view-display-products ul.products li.product, .view-collection-products ul.products li.product, .view-products-in-de-kijker ul.products li.product {
     width: 100%;
     float: none;
     margin: 0;
     border-bottom: 1px solid #e84c3d;
   }
-  /* line 54, ../sass/layouts/_smartphone.scss */
+  /* line 55, ../sass/layouts/_smartphone.scss */
   .view-display-products ul.products li.product.last, .view-collection-products ul.products li.product.last, .view-products-in-de-kijker ul.products li.product.last {
     width: 100%;
   }
