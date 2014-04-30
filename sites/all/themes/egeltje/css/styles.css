@@ -1838,7 +1838,7 @@ tr.selected td {
     width: 100%;
     float: none;
     margin: 0;
-    border-bottom: 1px solid #e84c3d;
+    border-bottom: 1px solid #ededed;
   }
   /* line 64, ../sass/layouts/_smartphone.scss */
   .view-display-products ul.products li.product.last, .view-collection-products ul.products li.product.last, .view-products-in-de-kijker ul.products li.product.last {
