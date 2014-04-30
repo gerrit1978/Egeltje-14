@@ -1755,25 +1755,30 @@ tr.selected td {
   }
 }
 @media all and (min-width: 320px) and (max-width: 640px) {
+  /* line 3, ../sass/layouts/_smartphone.scss */
+  h1 {
+    font-size: 1.25em !important;
+  }
+
   /* Hide search text field */
-  /* line 4, ../sass/layouts/_smartphone.scss */
+  /* line 8, ../sass/layouts/_smartphone.scss */
   #block-views-exp-display-products-page {
     display: none;
   }
 
   /* Logo */
-  /* line 9, ../sass/layouts/_smartphone.scss */
+  /* line 13, ../sass/layouts/_smartphone.scss */
   a#logo {
     width: 100%;
     text-align: center;
   }
 
   /* Secondary Menu */
-  /* line 15, ../sass/layouts/_smartphone.scss */
+  /* line 19, ../sass/layouts/_smartphone.scss */
   #block-menu-secondary-navigation {
     padding-top: 20px;
   }
-  /* line 17, ../sass/layouts/_smartphone.scss */
+  /* line 21, ../sass/layouts/_smartphone.scss */
   #block-menu-secondary-navigation ul {
     margin: 0;
     padding: 0;
@@ -1781,7 +1786,7 @@ tr.selected td {
     overflow: hidden;
     background: #ededed url(../images/sprite.png) no-repeat 0 -313px;
   }
-  /* line 23, ../sass/layouts/_smartphone.scss */
+  /* line 27, ../sass/layouts/_smartphone.scss */
   #block-menu-secondary-navigation ul li {
     margin: 0;
     padding: 0;
@@ -1790,50 +1795,50 @@ tr.selected td {
     height: 38px;
     line-height: 38px;
   }
-  /* line 30, ../sass/layouts/_smartphone.scss */
+  /* line 34, ../sass/layouts/_smartphone.scss */
   #block-menu-secondary-navigation ul li a {
     border-bottom: none;
     display: block;
     padding-left: 8px;
   }
-  /* line 34, ../sass/layouts/_smartphone.scss */
+  /* line 38, ../sass/layouts/_smartphone.scss */
   #block-menu-secondary-navigation ul li a#smartphone-link {
     padding-left: 50px;
   }
 
   /* Homepage carrousel */
-  /* line 43, ../sass/layouts/_smartphone.scss */
+  /* line 47, ../sass/layouts/_smartphone.scss */
   .view-carrousel {
     display: none;
   }
 
   /* Catalog */
-  /* line 50, ../sass/layouts/_smartphone.scss */
+  /* line 54, ../sass/layouts/_smartphone.scss */
   .view-display-products ul.products li.product, .view-collection-products ul.products li.product, .view-products-in-de-kijker ul.products li.product {
     width: 100%;
     float: none;
     margin: 0;
     border-bottom: 1px solid #e84c3d;
   }
-  /* line 55, ../sass/layouts/_smartphone.scss */
+  /* line 59, ../sass/layouts/_smartphone.scss */
   .view-display-products ul.products li.product.last, .view-collection-products ul.products li.product.last, .view-products-in-de-kijker ul.products li.product.last {
     width: 100%;
   }
 
   /* Homepage categories */
-  /* line 64, ../sass/layouts/_smartphone.scss */
+  /* line 68, ../sass/layouts/_smartphone.scss */
   .catalog-blocks-front ul.blocks {
     margin: 0;
     padding: 0;
   }
-  /* line 67, ../sass/layouts/_smartphone.scss */
+  /* line 71, ../sass/layouts/_smartphone.scss */
   .catalog-blocks-front ul.blocks li.block {
     margin: 0;
     padding: 0;
     margin-bottom: 5px;
     list-style: none;
   }
-  /* line 72, ../sass/layouts/_smartphone.scss */
+  /* line 76, ../sass/layouts/_smartphone.scss */
   .catalog-blocks-front ul.blocks li.block a {
     background-color: none !important;
   }
