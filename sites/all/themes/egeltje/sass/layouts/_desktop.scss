@@ -5,6 +5,12 @@
 
 /* Desktop and tablet */
 @media all and (min-width: 767px) {
+
+h1 {
+  font-size: 2.25em;
+}
+
+
 	/* Main Menu */
 	#block-megamenu-main-menu {
 	  ul#megamenu-main-menu {
@@ -173,6 +179,14 @@
 	    }
 	  }
 	}
+
+
+  /* Homepage text */
+  .catalog-header {
+    p {
+      font-size: 1.25em;
+    }
+  }
 
 	/* Product catalogus */
 	.view-display-products, .view-collection-products, .view-products-in-de-kijker {
