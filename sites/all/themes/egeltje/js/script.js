@@ -24,7 +24,7 @@ Drupal.behaviors.carrousel = {
 
 Drupal.behaviors.smartphonemenu = {
   attach: function(context, settings) {
-    $('a#smartphone-link').click(function(e) {
+    $('a#smartphone-link', context).click(function(e) {
       alert('gelikt');
       e.preventDefault();
       return false;
