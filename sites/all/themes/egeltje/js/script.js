@@ -22,5 +22,16 @@ Drupal.behaviors.carrousel = {
   }
 }
 
+Drupal.behaviors.smartphonemenu = {
+  attach: function(context, settings) {
+    $('a#smartphone-link').click(function(e) {
+      alert('gelikt');
+      e.preventDefault();
+      return false;
+    });
+  }
+}
+
+
 
 })(jQuery, Drupal, this, this.document);
