@@ -87,6 +87,13 @@
       }
     }
   }
+
+	/* Product Display detail page */
+	.node-type-product-display {
+	  .cloud-zoom-gallery-thumbs {
+	    float: none !important;
+	  }
+  }	   
   
   /* Campaign Monitor */
 	#block-campaign-monitor-subscribe-campaign-monitor-subscribe {

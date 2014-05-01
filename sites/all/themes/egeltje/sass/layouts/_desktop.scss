@@ -330,6 +330,45 @@
 		}
 	}
 
+	/* Product Display detail page */
+	.node-type-product-display {
+	  .call-to-action {
+	    margin-top: 90px;
+	    .price {
+	      font-size: 1.375em;
+	      color: #888888;
+	    }
+	    form {
+	      margin: 20px 0;
+	      .form-item-quantity {
+	        margin: 0;
+	        padding: 0;
+	        float: left;
+	        margin-right: 20px;
+	        label {
+	          display: inline;
+	        }
+	      }
+	      .form-submit {
+	        position: relative;
+	        top: -3px;
+	      }
+	      &.out-of-stock {
+	        .form-item-quantity {
+	          display: none;
+	        }
+	        .form-submit {
+	          cursor: default;
+	          background: #ededed;
+	          padding-left: 10px;
+	          color: #adadad;
+	        }
+	      }
+	    }
+	  }
+	}
+
+
 	/* Footer */
 	#footer-wrapper {
 	  #footer {
