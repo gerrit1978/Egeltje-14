@@ -626,18 +626,12 @@ ol.commerce-checkout-progress {
 #footer-wrapper {
   background: white;
   #footer {
-	  margin: 0;
-	  padding: 0;
-	  max-width: 1180px;
-	  margin-left: auto;
-	  margin-right: auto;
-	  font-weight: 300;
+    font-weight: 300;
 	  .column-2 {
 	    h2 {
 	      text-transform: uppercase;
 	      font-size: 1.125em;
         font-weight: 500;
-        margin-top: 16px;
 	    }
 	    ul {
 	      margin: 0;
@@ -646,14 +640,9 @@ ol.commerce-checkout-progress {
 	        margin: 0;
 	        padding: 0;
 	        list-style: none;
-	        float: left;
-	        width: 50%;
 	      }
 	    }
-	  }
-	  .column-3 {
-	    text-align: right;
-	  }
+    }    
 	  a {
 	    color: #888888;
 	    border-bottom: 1px solid #888888;

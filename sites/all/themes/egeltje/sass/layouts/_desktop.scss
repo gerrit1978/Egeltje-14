@@ -330,6 +330,29 @@
 		}
 	}
 
-
+	/* Footer */
+	#footer-wrapper {
+	  #footer {
+		  margin: 0;
+		  padding: 0;
+		  max-width: 1180px;
+		  margin-left: auto;
+		  margin-right: auto;
+		  .column-2 {
+		    h2 {
+	        margin-top: 16px;
+		    }
+		    ul {
+		      li {
+		        float: left;
+		        width: 50%;
+		      }
+		    }
+		  }
+		  .column-3 {
+		    text-align: right;
+		  }
+		}
+	}
 
 }	

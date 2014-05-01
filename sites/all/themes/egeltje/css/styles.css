@@ -1778,6 +1778,29 @@ tr.selected td {
     text-indent: -1000em;
     border: none;
   }
+
+  /* Footer */
+  /* line 335, ../sass/layouts/_desktop.scss */
+  #footer-wrapper #footer {
+    margin: 0;
+    padding: 0;
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 342, ../sass/layouts/_desktop.scss */
+  #footer-wrapper #footer .column-2 h2 {
+    margin-top: 16px;
+  }
+  /* line 346, ../sass/layouts/_desktop.scss */
+  #footer-wrapper #footer .column-2 ul li {
+    float: left;
+    width: 50%;
+  }
+  /* line 352, ../sass/layouts/_desktop.scss */
+  #footer-wrapper #footer .column-3 {
+    text-align: right;
+  }
 }
 @media all and (min-width: 767px) and (max-width: 1024px) {
   /* Secondary Menu */
@@ -3041,38 +3064,26 @@ ol.commerce-checkout-progress li.active {
 }
 /* line 628, ../sass/styles.scss */
 #footer-wrapper #footer {
-  margin: 0;
-  padding: 0;
-  max-width: 1180px;
-  margin-left: auto;
-  margin-right: auto;
   font-weight: 300;
 }
-/* line 636, ../sass/styles.scss */
+/* line 631, ../sass/styles.scss */
 #footer-wrapper #footer .column-2 h2 {
   text-transform: uppercase;
   font-size: 1.125em;
   font-weight: 500;
-  margin-top: 16px;
 }
-/* line 642, ../sass/styles.scss */
+/* line 636, ../sass/styles.scss */
 #footer-wrapper #footer .column-2 ul {
   margin: 0;
   padding: 0;
 }
-/* line 645, ../sass/styles.scss */
+/* line 639, ../sass/styles.scss */
 #footer-wrapper #footer .column-2 ul li {
   margin: 0;
   padding: 0;
   list-style: none;
-  float: left;
-  width: 50%;
 }
-/* line 654, ../sass/styles.scss */
-#footer-wrapper #footer .column-3 {
-  text-align: right;
-}
-/* line 657, ../sass/styles.scss */
+/* line 646, ../sass/styles.scss */
 #footer-wrapper #footer a {
   color: #888888;
   border-bottom: 1px solid #888888;
@@ -3082,7 +3093,7 @@ ol.commerce-checkout-progress li.active {
   -o-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
 }
-/* line 665, ../sass/styles.scss */
+/* line 654, ../sass/styles.scss */
 #footer-wrapper #footer a:hover {
   color: #444444;
   border-bottom: 1px solid #888888;
