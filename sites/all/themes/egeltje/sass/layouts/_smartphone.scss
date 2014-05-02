@@ -92,6 +92,11 @@
 	.node-type-product-display {
 	  .cloud-zoom-gallery-thumbs {
 	    float: none !important;
+	    a {
+	      img {
+	        width: 75px !important;
+	      }
+	    }
 	  }
   }	   
   

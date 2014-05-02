@@ -1985,26 +1985,30 @@ tr.selected td {
   .node-type-product-display .cloud-zoom-gallery-thumbs {
     float: none !important;
   }
+  /* line 96, ../sass/layouts/_smartphone.scss */
+  .node-type-product-display .cloud-zoom-gallery-thumbs a img {
+    width: 75px !important;
+  }
 
   /* Campaign Monitor */
-  /* line 99, ../sass/layouts/_smartphone.scss */
+  /* line 104, ../sass/layouts/_smartphone.scss */
   #block-campaign-monitor-subscribe-campaign-monitor-subscribe {
     padding-top: 20px;
     height: 145px;
   }
-  /* line 102, ../sass/layouts/_smartphone.scss */
+  /* line 107, ../sass/layouts/_smartphone.scss */
   #block-campaign-monitor-subscribe-campaign-monitor-subscribe .label {
     color: white;
     margin: 10px;
   }
-  /* line 108, ../sass/layouts/_smartphone.scss */
+  /* line 113, ../sass/layouts/_smartphone.scss */
   #block-campaign-monitor-subscribe-campaign-monitor-subscribe form .form-item .form-text {
     width: 80%;
     margin-left: 10px;
     float: left;
     height: 35px;
   }
-  /* line 115, ../sass/layouts/_smartphone.scss */
+  /* line 120, ../sass/layouts/_smartphone.scss */
   #block-campaign-monitor-subscribe-campaign-monitor-subscribe form .form-submit {
     background: url(../images/sprite.png) no-repeat 0 -85px;
     float: left;
