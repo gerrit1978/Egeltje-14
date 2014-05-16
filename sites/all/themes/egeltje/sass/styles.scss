@@ -393,6 +393,7 @@ h1 {
 /* Facets on catalog pages */
 .block-facet {
   position: relative;
+  margin-top: 20px;
   &.block-facet-merk {
     @include zen-grid-item(7, 1);
   }
@@ -401,12 +402,13 @@ h1 {
   }
   .block-title {
     border: 1px solid #cacaca;
-    background: #dadada;
+    background: #f1f1f1;
     font-weight: 300;
-    color: #444444;
+    color: #a6a6a6;
     cursor: pointer;
     padding-left: 20px;
     font-size: 1em;
+    background: url(../images/sprite.png) no-repeat right -355px;
   }
   .item-list {
     display: none;
