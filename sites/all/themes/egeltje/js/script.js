@@ -37,6 +37,13 @@ Drupal.behaviors.smartphonemenu = {
   }
 }
 
+Drupal.behaviors.facets = {
+  attach: function(context, settings) {
+    $('.block-facet .block-title').click(function(e) {
+      $(this).parent().find('.item-list').slideToggle();
+    });
+  }
+}
 
 
 })(jQuery, Drupal, this, this.document);

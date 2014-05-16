@@ -390,6 +390,48 @@ h1 {
   }
 }
 
+/* Facets on catalog pages */
+.block-facet {
+  position: relative;
+  &.block-facet-merk {
+    @include zen-grid-item(7, 1);
+  }
+  &.block-facet-prijs {
+    @include zen-grid-item(7, 10);
+  }
+  .block-title {
+    border: 1px solid #cacaca;
+    background: #dadada;
+    font-weight: 300;
+    color: #444444;
+    cursor: pointer;
+    padding-left: 20px;
+    font-size: 1em;
+  }
+  .item-list {
+    display: none;
+    position: absolute;
+    background: $mainRed;
+    z-index: 80;
+    width: 100%;
+    ul {
+      li {
+        color: white;
+        list-style: none;
+        font-weight: 100;
+		    a {
+		      font-size: 0.875em;
+		      color: white;
+		      border-bottom: none;
+		      &:hover {
+		        border-bottom: 1px solid white;
+		      }
+		    }
+      }
+    }
+  }
+}
+
 /* Product Display detail page */
 .node-type-product-display {
   .field-field-images {
