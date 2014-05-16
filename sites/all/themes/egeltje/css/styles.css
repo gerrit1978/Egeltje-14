@@ -1962,53 +1962,59 @@ tr.selected td {
     height: 300px;
   }
 
+  /* Catalog facets */
+  /* line 75, ../sass/layouts/_smartphone.scss */
+  .block-facet {
+    display: none;
+  }
+
   /* Homepage categories */
-  /* line 76, ../sass/layouts/_smartphone.scss */
+  /* line 81, ../sass/layouts/_smartphone.scss */
   .catalog-blocks-front ul.blocks {
     margin: 0;
     padding: 0;
   }
-  /* line 79, ../sass/layouts/_smartphone.scss */
+  /* line 84, ../sass/layouts/_smartphone.scss */
   .catalog-blocks-front ul.blocks li.block {
     margin: 0;
     padding: 0;
     margin-bottom: 5px;
     list-style: none;
   }
-  /* line 84, ../sass/layouts/_smartphone.scss */
+  /* line 89, ../sass/layouts/_smartphone.scss */
   .catalog-blocks-front ul.blocks li.block a {
     background-color: none !important;
   }
 
   /* Product Display detail page */
-  /* line 93, ../sass/layouts/_smartphone.scss */
+  /* line 98, ../sass/layouts/_smartphone.scss */
   .node-type-product-display .cloud-zoom-gallery-thumbs {
     float: none !important;
   }
-  /* line 96, ../sass/layouts/_smartphone.scss */
+  /* line 101, ../sass/layouts/_smartphone.scss */
   .node-type-product-display .cloud-zoom-gallery-thumbs a img {
     width: 75px !important;
   }
 
   /* Campaign Monitor */
-  /* line 104, ../sass/layouts/_smartphone.scss */
+  /* line 109, ../sass/layouts/_smartphone.scss */
   #block-campaign-monitor-subscribe-campaign-monitor-subscribe {
     padding-top: 20px;
     height: 145px;
   }
-  /* line 107, ../sass/layouts/_smartphone.scss */
+  /* line 112, ../sass/layouts/_smartphone.scss */
   #block-campaign-monitor-subscribe-campaign-monitor-subscribe .label {
     color: white;
     margin: 10px;
   }
-  /* line 113, ../sass/layouts/_smartphone.scss */
+  /* line 118, ../sass/layouts/_smartphone.scss */
   #block-campaign-monitor-subscribe-campaign-monitor-subscribe form .form-item .form-text {
     width: 80%;
     margin-left: 10px;
     float: left;
     height: 35px;
   }
-  /* line 120, ../sass/layouts/_smartphone.scss */
+  /* line 125, ../sass/layouts/_smartphone.scss */
   #block-campaign-monitor-subscribe-campaign-monitor-subscribe form .form-submit {
     background: url(../images/sprite.png) no-repeat 0 -85px;
     float: left;
