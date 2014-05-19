@@ -395,10 +395,13 @@ h1 {
   position: relative;
   margin-top: 20px;
   &.block-facet-merk {
-    @include zen-grid-item(7, 1);
+    @include zen-grid-item(6, 3);
   }
   &.block-facet-prijs {
-    @include zen-grid-item(7, 10);
+    @include zen-grid-item(6, 10);
+  }
+  &.block-facet-type {
+    @include zen-grid-item(6, 17);
   }
   .block-title {
     border: 1px solid #cacaca;
