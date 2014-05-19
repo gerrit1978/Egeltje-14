@@ -156,3 +156,41 @@ function egeltje_preprocess_block(&$variables, $hook) {
   //}
 }
 // */
+
+function egeltje_facetapi_link_inactive($variables) {
+
+  // Builds accessible markup.
+  $accessible_vars = array(
+    'text' => $variables['text'],
+    'active' => FALSE,
+  );
+  $accessible_markup = theme('facetapi_accessible_markup', $accessible_vars);
+  // Sanitizes the link text if necessary.
+  $sanitize = empty($variables['options']['html']);
+  $variables['text'] = ($sanitize) ? check_plain($variables['text']) : $variables['text'];
+  // Adds count to link if one was passed.
+  if (isset($variables['count'])) {
+    $variables['text'] .= ' ' . theme('facetapi_count', $variables);
+  }
+  // Add functionality requested in #1669600.
+  if (!$variables['count'] && isset($variables['options']['query']['f'])) {
+    // We should be getting this from the url processor plugin, however we are
+    // making an assumption since this is in our custom theme.
+    $params = &$variables['options']['query']['f'];
+    // Capture the filter associated with this link and find the field alias.
+    $filter = end($params);
+    $field_alias = substr($filter, 0, strpos($filter, ':')) . ':';
+    // Iterate over params and strip out items that are using the same field
+    // alias as this filter. Do not strip out this filter.
+    foreach ($params as $key => $param) {
+      if (0 === strpos($param, $field_alias) && $param != $filter) {
+        unset($params[$key]);
+      }
+    }
+  }
+  // Resets link text, sets to options to HTML since we already sanitized the
+  // link text and are providing additional markup for accessibility.
+  $variables['text'] .= $accessible_markup;
+  $variables['options']['html'] = TRUE;
+  return theme_link($variables);
+}

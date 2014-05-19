@@ -1,0 +1,6 @@
+name          = Facet Alteration
+description   = Adds empty behavior for facett
+core          = 7.x
+version       = 7.x-1.0
+package       = egeltje
+files[]       = egeltje_facets_empty_behavior_not_available.inc

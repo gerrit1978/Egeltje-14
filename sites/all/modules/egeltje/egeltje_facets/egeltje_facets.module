@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * Implements hook_facetapi_empty_behaviors
+ */
+function egeltje_facets_facetapi_empty_behaviors() {
+  return array(
+    'kaka' => array(
+      'handler' => array(
+        'label' => t('Display Not Available text'), 
+        'class' => 'FacetapiEmptyBehaviorNotAvailable',
+      ),
+    ),
+  );
+}
