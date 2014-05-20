@@ -437,6 +437,46 @@ h1 {
   }
 }
 
+/* Current Search */
+.block-current-search {
+  padding: 20px;
+  background: #dadada;
+  border: 1px solid #cacaca;
+  h3 {
+    margin-top: 0;
+    font-weight: 300;
+  }
+  a {
+    color: white;
+  }
+  .current-search-item {
+    .item-list {
+      ul {
+        margin: 0;
+        padding: 0;
+        li {
+          margin: 0;
+          padding: 0;
+          display: inline-block;
+          margin-right: 10px;
+          list-style: none;
+          height: 18px;
+          line-height: 18px;
+          a {
+            display: inline-block;
+            border: none;
+            width: 18px;
+            height: 18px;
+            margin-right: 3px;
+            background: url(../images/sprite.png) left -353px;
+            text-indent: -999em;
+          }
+        }
+      }
+    }
+  }
+}
+
 /* Product Display detail page */
 .node-type-product-display {
   .field-field-images {
