@@ -470,6 +470,9 @@ h1 {
             margin-right: 3px;
             background: url(../images/sprite.png) left -353px;
             text-indent: -999em;
+            &:hover {
+              background-position: -18px -353px;
+            }
           }
         }
       }
