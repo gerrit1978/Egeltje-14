@@ -16,9 +16,9 @@ files[] = includes/views/handlers/commerce_reports_stock_handler_sort_stocklifet
 files[] = includes/views/handlers/commerce_reports_stock_handler_sort_monthlysales.inc
 files[] = includes/views/handlers/commerce_reports_stock_handler_sort_weeklysales.inc
 
-; Information added by Drupal.org packaging script on 2014-04-26
-version = "7.x-4.0-alpha2"
+; Information added by Drupal.org packaging script on 2014-05-09
+version = "7.x-4.0-alpha3"
 core = "7.x"
 project = "commerce_reports"
-datestamp = "1398494028"
+datestamp = "1399603735"
 

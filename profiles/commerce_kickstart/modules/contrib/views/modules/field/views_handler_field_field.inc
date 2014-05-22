@@ -820,7 +820,10 @@ class views_handler_field_field extends views_handler_field {
    * Return an array of items for the field.
    */
   function set_items($values, $row_id) {
-    if (empty($values->_field_data[$this->field_alias]) || empty($values->_field_data[$this->field_alias]['entity'])) {
+    // In some cases the instance on the entity might be easy, see
+    // https://drupal.org/node/1161708 and https://drupal.org/node/1461536 for
+    // more information.
+    if (empty($values->_field_data[$this->field_alias]) || empty($values->_field_data[$this->field_alias]['entity']) || !isset($values->_field_data[$this->field_alias]['entity']->{$this->definition['field_name']})) {
       return array();
     }
 
@@ -828,12 +831,12 @@ class views_handler_field_field extends views_handler_field {
       'type' => $this->options['type'],
       'settings' => $this->options['settings'],
       'label' => 'hidden',
-      // Pass information about the View in the display so that fields can act on it.
-      'views_view_name' => $this->view->name,
-      'views_display_name' => $this->view->current_display,
+      // Pass the View object in the display so that fields can act on it.
+      'views_view' => $this->view,
       'views_field' => $this,
       'views_row_id' => $row_id,
     );
+
 
     $entity_type = $values->_field_data[$this->field_alias]['entity_type'];
     $entity = $this->get_value($values, 'entity');
