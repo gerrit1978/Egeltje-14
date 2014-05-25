@@ -25,6 +25,7 @@
   <?php
     hide($content['title_field']);
     hide($content['comments']);    
+//    hide($content['product:field_commerce_price_original']);
     print render($content['body']); 
   ?>
   
