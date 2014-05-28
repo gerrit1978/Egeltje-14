@@ -1,0 +1,27 @@
+<?php
+
+/**
+ * Implements hook_form_alter
+ *
+ * Alters the "form" (message) after checkout
+ */
+function egeltje_checkout_form_alter(&$form, &$form_state, $form_id) {
+  if ($form_id == 'commerce_checkout_form_complete') {
+  
+    // get the payment method for this order
+    $payment_method = $form_state['order']->data['payment_method'];
+    $order_number = $form_state['order']->order_number;
+    $order_wrapper = entity_metadata_wrapper('commerce_order', $form_state['order']);
+    $order_total = $order_wrapper->commerce_order_total->value();
+    $order_total_formatted = commerce_currency_format($order_total['amount'], $order_total['currency_code']);
+   
+    if (strstr($payment_method, 'bank_transfer')) {
+      $form['checkout_completion_message']['message']['#suffix'] = "<strong>Belangrijk! Je bestelling is pas volledig na betaling per overschrijving:</strong>"
+        . "<br /><br />"
+        . "<strong>Bedrag</strong>: " . $order_total_formatted
+        . "<strong>Rekeninghouder</strong>: Egeltje<br />"
+        . "<strong>Rekeningnummer</strong>: BE72 9730 3035 9216 (IBAN) - ARSPBE22 (BIC)<br />"
+        . "<strong>Mededeling</strong>: bestelnummer " . $order_number;
+    }
+  }
+}
