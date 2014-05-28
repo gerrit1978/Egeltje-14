@@ -6,6 +6,13 @@
  * Alters the "form" (message) after checkout
  */
 function egeltje_checkout_form_alter(&$form, &$form_state, $form_id) {
+
+	if ($form_id == 'commerce_checkout_form_review') {
+		if (isset($form['buttons']['continue'])) {
+			$form['buttons']['continue']['#value'] = t('Bestelling bevestigen');
+		}
+	}
+
   if ($form_id == 'commerce_checkout_form_complete') {
   
     // get the payment method for this order
@@ -24,4 +31,5 @@ function egeltje_checkout_form_alter(&$form, &$form_state, $form_id) {
         . "<strong>Mededeling</strong>: bestelnummer " . $order_number;
     }
   }
+  
 }
