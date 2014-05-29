@@ -25,7 +25,11 @@ function egeltje_product_ui_entity_info_alter(&$entity_info) {
   $entity_info['commerce_product']['view modes']['node_product_catalogus'] = array(
     'label' => t('Node: Product catalogus'),
     'custom settings' => TRUE,
-  );  
+  );
+  $entity_info['commerce_product']['view modes']['admin_order_view_picture'] = array(
+    'label' => t('Enkel foto voor beheerder'),
+    'custom settings' => TRUE,
+  );
 
 
 }
