@@ -33,3 +33,14 @@ function egeltje_checkout_form_alter(&$form, &$form_state, $form_id) {
   }
   
 }
+
+function egeltje_checkout_message_presave($message) {
+  if (!empty($message->mid) || $message->type != 'commerce_order_order_confirmation_admin') {
+    return;
+  }
+
+  $message->arguments['!order-summary'] = array(
+    'callback' => 'commerce_message_order_summary',
+    'pass message' => TRUE,
+  );
+}
