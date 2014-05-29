@@ -26,6 +26,7 @@
     hide($content['title_field']);
     hide($content['comments']);    
 //    hide($content['product:field_commerce_price_original']);
+    hide($content['product:field_commerce_exclude_cpn']);
     print render($content['body']); 
   ?>
   
