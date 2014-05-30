@@ -3196,33 +3196,73 @@ ol.commerce-checkout-progress li.active {
 }
 
 */
+/* User profile pages */
+/* line 698, ../sass/styles.scss */
+.page-user .profile ul li {
+  list-style: none;
+}
+
+/* line 706, ../sass/styles.scss */
+.view-commerce-backoffice-user-orders table, .view-commerce-line-item-table table, .view-commerce-message-messages table {
+  width: 100% !important;
+}
+/* line 709, ../sass/styles.scss */
+.view-commerce-backoffice-user-orders table tr th, .view-commerce-line-item-table table tr th, .view-commerce-message-messages table tr th {
+  text-align: left;
+}
+/* line 714, ../sass/styles.scss */
+.view-commerce-backoffice-user-orders table tr td.active.active, .view-commerce-line-item-table table tr td.active.active, .view-commerce-message-messages table tr td.active.active {
+  background-color: #f4f4f4;
+}
+/* line 719, ../sass/styles.scss */
+.view-commerce-backoffice-user-orders table tr td, .view-commerce-backoffice-user-orders table tr th, .view-commerce-line-item-table table tr td, .view-commerce-line-item-table table tr th, .view-commerce-message-messages table tr td, .view-commerce-message-messages table tr th {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+/* line 724, ../sass/styles.scss */
+.view-commerce-backoffice-user-orders table tr.odd, .view-commerce-line-item-table table tr.odd, .view-commerce-message-messages table tr.odd {
+  background-color: #f6f6f6;
+}
+
+/* line 732, ../sass/styles.scss */
+.entity-commerce-order .field {
+  margin-bottom: 20px;
+}
+
+/* line 739, ../sass/styles.scss */
+.field-name-commerce-order-total table td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 /* Footer */
-/* line 694, ../sass/styles.scss */
+/* line 747, ../sass/styles.scss */
 #footer-wrapper {
   background: white;
 }
-/* line 696, ../sass/styles.scss */
+/* line 749, ../sass/styles.scss */
 #footer-wrapper #footer {
   font-weight: 300;
 }
-/* line 699, ../sass/styles.scss */
+/* line 752, ../sass/styles.scss */
 #footer-wrapper #footer .column-2 h2 {
   text-transform: uppercase;
   font-size: 1.125em;
   font-weight: 500;
 }
-/* line 704, ../sass/styles.scss */
+/* line 757, ../sass/styles.scss */
 #footer-wrapper #footer .column-2 ul {
   margin: 0;
   padding: 0;
 }
-/* line 707, ../sass/styles.scss */
+/* line 760, ../sass/styles.scss */
 #footer-wrapper #footer .column-2 ul li {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 714, ../sass/styles.scss */
+/* line 767, ../sass/styles.scss */
 #footer-wrapper #footer a {
   color: #888888;
   border-bottom: 1px solid #888888;
@@ -3232,7 +3272,7 @@ ol.commerce-checkout-progress li.active {
   -o-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
 }
-/* line 722, ../sass/styles.scss */
+/* line 775, ../sass/styles.scss */
 #footer-wrapper #footer a:hover {
   color: #444444;
   border-bottom: 1px solid #888888;

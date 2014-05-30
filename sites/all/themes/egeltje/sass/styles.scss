@@ -690,6 +690,59 @@ ol.commerce-checkout-progress {
 }
 
 */
+
+/* User profile pages */
+.page-user {
+  .profile {
+    ul {
+      li {
+        list-style: none;
+      }
+    }
+  }
+}
+
+.view-commerce-backoffice-user-orders, .view-commerce-line-item-table, .view-commerce-message-messages {
+  table {
+    width: 100% !important;
+    tr {
+      th {
+        text-align: left;
+      }
+      td {
+        &.active {
+	        &.active {
+	          background-color: #f4f4f4;
+	        }
+        }
+      }
+      td,th {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+      }
+      &.odd {
+        background-color: #f6f6f6;
+      }
+    }
+  }
+}
+
+.entity-commerce-order {
+  .field {
+    margin-bottom: 20px;
+  }
+}
+
+.field-name-commerce-order-total {
+  table {
+    td {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+}
+
 /* Footer */
 #footer-wrapper {
   background: white;
