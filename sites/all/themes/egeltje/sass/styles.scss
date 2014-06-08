@@ -515,6 +515,7 @@ h1 {
     background: #f2f2f2;
     border: 1px solid #cacaca;
     padding: 10px;
+    position: relative;
     form {
       .form-submit {
 	      color: white;
@@ -525,6 +526,14 @@ h1 {
 	      background: url(../images/sprite.png) $mainRed no-repeat left -127px;
 	      padding: 6px 10px 6px 40px;
       }
+    }
+    .field-field-commerce-price-original {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      text-decoration: line-through;
+      font-style: italic;
+      color: $mainRed;
     }
   }
 }	   
