@@ -3345,3 +3345,8 @@ ol.commerce-checkout-progress li.active {
 .ie9 .view-carrousel ul.slides li.slide .text .subtitle, .lt-ie9 .view-carrousel ul.slides li.slide .text .subtitle {
   color: #444444;
 }
+
+/* line 823, ../sass/styles.scss */
+.lt-ie9 #campaign-monitor-subscribe #edit-email {
+  width: 500px;
+}
