@@ -1923,6 +1923,11 @@ tr.selected td {
   .catalog-blocks-front ul.blocks li.block a .category {
     font-size: 2em;
   }
+
+  /* line 89, ../sass/layouts/_tablet.scss */
+  .lt-ie9 #campaign-monitor-subscribe {
+    display: none;
+  }
 }
 @media all and (min-width: 320px) and (max-width: 640px) {
   /* line 3, ../sass/layouts/_smartphone.scss */
