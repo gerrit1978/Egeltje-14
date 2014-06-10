@@ -795,19 +795,27 @@ ol.commerce-checkout-progress {
 }
 
 /* Conditional IE stylesheets */
-.ie9, .ltie9 {
+.ie9, .lt-ie9 {
   .view-carrousel {
     ul.slides {
       li.slide {
         .text {
           .title {
-            color: black;          
+            color: #444444;          
           }
           .subtitle {
-            color: black;
+            color: #444444;
           }
         }
       }
+    }
+  }
+}
+
+.lt-ie9 {
+  .front {
+    #block-views-products-in-de-kijker-block {
+      display: none;
     }
   }
 }
