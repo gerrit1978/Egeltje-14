@@ -3351,14 +3351,26 @@ ol.commerce-checkout-progress li.active {
   color: #444444;
 }
 
-/* line 821, ../sass/styles.scss */
-.lt-ie9 .front #block-views-products-in-de-kijker-block .view-display-products ul.products li.product .node, .lt-ie9 .front #block-views-products-in-de-kijker-block .view-collection-products ul.products li.product .node, .lt-ie9 .front #block-views-products-in-de-kijker-block .view-products-in-de-kijker ul.products li.product .node {
+/* line 815, ../sass/styles.scss */
+.lt-ie9 {
   /*
+  			  ul.products {
+  			    li.product {
+  			      .node {
   			        text-align: center;
   			        position: relative;
   			        margin: 10px;
-  */
-  /*
+  			        h2.node-title {
+  			          position: absolute;
+  			          bottom: 70px;
+  			          text-align: center;
+  			          width: 100%;
+  			          font-size: 1em;
+  			          line-height: 1.2;
+  			          a {
+  			            border: 14px solid red;
+  			          }
+  			        }
   			        .field-type-image {
   			          text-align: center;
   			          a {
@@ -3397,24 +3409,15 @@ ol.commerce-checkout-progress li.active {
   			            }
   			          }
   			        }
+  			      }
+  			    }
   */
 }
-/* line 827, ../sass/styles.scss */
-.lt-ie9 .front #block-views-products-in-de-kijker-block .view-display-products ul.products li.product .node h2.node-title, .lt-ie9 .front #block-views-products-in-de-kijker-block .view-collection-products ul.products li.product .node h2.node-title, .lt-ie9 .front #block-views-products-in-de-kijker-block .view-products-in-de-kijker ul.products li.product .node h2.node-title {
-  /*
-  			          position: absolute;
-  			          bottom: 70px;
-  			          text-align: center;
-  			          width: 100%;
-  			          font-size: 1em;
-  			          line-height: 1.2;
-  */
+/* line 820, ../sass/styles.scss */
+.lt-ie9 .front #block-views-products-in-de-kijker-block .view-display-products ul.products li.product, .lt-ie9 .front #block-views-products-in-de-kijker-block .view-collection-products ul.products li.product, .lt-ie9 .front #block-views-products-in-de-kijker-block .view-products-in-de-kijker ul.products li.product {
+  border: 4px solid red;
 }
-/* line 836, ../sass/styles.scss */
-.lt-ie9 .front #block-views-products-in-de-kijker-block .view-display-products ul.products li.product .node h2.node-title a, .lt-ie9 .front #block-views-products-in-de-kijker-block .view-collection-products ul.products li.product .node h2.node-title a, .lt-ie9 .front #block-views-products-in-de-kijker-block .view-products-in-de-kijker ul.products li.product .node h2.node-title a {
-  border: 14px solid red;
-}
-/* line 888, ../sass/styles.scss */
+/* line 891, ../sass/styles.scss */
 .lt-ie9 #campaign-monitor-subscribe #edit-email {
   width: auto;
   display: block;
