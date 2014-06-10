@@ -3348,7 +3348,7 @@ ol.commerce-checkout-progress li.active {
 
 /* line 823, ../sass/styles.scss */
 .lt-ie9 #campaign-monitor-subscribe #edit-email {
-  width: 500px;
+  width: auto;
   border: 4px solid black;
   display: block;
 }
