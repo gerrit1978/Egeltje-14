@@ -821,14 +821,15 @@ ol.commerce-checkout-progress {
 			      text-align: center;
 			      position: relative;
 		        h2.node-title {
-/*
 		          position: absolute;
 		          bottom: 70px;
-*/
 		          text-align: center;
 		          width: 100%;
 		          font-size: 1em;
 		          line-height: 1.2;
+		          a {
+		            border: none;
+		          }
 		        }
 		        .field-type-image {
 		          text-align: center;
