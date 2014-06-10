@@ -4,7 +4,10 @@
 	#block-megamenu-main-menu {
 	  ul#megamenu-main-menu {
 	    li.megamenu-parent {
-	      margin-right: 30px;
+	      margin-right: 15px;
+	      &.first {
+	        margin-left: 15px;
+	      }
 	    }
 	  }
 	}
