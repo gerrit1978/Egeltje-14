@@ -3351,10 +3351,6 @@ ol.commerce-checkout-progress li.active {
   color: #444444;
 }
 
-/* line 817, ../sass/styles.scss */
-.lt-ie9 .front #block-views-products-in-de-kijker-block {
-  display: none;
-}
 /* line 823, ../sass/styles.scss */
 .lt-ie9 #campaign-monitor-subscribe #edit-email {
   width: auto;
