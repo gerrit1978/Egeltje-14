@@ -3415,9 +3415,30 @@ ol.commerce-checkout-progress li.active {
 }
 /* line 822, ../sass/styles.scss */
 .lt-ie9 .front #block-views-products-in-de-kijker-block .view-display-products ul.products li.product .go-to-product a, .lt-ie9 .front #block-views-products-in-de-kijker-block .view-collection-products ul.products li.product .go-to-product a, .lt-ie9 .front #block-views-products-in-de-kijker-block .view-products-in-de-kijker ul.products li.product .go-to-product a {
-  border: 5px solid red;
+  border: none;
+  text-align: right;
+  display: block;
+  margin: 0 auto;
+  padding: 5px 10px 5px 50px;
+  color: white;
+  background: #e84c3d url(../images/sprite.png) no-repeat 0 -42px;
+  -webkit-transition: all .15s ease-in-out;
+  -moz-transition: all .15s ease-in-out;
+  -ms-transition: all .15s ease-in-out;
+  -o-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
 }
-/* line 895, ../sass/styles.scss */
+/* line 835, ../sass/styles.scss */
+.lt-ie9 .front #block-views-products-in-de-kijker-block .view-display-products ul.products li.product .go-to-product a:hover, .lt-ie9 .front #block-views-products-in-de-kijker-block .view-collection-products ul.products li.product .go-to-product a:hover, .lt-ie9 .front #block-views-products-in-de-kijker-block .view-products-in-de-kijker ul.products li.product .go-to-product a:hover {
+  background-color: #e88b82;
+  border-bottom: none;
+  -webkit-transition: all .15s ease-in-out;
+  -moz-transition: all .15s ease-in-out;
+  -ms-transition: all .15s ease-in-out;
+  -o-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+}
+/* line 915, ../sass/styles.scss */
 .lt-ie9 #campaign-monitor-subscribe #edit-email {
   width: auto;
   display: block;
