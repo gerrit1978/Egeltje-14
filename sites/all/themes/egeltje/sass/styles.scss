@@ -793,3 +793,21 @@ ol.commerce-checkout-progress {
 	  }
 	}
 }
+
+/* Conditional IE stylesheets */
+.ie9, .ltie9 {
+  .view-carrousel {
+    ul.slides {
+      li.slide {
+        .text {
+          .title {
+            color: black;          
+          }
+          .subtitle {
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}
