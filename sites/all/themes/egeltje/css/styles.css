@@ -3350,4 +3350,6 @@ ol.commerce-checkout-progress li.active {
 .lt-ie9 #campaign-monitor-subscribe #edit-email {
   width: auto;
   display: block;
+  position: relative;
+  top: 30px;
 }
