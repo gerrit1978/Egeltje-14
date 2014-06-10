@@ -12,6 +12,7 @@
     // We hide the comments and links now so that we can render them later.
     hide($content['comments']);
     hide($content['links']);
+    hide($content['link_go_to_product']);
     print render($content);
   ?>
 
