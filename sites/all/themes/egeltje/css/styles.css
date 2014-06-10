@@ -3413,11 +3413,11 @@ ol.commerce-checkout-progress li.active {
   			    }
   */
 }
-/* line 820, ../sass/styles.scss */
-.lt-ie9 .front #block-views-products-in-de-kijker-block .view-display-products ul.products li.product, .lt-ie9 .front #block-views-products-in-de-kijker-block .view-collection-products ul.products li.product, .lt-ie9 .front #block-views-products-in-de-kijker-block .view-products-in-de-kijker ul.products li.product {
-  border: 4px solid red;
+/* line 822, ../sass/styles.scss */
+.lt-ie9 .front #block-views-products-in-de-kijker-block .view-display-products ul.products li.product .go-to-product a, .lt-ie9 .front #block-views-products-in-de-kijker-block .view-collection-products ul.products li.product .go-to-product a, .lt-ie9 .front #block-views-products-in-de-kijker-block .view-products-in-de-kijker ul.products li.product .go-to-product a {
+  border: 5px solid red;
 }
-/* line 891, ../sass/styles.scss */
+/* line 895, ../sass/styles.scss */
 .lt-ie9 #campaign-monitor-subscribe #edit-email {
   width: auto;
   display: block;
