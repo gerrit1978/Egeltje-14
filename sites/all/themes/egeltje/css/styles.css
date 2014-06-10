@@ -3345,8 +3345,3 @@ ol.commerce-checkout-progress li.active {
 .ie9 .view-carrousel ul.slides li.slide .text .subtitle, .lt-ie9 .view-carrousel ul.slides li.slide .text .subtitle {
   color: #444444;
 }
-
-/* line 817, ../sass/styles.scss */
-.lt-ie9 .front #block-views-products-in-de-kijker-block {
-  display: none;
-}
