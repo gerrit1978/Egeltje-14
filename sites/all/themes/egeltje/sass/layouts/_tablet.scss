@@ -1,5 +1,14 @@
 @media all and (min-width : 767px) and (max-width : 1024px) {
 
+	/* Main Menu */
+	#block-megamenu-main-menu {
+	  ul#megamenu-main-menu {
+	    li.megamenu-parent {
+	      margin-right: 30px;
+	    }
+	  }
+	}
+
   /* Secondary Menu */
   #block-menu-secondary-navigation {
     ul {
@@ -9,7 +18,7 @@
         }
       }
     }
-  }
+  }  
   
   /* Homepage carrousel */
   .view-carrousel {
