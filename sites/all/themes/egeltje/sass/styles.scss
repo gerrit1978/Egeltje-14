@@ -813,6 +813,11 @@ ol.commerce-checkout-progress {
 }
 
 .lt-ie9 {
+
+  .region-newsletter {
+    display: none;
+  }
+
   .front { 
     #block-views-products-in-de-kijker-block {
 			.view-display-products, .view-collection-products, .view-products-in-de-kijker {
@@ -868,34 +873,6 @@ ol.commerce-checkout-progress {
 					        transition: all .15s ease-in-out;          
 		            }
 		          }
-
-/*
-	            .go-to-product {
-	              a {
-			            border: none;
-			            text-align: right;
-			            display: block;
-			            margin: 0 auto;
-			            padding: 5px 10px 5px 50px;
-			            color: white;
-			            background: $mainRed url(../images/sprite.png) no-repeat 0 -42px;
-					        -webkit-transition: all .15s ease-in-out;
-					        -moz-transition: all .15s ease-in-out;
-					        -ms-transition: all .15s ease-in-out;
-					        -o-transition: all .15s ease-in-out;
-					        transition: all .15s ease-in-out;          
-			            &:hover {
-			              background-color: #e88b82;
-			              border-bottom: none;
-						        -webkit-transition: all .15s ease-in-out;
-						        -moz-transition: all .15s ease-in-out;
-						        -ms-transition: all .15s ease-in-out;
-						        -o-transition: all .15s ease-in-out;
-						        transition: all .15s ease-in-out;          
-			            }
-	              }
-	            }
-*/
 			      }
 			    }
 			  }
@@ -903,68 +880,6 @@ ol.commerce-checkout-progress {
 		}
   }
 
-/*
-			  ul.products {
-			    li.product {
-			      .node {
-			        text-align: center;
-			        position: relative;
-			        margin: 10px;
-			        h2.node-title {
-			          position: absolute;
-			          bottom: 70px;
-			          text-align: center;
-			          width: 100%;
-			          font-size: 1em;
-			          line-height: 1.2;
-			          a {
-			            border: 14px solid red;
-			          }
-			        }
-			        .field-type-image {
-			          text-align: center;
-			          a {
-			            border: none;
-			          }
-			          img {
-			            border: 2px solid #e3e3e4;
-			          }
-			        }
-			        .go-to-product {
-			          position: absolute;
-			          bottom: 10px;
-			          left: 10%;
-			          width: 80%;
-			          a {
-			            border: none;
-			            text-align: right;
-			            display: block;
-			            margin: 0 auto;
-			            padding: 5px 10px 5px 50px;
-			            color: white;
-			            background: $mainRed url(../images/sprite.png) no-repeat 0 -42px;
-					        -webkit-transition: all .15s ease-in-out;
-					        -moz-transition: all .15s ease-in-out;
-					        -ms-transition: all .15s ease-in-out;
-					        -o-transition: all .15s ease-in-out;
-					        transition: all .15s ease-in-out;          
-			            &:hover {
-			              background-color: #e88b82;
-			              border-bottom: none;
-						        -webkit-transition: all .15s ease-in-out;
-						        -moz-transition: all .15s ease-in-out;
-						        -ms-transition: all .15s ease-in-out;
-						        -o-transition: all .15s ease-in-out;
-						        transition: all .15s ease-in-out;          
-			            }
-			          }
-			        }
-			      }
-			    }
-*/
-
-
-  
   #campaign-monitor-subscribe {
     #edit-email {
       width: auto;
