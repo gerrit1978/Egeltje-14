@@ -76,6 +76,11 @@ function campaign_monitor_subscribe($form_state) {
 		'#attributes' => array('placeholder' => t('je e-mailadres')),
   );	
   
+  $form['captcha'] = array(
+    '#type' => 'hidden',
+    '#value' => '',
+  );
+  
   $form['submit'] = array(
     '#type' => 'submit',
 	'#value' => t('Subscribe'),
@@ -89,29 +94,33 @@ function campaign_monitor_subscribe($form_state) {
  */
 function campaign_monitor_subscribe_submit($form, &$form_state) {
 
-  $api_key                = variable_get('campaignmonitor_api_key', '');
-  $api_client_id          = variable_get('campaignmonitor_api_client_id', '');
-  $api_subscriber_list_id = variable_get('campaignmonitor_api_subscriber_list_id', '');
-
-  include_once(drupal_get_path('module', 'campaign_monitor_subscribe') . '/lib/csrest_subscribers.php');
-  
-  $campaign_monitor = new CS_REST_Subscribers($api_subscriber_list_id, $api_key);
-  
-  $subscriber = array(
-    'EmailAddress' => $form_state['values']['email'],
-	'Name' => '',
-	'CustomFields' => array(),
-	'Resubscribe' => TRUE,
-  );
-  
-  $result = $campaign_monitor->add($subscriber);
-
-  if ($result->http_status_code == '201') {
-    drupal_set_message(t('Email address successfully added.'));
+  $captcha = $form_state['values']['captcha'];
+  if ($captcha) {
+    form_set_error('email', t('Seems that you are a spammer.'));
   } else {
-	form_set_error('email', t('Could not subscribe email address. Please try again.')); 
-  }
-  
+	  $api_key                = variable_get('campaignmonitor_api_key', '');
+	  $api_client_id          = variable_get('campaignmonitor_api_client_id', '');
+	  $api_subscriber_list_id = variable_get('campaignmonitor_api_subscriber_list_id', '');
+	
+	  include_once(drupal_get_path('module', 'campaign_monitor_subscribe') . '/lib/csrest_subscribers.php');
+	  
+	  $campaign_monitor = new CS_REST_Subscribers($api_subscriber_list_id, $api_key);
+	  
+	  $subscriber = array(
+	    'EmailAddress' => $form_state['values']['email'],
+		'Name' => '',
+		'CustomFields' => array(),
+		'Resubscribe' => TRUE,
+	  );
+	  
+	  $result = $campaign_monitor->add($subscriber);
+	
+	  if ($result->http_status_code == '201') {
+	    drupal_set_message(t('Email address successfully added.'));
+	  } else {
+		form_set_error('email', t('Could not subscribe email address. Please try again.')); 
+	  }
+  }  
 }
 
 /**
