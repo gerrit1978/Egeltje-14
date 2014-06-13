@@ -474,10 +474,10 @@ h1 {
             width: 18px;
             height: 18px;
             margin-right: 3px;
-            background: url(../images/sprite.png) left -353px;
+            background: url(../images/sprite.png) -464px top;
             text-indent: -999em;
             &:hover {
-              background-position: -18px -353px;
+              background-position: right top;
             }
           }
         }
