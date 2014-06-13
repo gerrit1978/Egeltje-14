@@ -59,7 +59,6 @@ class SearchApiRangesWidgetSelect extends FacetapiWidgetLinks {
     if ($tmp_first['#active'] == TRUE) {
       $remove_facet_url = url($_GET['q'], array('query' => $tmp_first['#query']));
     };
-/*     $remove_facet_url = url($_GET['q'], array('query' => $tmp_first['#query'])); */
 
     $options[$remove_facet_url] = t('All');
     foreach ($element as $value => $item) {
