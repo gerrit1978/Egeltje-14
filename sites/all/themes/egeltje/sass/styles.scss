@@ -535,6 +535,26 @@ h1 {
       font-style: italic;
       color: $mainRed;
     }
+    .service-links {
+      ul {
+        margin: 0;
+        padding: 0;
+	      li {
+	        list-style: none;
+	        display: inline-block;
+	        &.service-links-facebook-like {
+	          iframe {
+	            width: 130px !important;
+	          }
+	        }
+	        &.service-links-google-plus-one {
+	          div {
+	            width: 80px !important;
+	          }
+	        }
+	      }
+      }
+    }
   }
 }	   
 
