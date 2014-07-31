@@ -17,7 +17,7 @@
 # http://www.sxw.org.uk/computing/robots/check.html
 
 User-agent: *
-Crawl-delay: 10
+Crawl-delay: 60
 # Directories
 Disallow: /includes/
 Disallow: /misc/
@@ -58,3 +58,27 @@ Disallow: /?q=user/password/
 Disallow: /?q=user/register/
 Disallow: /?q=user/login/
 Disallow: /?q=user/logout/
+
+user-agent: AhrefsBot
+disallow: /
+
+User-Agent: MJ12bot
+disallow: /
+
+User-Agent: YandexBot
+disallow: /
+
+User-Agent: Sistrix
+disallow: /
+
+User-Agent: WiseGuys
+disallow: /
+
+User-Agent: Wise-Guys
+disallow: /
+
+User-Agent: Bingbot
+disallow: /
+
+User-Agent: Bing
+disallow: /
