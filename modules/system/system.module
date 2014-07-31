@@ -242,6 +242,7 @@ function system_permission() {
     ),
     'access site reports' => array(
       'title' => t('View site reports'),
+      'restrict access' => TRUE,
     ),
     'block IP addresses' => array(
       'title' => t('Block IP addresses'),
@@ -321,6 +322,12 @@ function system_element_info() {
     '#pre_render' => array('drupal_pre_render_styles'),
     '#group_callback' => 'drupal_group_css',
     '#aggregate_callback' => 'drupal_aggregate_css',
+  );
+  $types['scripts'] = array(
+    '#items' => array(),
+    '#pre_render' => array('drupal_pre_render_scripts'),
+    '#group_callback' => 'drupal_group_js',
+    '#aggregate_callback' => 'drupal_aggregate_js',
   );
 
   // Input elements.
