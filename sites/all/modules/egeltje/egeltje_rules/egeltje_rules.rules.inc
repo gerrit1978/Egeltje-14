@@ -17,6 +17,17 @@ function egeltje_rules_rules_condition_info() {
       ),
       'module' => 'egeltje_rules',
     ),
+    'egeltje_rules_single_coupon' => array(
+      'group' => 'egeltje',
+      'label' => t('Bestelling bevat al een kortingcode'),
+      'arguments' => array(
+        'order' => array(
+          'type' => 'commerce_order',
+          'label' => t('de bestelling'),
+        ),
+      ),
+      'module' => 'egeltje_rules',
+    ),
   );
 }
 
@@ -43,4 +54,16 @@ function egeltje_rules_product_solden($product) {
   }
   
   return FALSE;
+}
+
+
+/**
+ * Callback function for checking if an order contains already a coupon
+ */
+function egeltje_rules_single_coupon($order) {
+  if (is_array($order->commerce_coupon_order_reference) && is_array($order->commerce_coupon_order_reference) && count($order->commerce_coupon_order_reference)) {
+    return TRUE;
+  } else {
+    return FALSE;
+  }
 }
