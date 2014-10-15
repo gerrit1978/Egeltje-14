@@ -82,3 +82,12 @@ disallow: /
 
 User-Agent: Bing
 disallow: /
+
+User-agent: BLEXBot
+disallow: /
+
+User-agent: spbot
+Disallow: /
+
+User-agent: XoviBot
+Disallow: /

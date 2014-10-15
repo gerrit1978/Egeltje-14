@@ -7,9 +7,9 @@ core = 7.x
 ; Tests
 files[] = tests/commerce_reports_patterns.test
 
-; Information added by Drupal.org packaging script on 2014-05-09
-version = "7.x-4.0-alpha3"
+; Information added by Drupal.org packaging script on 2014-09-06
+version = "7.x-4.0-beta1"
 core = "7.x"
 project = "commerce_reports"
-datestamp = "1399603735"
+datestamp = "1410012952"
 
